@@ -1,7 +1,7 @@
 // ЯМА / SOULPIT: one page, hash routes, polling instead of sockets.
 // The API may live elsewhere (the site on GitHub Pages, the API on another host): config.js sets window.SOULPIT.api.
 // Two languages: every string is written L('русский', 'English') where it is used; the choice is kept in localStorage.
-// Routes: #/ · #/lobbies · #/lobby · #/heroes · #/hero/<id> · #/items · #/modes · #/guide · #/top · #/matches
+// Routes: #/ · #/lobbies · #/lobby · #/heroes · #/hero/<id> · #/items · #/modes · #/guide · #/top · #/matches · #/admin
 
 const API = ((window.SOULPIT && window.SOULPIT.api) || '').replace(/\/$/, '');
 const TOKEN_KEY = 'yama_token';
@@ -27,7 +27,8 @@ let ranks = [];            // static/data/ranks[.en].json: names of rank 0 (cali
 let pendingBan = null;     // hero clicked in the ban phase, not yet sent
 let clock = null;          // {left, total, at}: the phase countdown, ticked locally between polls
 let lastHtml = '', lastKey = '', lastState = null, lastLobby = null;
-const ui = { heroType: '', heroQuery: '', heroView: 'cards', heroSort: 'name', heroSortDir: 1, itemSlot: 'weapon', item: null, mineOnly: false };
+const ui = { heroType: '', heroQuery: '', heroView: 'cards', heroSort: 'name', heroSortDir: 1, itemSlot: 'weapon', item: null, mineOnly: false,
+  adminTab: 'overview', adminMatchStatus: 'playing', adminQuery: '' };
 const chat = { channel: 'global', logs: {} };  // channel -> {since, msgs}
 
 const $ = (id) => document.getElementById(id);
@@ -169,25 +170,21 @@ function render() {
   renderNav();
   renderMe();
   renderRail();
+  renderNotice();
   const html = view();
   const key = route() + ':' + (lobby?.state || '');
   if (html !== lastHtml) {
     // don't redraw the same screen while the user types in it
-    const typing = document.activeElement?.tagName === 'INPUT' && $('view').contains(document.activeElement);
+    const typing = ['INPUT', 'TEXTAREA'].includes(document.activeElement?.tagName) && $('view').contains(document.activeElement);
     if (!(typing && key === lastKey)) {
       $('view').innerHTML = html;
       lastHtml = html;
       lastKey = key;
-      afterRender();
     }
   }
   tickClock();
 }
 
-function afterRender() {
-  const box = $('modelBox');
-  if (box && box.dataset.auto === '1' && !box.dataset.loaded) loadModel(box.dataset.hero);
-}
 
 function renderNav() {
   const open = pulse.lobbies.filter((l) => l.state === 'waiting').length;
@@ -201,6 +198,7 @@ function renderNav() {
     ['/heroes', L('Герои', 'Heroes')],
     ['/items', L('Предметы', 'Items')],
     ['/guide', L('Как играть', 'How to play')],
+    ...(me?.admin ? [['/admin', L('Админка', 'Admin'), 'admin-link']] : []),
   ];
   const on = (p) => r === p || (p === '/heroes' && r.startsWith('/hero/')) || (p === '/matches' && r.startsWith('/match/'));
   const html = items.map(([p, label, cls]) => `<a href="#${p}" class="${on(p) ? 'on' : ''} ${cls || ''}">${label}</a>`).join('');
@@ -257,6 +255,7 @@ function view() {
     case '/matches': return matchesPage();
     case '/modes': return modesPage();
     case '/guide': return guidePage();
+    case '/admin': return adminPage();
     default: return homeView();
   }
 }
@@ -669,7 +668,8 @@ function resultPanel(l) {
   if (l.state !== 'live') return '';
   if (l.result) {
     const d = l.result.deltas?.[me.sid];
-    const via = { server: L(' · от сервера', ' · from the server'), timeout: L(' · принят без спора по таймеру', ' · accepted undisputed on timeout') }[l.result.source]
+    const via = { server: L(' · от сервера', ' · from the server'), timeout: L(' · принят без спора по таймеру', ' · accepted undisputed on timeout'),
+      admin: L(' · решение админа', ' · decided by an admin') }[l.result.source]
       || L(' · подтверждён командами', ' · confirmed by the teams');
     return `<div class="result-box">
       <span class="label muted">${L('Результат', 'Result')}${via}</span>
@@ -888,7 +888,8 @@ function matchPage(id) {
       <td>${p.mmr_after != null ? `${p.mmr_after} ${delta(p.delta)}` : (p.mmr_before ?? '—')}</td>
     </tr>`).join('')}</tbody></table></div>`;
   const dur = m.duration >= 60 ? `${Math.floor(m.duration / 60)} ${L('мин', 'min')}` : null;
-  const source = { server: L('прислал сервер', 'sent by the server'), timeout: L('принят без спора по таймеру', 'accepted undisputed on timeout') }[m.source]
+  const source = { server: L('прислал сервер', 'sent by the server'), timeout: L('принят без спора по таймеру', 'accepted undisputed on timeout'),
+    admin: L('решил админ', 'decided by an admin') }[m.source]
     || L('подтвердили игроки', 'confirmed by the players');
   return `<section class="section">
     <p class="kicker"><a href="#/matches">${L('← все матчи', '← all matches')}</a> · ${esc(modeNameById(m.mode))} · ${fmtDate(m.ts)}${dur ? ` · ${dur}` : ''} · ${L('матч', 'match')} №${esc(m.id)}</p>
@@ -1099,81 +1100,10 @@ function heroPage(id) {
           ${stat(w.clip, L('Обойма', 'Clip'))}${stat(w.reload, L('Перезарядка', 'Reload'), L('с', 's'))}${stat(w.falloff, L('Спад урона', 'Damage falloff'), L('м', 'm'))}
         </div></section>` : ''}
 
-      ${config.models ? `<section class="section">${sectionHead('§', L('3D-модель', '3D model'), L('из файлов игры', 'from the game files'))}
-        <div class="model-box" id="modelBox" data-hero="${h.id}">
-          <div><p class="muted" style="margin:0 0 14px">${L('Модель грузится из игры: ~6 МБ, первый раз — несколько секунд.', 'The model loads from the game: ~6 MB, a few seconds the first time.')}</p>
-          <button class="btn" onclick="loadModel('${h.id}')">${L('Показать модель', 'Show the model')}</button></div>
-        </div>
-      </section>` : ''}
-
       ${h.playstyle ? `<section class="section">${sectionHead('§', L('Как играть', 'How to play'))}<p class="rich">${h.playstyle}</p></section>` : ''}
       ${h.lore ? `<section class="section">${sectionHead('§', L('История', 'Lore'))}<p class="rich">${h.lore}</p></section>` : ''}
     </div>
   </section>`;
-}
-
-// three.js viewer: the model turns slowly, drag to rotate, wheel to zoom
-let viewer = null;
-async function loadModel(id) {
-  const box = $('modelBox');
-  if (!box || box.dataset.loaded) return;
-  box.dataset.loaded = '1';
-  box.innerHTML = `<p class="label muted">${L('Загрузка модели', 'Loading the model')}<span class="dots"></span></p>`;
-  try {
-    const THREE = await import('three');
-    const { GLTFLoader } = await import('three/addons/loaders/GLTFLoader.js');
-    const { OrbitControls } = await import('three/addons/controls/OrbitControls.js');
-    const gltf = await new GLTFLoader().loadAsync(`${API}/models/${id}.glb`);
-    if ($('modelBox') !== box) return;  // the user went elsewhere meanwhile
-    viewer?.stop();
-    const scene = new THREE.Scene();
-    scene.add(new THREE.HemisphereLight(0xfff4e0, 0x2b2823, 2.2));
-    const key = new THREE.DirectionalLight(0xffffff, 2.4);
-    key.position.set(2, 3, 4);
-    scene.add(key);
-    const rim = new THREE.DirectionalLight(0xc8321f, 1.6);
-    rim.position.set(-3, 2, -3);
-    scene.add(rim);
-    const model = gltf.scene;
-    const size = new THREE.Box3().setFromObject(model).getSize(new THREE.Vector3());
-    // models come Z-up from the game: stand them up when they lie
-    if (size.z > size.y * 1.2) model.rotation.x = -Math.PI / 2;
-    const bounds = new THREE.Box3().setFromObject(model);
-    const center = bounds.getCenter(new THREE.Vector3());
-    const dims = bounds.getSize(new THREE.Vector3());
-    model.position.sub(center);
-    const pivot = new THREE.Group();
-    pivot.add(model);
-    scene.add(pivot);
-    const camera = new THREE.PerspectiveCamera(30, box.clientWidth / box.clientHeight, 0.01, 1000);
-    const dist = dims.y / (2 * Math.tan(Math.PI * 30 / 360)) * 0.95;
-    camera.position.set(0, dims.y * 0.05, dist);
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(2, devicePixelRatio));
-    renderer.setSize(box.clientWidth, box.clientHeight);
-    renderer.outputColorSpace = THREE.SRGBColorSpace;
-    box.innerHTML = `<span class="hint-3d">${L('тяните — повернуть · колесо — приблизить', 'drag to rotate · wheel to zoom')}</span>`;
-    box.prepend(renderer.domElement);
-    const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true;
-    controls.enablePan = false;
-    controls.minDistance = dist * 0.3;
-    controls.maxDistance = dist * 2;
-    let spin = true, running = true;
-    controls.addEventListener('start', () => { spin = false; });
-    const frame = () => {
-      if (!running || !document.body.contains(renderer.domElement)) { renderer.dispose(); return; }
-      if (spin) pivot.rotation.y += 0.004;
-      controls.update();
-      renderer.render(scene, camera);
-      requestAnimationFrame(frame);
-    };
-    frame();
-    viewer = { stop: () => { running = false; } };
-  } catch (e) {
-    box.dataset.loaded = '';
-    box.innerHTML = `<div><p>${L('Не удалось показать модель', 'Could not show the model')}: ${esc(e.message)}</p><button class="btn" onclick="loadModel('${id}')">${L('Ещё раз', 'Try again')}</button></div>`;
-  }
 }
 
 // ---------- items ----------
@@ -1271,12 +1201,235 @@ function guidePage() {
     <div class="guide">${items.map(([h, p]) => `<article><h4>${h}</h4><p>${p}</p></article>`).join('')}</div></section>`;
 }
 
+// ---------- admin ----------
+
+const ADMIN_TABS = () => [['overview', L('Обзор', 'Overview')], ['lobbies', L('Лобби', 'Lobbies')], ['matches', L('Матчи', 'Matches')],
+  ['players', L('Игроки', 'Players')], ['chat', L('Чат', 'Chat')], ['settings', L('Настройки', 'Settings')], ['log', L('Журнал', 'Log')]];
+
+function adminPage() {
+  if (!me?.admin) return `<section class="section">${sectionHead('§', L('Админка', 'Admin'))}<p>${L('Только для админов.', 'Admins only.')}</p></section>`;
+  const tab = ui.adminTab || 'overview';
+  const body = { overview: adminOverview, lobbies: adminLobbies, matches: adminMatches, players: adminPlayers,
+    chat: adminChat, settings: adminSettings, log: adminLog }[tab]();
+  return `<section class="section admin">
+    ${sectionHead('§', L('Админка', 'Admin'), L('управление платформой', 'running the platform'))}
+    <div class="filters">${ADMIN_TABS().map(([k, label]) => `<button class="chip-btn ${tab === k ? 'on' : ''}" onclick="setAdminTab('${k}')">${label}</button>`).join('')}</div>
+    ${body}
+  </section>`;
+}
+
+function adminData(path, maxAge = 4000) {
+  const c = remote('/api/admin/' + path, maxAge);
+  if (c?.data) return { data: c.data };
+  return { wait: `<p class="muted">${c?.error ? esc(c.error) : L('Загрузка…', 'Loading…')}</p>` };
+}
+
+// a change: confirm if asked, send, then reload every admin view
+async function adminAct(path, body = {}, question = '') {
+  if (question && !confirm(question)) return;
+  try { await api('/api/admin/' + path, body); } catch (e) { return showError(e.message); }
+  for (const k of Object.keys(remoteCache)) if (k.startsWith('/api/admin') || k.startsWith('/api/match')) delete remoteCache[k];
+  refreshPulse();
+}
+
+const ACTION_NAMES = () => ({
+  ban: L('бан', 'ban'), unban: L('разбан', 'unban'), mute: L('мут', 'mute'), unmute: L('снят мут', 'unmute'),
+  reset_rating: L('сброс рейтинга', 'rating reset'), set_result: L('итог матча', 'match result'), annul: L('аннулирован матч', 'match annulled'),
+  close_lobby: L('закрыто лобби', 'lobby closed'), kick: L('выгнан из лобби', 'kicked from lobby'),
+  delete_message: L('удалено сообщение', 'message deleted'), settings: L('настройки', 'settings'),
+});
+
+function logRows(rows) {
+  if (!rows.length) return `<p class="muted">${L('Пока пусто.', 'Empty so far.')}</p>`;
+  return `<div class="table-wrap"><table class="htable atable"><thead><tr><th>${L('Когда', 'When')}</th><th>${L('Админ', 'Admin')}</th>
+    <th>${L('Действие', 'Action')}</th><th>${L('Кому / что', 'Target')}</th><th>${L('Подробности', 'Details')}</th></tr></thead><tbody>
+    ${rows.map((r) => `<tr><td>${fmtDate(r.ts)}</td><td>${esc(r.admin)}</td><td>${esc(ACTION_NAMES()[r.action] || r.action)}</td>
+      <td>${r.target_name ? `<a href="#/player/${esc(r.target)}">${esc(r.target_name)}</a>` : esc(r.target)}</td>
+      <td class="muted">${logDetails(r.details)}</td></tr>`).join('')}</tbody></table></div>`;
+}
+
+function logDetails(d) {
+  if (!d) return '';
+  const names = { reason: L('причина', 'reason'), minutes: L('минут', 'minutes'), winner: L('победа', 'win'), score: L('счёт', 'score'),
+    teams: L('команды', 'teams'), lobby: L('лобби', 'lobby'), text: L('текст', 'text'), mmr: 'MMR', games: L('матчей', 'matches'),
+    announcement: L('объявление', 'announcement'), lobbies_closed: L('лобби закрыты', 'lobbies closed'), was: L('было', 'was'),
+    channel: L('канал', 'channel'), wins: L('побед', 'wins') };
+  const show = (k, v) => k === 'winner' && typeof v === 'number' ? L(`команда ${v + 1}`, `team ${v + 1}`)
+    : Array.isArray(v) ? v.join(v.every((x) => typeof x === 'number') ? ':' : ' vs ')
+    : v && typeof v === 'object' ? Object.entries(v).map(([a, b]) => `${names[a] || a} ${show(a, b)}`).join(', ')
+    : v === true ? L('да', 'yes') : v === false ? L('нет', 'no') : v ?? '—';
+  return Object.entries(d).map(([k, v]) => `${esc(names[k] || k)}: ${esc(String(show(k, v)))}`).join(' · ');
+}
+
+function adminOverview() {
+  const { data: o, wait } = adminData('overview');
+  if (wait) return wait;
+  const lobbiesNow = Object.entries(o.lobbies).map(([s, n]) => `${stateLabel(s)} ${n}`).join(' · ') || '0';
+  return `<div class="facts">
+      <div><b>${o.online}</b><span>${L('в сети сейчас', 'online now')}</span></div>
+      <div><b>${o.players}</b><span>${L(`игроков всего, +${o.players_day} за сутки`, `players in total, +${o.players_day} today`)}</span></div>
+      <div><b>${lobbiesNow}</b><span>${L('лобби сейчас', 'lobbies now')}</span></div>
+      <div><b>${o.matches_day}</b><span>${L(`матчей за сутки, всего ${o.matches_total}`, `matches today, ${o.matches_total} in total`)}</span></div>
+      <div><b>${o.playing}</b><span>${L(`матчей ждут итога, из них с сообщённым итогом — ${o.pending_reports}`, `matches waiting for a result, ${o.pending_reports} with a reported one`)}</span></div>
+      <div><b>${o.banned}</b><span>${L(`в бане · сообщений в чате за сутки: ${o.messages_day}`, `banned · chat messages today: ${o.messages_day}`)}</span></div>
+    </div>
+    <section class="section">${sectionHead('§', L('Последние действия', 'Recent actions'))}${logRows(o.log)}</section>`;
+}
+
+function adminLobbies() {
+  const { data, wait } = adminData('lobbies', 3000);
+  if (wait) return wait;
+  if (!data.length) return `<p class="muted">${L('Лобби сейчас нет.', 'No lobbies right now.')}</p>`;
+  return `<ol class="alist">${data.map((l) => `<li>
+    <div class="ahead"><b>${teamsTitle(l.teams.map((t) => t.name))}</b>
+      <span class="label">${stateLabel(l.state)} · №${esc(l.id)} · ${L('владелец', 'owner')} ${esc(nameOf(l, l.owner))}${l.match ? ` · ${L('матч', 'match')}: ${esc(l.match)}` : ''}</span>
+      <button class="btn small" onclick="adminAct('lobby/${l.id}/close', {}, '${L('Закрыть лобби? Матч без итога будет отменён.', 'Close the lobby? A match without a result gets cancelled.')}')">${L('Закрыть', 'Close')}</button></div>
+    <div class="ateams">${[0, 1].map((t) => `<div><span class="label ${TEAM_CLASS[t]}">${esc(l.teams[t].name)}</span>
+      ${playersOf(l, t).map((sid) => `<p>${plink({ sid, name: nameOf(l, sid) })} ${l.picks[sid] ? `<span class="muted">· ${esc(l.picks[sid])}</span>` : ''}
+        ${['waiting', 'live', 'error'].includes(l.state) ? `<button class="kick" title="${L('Выгнать', 'Kick')}" onclick="adminAct('lobby/${l.id}/kick', { sid: '${sid}' })">×</button>` : ''}</p>`).join('') || '<p class="muted">—</p>'}</div>`).join('')}</div>
+  </li>`).join('')}</ol>`;
+}
+
+function adminMatches() {
+  const status = ui.adminMatchStatus ?? 'playing';
+  const { data, wait } = adminData(`matches?status=${status}&limit=80`);
+  const filters = [['playing', L('Ждут итога', 'Waiting for result')], ['finished', L('Завершённые', 'Finished')],
+    ['cancelled', L('Отменённые', 'Cancelled')], ['', L('Все', 'All')]];
+  const head = `<div class="filters">${filters.map(([k, label]) => `<button class="chip-btn ${status === k ? 'on' : ''}" onclick="setAdminMatchStatus('${k}')">${label}</button>`).join('')}</div>`;
+  if (wait) return head + wait;
+  if (!data.length) return head + `<p class="muted">${L('Матчей нет.', 'No matches.')}</p>`;
+  return head + `<ol class="alist">${data.map((m) => {
+    const names = (t) => m.players.filter((p) => p.team === t).map((p) => esc(p.name)).join(', ') || '—';
+    const report = m.report ? `<p class="small">${L('Сообщён итог', 'Reported')}: ${L('победа', 'win')} ${esc(m.teams[m.report.winner])}${m.report.score ? ` ${m.report.score[0]}:${m.report.score[1]}` : ''} · ${L('споров', 'disputes')}: ${m.report.disputes}</p>` : '';
+    let actions = '';
+    if (m.status === 'playing') {
+      actions = [0, 1].map((t) => `<button class="btn small ${TEAM_CLASS[t]}" onclick="adminResult('${m.id}', ${t})">${L('Победа', 'Win')}: ${esc(m.teams[t])}</button>`).join('')
+        + `<button class="btn small ghost" onclick="adminAct('match/${m.id}/annul', {}, '${L('Отменить матч? Рейтинг не изменится.', 'Cancel the match? Ratings stay as they are.')}')">${L('Отменить', 'Cancel')}</button>`;
+    } else if (m.status === 'finished') {
+      actions = `<button class="btn small ghost" onclick="adminAct('match/${m.id}/annul', {}, '${L('Аннулировать матч? Изменения рейтинга откатятся.', 'Annul the match? Rating changes are rolled back.')}')">${L('Аннулировать', 'Annul')}</button>`;
+    }
+    return `<li>
+      <div class="ahead"><a href="#/match/${m.id}"><b>${esc(m.teams[0])} ${m.score ? `${m.score[0]}:${m.score[1]}` : 'vs'} ${esc(m.teams[1])}</b></a>
+        <span class="label">${fmtDate(m.ts)} · ${statusStamp(m) || (m.winner != null ? `${L('победа', 'win')}: ${esc(m.teams[m.winner])}` : '')} · №${esc(m.id)}</span></div>
+      <p class="small muted">${esc(m.teams[0])}: ${names(0)} · ${esc(m.teams[1])}: ${names(1)}</p>${report}
+      ${actions ? `<p class="row-btns">${actions}</p>` : ''}
+    </li>`;
+  }).join('')}</ol>`;
+}
+
+function adminResult(id, winner) {
+  const raw = prompt(L('Счёт по убийствам, например 30:22 (можно оставить пустым):', 'Kill score, e.g. 30:22 (may be empty):'), '');
+  if (raw === null) return;
+  const m = raw.match(/^\s*(\d+)\s*[:\-]\s*(\d+)\s*$/);
+  adminAct(`match/${id}/result`, m ? { winner, score: [+m[1], +m[2]] } : { winner });
+}
+
+function adminPlayers() {
+  const q = ui.adminQuery || '';
+  const { data, wait } = adminData(`players?q=${encodeURIComponent(q)}`, 6000);
+  const search = `<form class="filters" onsubmit="adminSearch(event)"><input class="input" id="adminQuery" placeholder="${L('Ник или SteamID', 'Name or SteamID')}" value="${esc(q)}">
+    <button class="btn small">${L('Найти', 'Search')}</button></form>`;
+  if (wait) return search + wait;
+  if (!data.length) return search + `<p class="muted">${L('Никого не нашлось.', 'Nobody found.')}</p>`;
+  const now = Date.now() / 1000;
+  return search + `<div class="table-wrap"><table class="htable atable"><thead><tr><th>${L('Игрок', 'Player')}</th><th>SteamID</th><th>MMR</th>
+    <th>${L('Матчи', 'Matches')}</th><th>${L('Статус', 'Status')}</th><th>${L('Был', 'Seen')}</th><th></th></tr></thead><tbody>
+    ${data.map((p) => {
+      const status = [p.admin && L('админ', 'admin'), p.banned && `${L('бан', 'banned')}${p.ban_reason ? `: ${esc(p.ban_reason)}` : ''}`,
+        p.muted_until && L(`мут до ${new Date(p.muted_until * 1000).toLocaleTimeString(LOCALE(), { hour: '2-digit', minute: '2-digit' })}`,
+          `muted till ${new Date(p.muted_until * 1000).toLocaleTimeString(LOCALE(), { hour: '2-digit', minute: '2-digit' })}`),
+        p.lobby && L('в лобби', 'in a lobby')].filter(Boolean).join(' · ') || '—';
+      const seen = p.last_seen ? (now - p.last_seen < 60 ? L('сейчас', 'now') : fmtDate(p.last_seen)) : '—';
+      const btns = p.admin ? '' : [
+        p.banned ? `<button class="btn small ghost" onclick="adminAct('player/${p.sid}/unban')">${L('Разбанить', 'Unban')}</button>`
+          : `<button class="btn small" onclick="adminBan('${p.sid}')">${L('Бан', 'Ban')}</button>`,
+        p.muted_until ? `<button class="btn small ghost" onclick="adminAct('player/${p.sid}/unmute')">${L('Снять мут', 'Unmute')}</button>`
+          : `<button class="btn small ghost" onclick="adminMute('${p.sid}')">${L('Мут', 'Mute')}</button>`,
+        `<button class="btn small ghost" onclick="adminAct('player/${p.sid}/reset', {}, '${L('Сбросить рейтинг игрока до 1000 и обнулить матчи?', 'Reset this player to 1000 MMR and zero matches?')}')">${L('Сброс', 'Reset')}</button>`,
+      ].join('');
+      return `<tr class="${p.banned ? 'banned' : ''}"><td><span class="pcell">${avatar(p, 'sm')}${plink(p)}</span></td><td class="mono small">${esc(p.sid)}</td>
+        <td>${p.mmr}</td><td>${p.games}</td><td>${status}</td><td>${seen}</td><td class="abtns">${btns}</td></tr>`;
+    }).join('')}</tbody></table></div>`;
+}
+
+function adminBan(sid) {
+  const reason = prompt(L('Причина бана (игрок её увидит):', 'Ban reason (the player sees it):'), '');
+  if (reason !== null) adminAct(`player/${sid}/ban`, { reason });
+}
+
+function adminMute(sid) {
+  const minutes = prompt(L('На сколько минут закрыть чат?', 'Mute in chat for how many minutes?'), '60');
+  if (minutes !== null && +minutes > 0) adminAct(`player/${sid}/mute`, { minutes: +minutes });
+}
+
+function adminSearch(e) {
+  e.preventDefault();
+  ui.adminQuery = $('adminQuery').value.trim();
+  document.activeElement.blur();
+  render();
+}
+
+function adminChat() {
+  const { data, wait } = adminData('chat?limit=150', 3000);
+  if (wait) return wait;
+  if (!data.length) return `<p class="muted">${L('Сообщений нет.', 'No messages.')}</p>`;
+  return `<ol class="achat">${data.map((m) => `<li>
+    <span class="t">${fmtDate(m.ts)}</span><span class="label">${m.channel === 'global' ? L('общий', 'global') : esc(m.channel)}</span>
+    <b>${m.user ? plink(m.user) : '—'}</b><span class="txt">${esc(m.text)}</span>
+    <span class="abtns">${m.user && !m.user.admin ? `<button class="btn small ghost" onclick="adminMute('${m.user.sid}')">${L('Мут', 'Mute')}</button>` : ''}
+      <button class="btn small" onclick="adminAct('message/${m.id}/delete')">${L('Удалить', 'Delete')}</button></span>
+  </li>`).join('')}</ol>`;
+}
+
+function adminSettings() {
+  const { data: s, wait } = adminData('settings', 15000);
+  if (wait) return wait;
+  return `<form class="asettings" onsubmit="adminSaveSettings(event)">
+    <label class="field"><span class="label">${L('Объявление для всех (наверху каждой страницы, пусто — скрыто)', 'Announcement for everyone (top of every page; empty hides it)')}</span>
+      <textarea class="input" id="adminAnnounce" maxlength="300" rows="3">${esc(s.announcement)}</textarea></label>
+    <label class="check"><input type="checkbox" id="adminLobbiesClosed" ${s.lobbies_closed ? 'checked' : ''}>
+      ${L('Закрыть создание новых лобби (идущие не трогаются)', 'Stop new lobbies from being created (running ones stay)')}</label>
+    <p><button class="btn red">${L('Сохранить', 'Save')}</button></p>
+    <p class="muted small">${L('Админы задаются в файле web/lobby/admins.txt (SteamID, по одному в строке).', 'Admins are listed in web/lobby/admins.txt (one SteamID per line).')}</p>
+  </form>`;
+}
+
+function adminSaveSettings(e) {
+  e.preventDefault();
+  adminAct('settings', { announcement: $('adminAnnounce').value, lobbies_closed: $('adminLobbiesClosed').checked });
+  document.activeElement.blur();
+}
+
+function adminLog() {
+  const { data, wait } = adminData('log', 8000);
+  return wait || logRows(data);
+}
+
+function setAdminTab(t) { ui.adminTab = t; render(); }
+function setAdminMatchStatus(s) { ui.adminMatchStatus = s; render(); }
+
+// an announcement from the admins, the lobby switch, and the player's own ban or mute
+function renderNotice() {
+  const parts = [];
+  if (me?.banned) parts.push(`<b>${L('Аккаунт заблокирован', 'Your account is banned')}</b>${me.ban_reason ? `: ${esc(me.ban_reason)}` : ''}`);
+  if (pulse.announcement) parts.push(esc(pulse.announcement));
+  if (pulse.lobbies_closed) parts.push(L('Создание новых лобби временно закрыто.', 'Creating new lobbies is closed for now.'));
+  const html = parts.map((p) => `<span>${p}</span>`).join('');
+  const box = $('notice');
+  if (box.innerHTML !== html) box.innerHTML = html;
+  box.hidden = !parts.length;
+  box.classList.toggle('bad', !!me?.banned);
+}
+
 // ---------- chat ----------
 
 function renderRail() {
   document.body.classList.add('with-rail');
-  $('say').placeholder = me ? L('Написать…', 'Write…') : L('Войдите, чтобы писать', 'Sign in to write');
-  $('say').disabled = !me;
+  const muted = me?.muted_until > Date.now() / 1000;
+  const till = muted ? new Date(me.muted_until * 1000).toLocaleTimeString(LOCALE(), { hour: '2-digit', minute: '2-digit' }) : '';
+  $('say').placeholder = !me ? L('Войдите, чтобы писать', 'Sign in to write') : me.banned ? L('Аккаунт заблокирован', 'Account banned')
+    : muted ? L(`Чат закрыт для вас до ${till}`, `You are muted till ${till}`) : L('Написать…', 'Write…');
+  $('say').disabled = !me || me.banned || muted;
   const tabs = `<button class="${chat.channel === 'global' ? 'on' : ''}" onclick="switchChannel('global')">${L('Общий', 'Global')}</button>
     <button class="${chat.channel.startsWith('lobby:') ? 'on' : ''}" ${lobby ? '' : 'disabled'} onclick="switchChannel('lobby:${lobby?.id}')">${L('Лобби', 'Lobby')}</button>`;
   if ($('railTabs').innerHTML !== tabs) $('railTabs').innerHTML = tabs;
@@ -1318,6 +1471,7 @@ function sysText(text) {
       `Win: ${m.team}${score}. ${m.rated ? 'Ratings updated' : 'Unranked match'}`],
     report: [`${m.who}: победа — ${m.team}${score}. Ждём подтверждения от ${m.wait} (без спора итог примется через ${m.minutes} мин)`,
       `${m.who}: ${m.team} won${score}. Waiting for ${m.wait} to confirm (it stands in ${m.minutes} min if undisputed)`],
+    annulled: ['Админ отменил матч: рейтинг не меняется', 'An admin cancelled the match: ratings stay'],
     dispute: [`${m.who} оспорил результат. ${m.cancelled ? 'Споров слишком много: матч отменён, рейтинг не меняется' : 'Сообщите его заново'}`,
       `${m.who} disputed the result. ${m.cancelled ? 'Too many disputes: the match is cancelled, ratings stay' : 'Report it again'}`],
   }[m.k];
