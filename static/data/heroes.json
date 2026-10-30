@@ -2,9 +2,9 @@
  {
   "id": "hero_atlas",
   "name": "Abrams",
-  "name_ru": "Абрамс",
+  "name_local": "Абрамс",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 1,
   "tags": [
    "Танк",
@@ -145,9 +145,9 @@
  {
   "id": "hero_fencer",
   "name": "Apollo",
-  "name_ru": "Аполлон",
+  "name_local": "Аполлон",
   "type": "Assassin",
-  "type_ru": "Ассассин",
+  "type_local": "Ассассин",
   "complexity": 2,
   "tags": [
    "Изящность",
@@ -309,9 +309,9 @@
  {
   "id": "hero_bebop",
   "name": "Bebop",
-  "name_ru": "Бибоп",
+  "name_local": "Бибоп",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 2,
   "tags": [
    "Крюк",
@@ -461,9 +461,9 @@
  {
   "id": "hero_punkgoat",
   "name": "Billy",
-  "name_ru": "Билли",
+  "name_local": "Билли",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 3,
   "tags": [
    "Панк",
@@ -649,9 +649,9 @@
  {
   "id": "hero_nano",
   "name": "Calico",
-  "name_ru": "Калико",
+  "name_local": "Калико",
   "type": "Assassin",
-  "type_ru": "Ассассин",
+  "type_local": "Ассассин",
   "complexity": 2,
   "tags": [
    "Ловкая",
@@ -801,9 +801,9 @@
  {
   "id": "hero_unicorn",
   "name": "Celeste",
-  "name_ru": "Селеста",
+  "name_local": "Селеста",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 2,
   "tags": [
    "Артистка",
@@ -973,9 +973,9 @@
  {
   "id": "hero_deadpack",
   "name": "Deadman Danny",
-  "name_ru": "Дохлый Дэнни",
+  "name_local": "Дохлый Дэнни",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 2,
   "tags": [
    "Безбашенный",
@@ -1149,9 +1149,9 @@
  {
   "id": "hero_drifter",
   "name": "Drifter",
-  "name_ru": "Скиталец",
+  "name_local": "Скиталец",
   "type": "Assassin",
-  "type_ru": "Ассассин",
+  "type_local": "Ассассин",
   "complexity": 3,
   "tags": [
    "Преследователь",
@@ -1309,9 +1309,9 @@
  {
   "id": "hero_dynamo",
   "name": "Dynamo",
-  "name_ru": "Динамо",
+  "name_local": "Динамо",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 2,
   "tags": [
    "Командный игрок",
@@ -1468,9 +1468,9 @@
  {
   "id": "hero_necro",
   "name": "Graves",
-  "name_ru": "Грейвс",
+  "name_local": "Грейвс",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 2,
   "tags": [
    "Мрачная",
@@ -1636,9 +1636,9 @@
  {
   "id": "hero_orion",
   "name": "Grey Talon",
-  "name_ru": "Серый Коготь",
+  "name_local": "Серый Коготь",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 2,
   "tags": [
    "Точность",
@@ -1796,9 +1796,9 @@
  {
   "id": "hero_haze",
   "name": "Haze",
-  "name_ru": "Пелена",
+  "name_local": "Пелена",
   "type": "Assassin",
-  "type_ru": "Ассассин",
+  "type_local": "Ассассин",
   "complexity": 1,
   "tags": [
    "Убийца",
@@ -1956,9 +1956,9 @@
  {
   "id": "hero_astro",
   "name": "Holliday",
-  "name_ru": "Холлидей",
+  "name_local": "Холлидей",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 3,
   "tags": [
    "Меткий глаз",
@@ -2097,9 +2097,9 @@
  {
   "id": "hero_inferno",
   "name": "Infernus",
-  "name_ru": "Инфернус",
+  "name_local": "Инфернус",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 1,
   "tags": [
    "Поджигатель",
@@ -2257,9 +2257,9 @@
  {
   "id": "hero_tengu",
   "name": "Ivy",
-  "name_ru": "Плющик",
+  "name_local": "Плющик",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 3,
   "tags": [
    "Командный игрок",
@@ -2433,9 +2433,9 @@
  {
   "id": "hero_kelvin",
   "name": "Kelvin",
-  "name_ru": "Кельвин",
+  "name_local": "Кельвин",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 2,
   "tags": [
    "Защитник",
@@ -2601,9 +2601,9 @@
  {
   "id": "hero_ghost",
   "name": "Lady Geist",
-  "name_ru": "Леди Гайст",
+  "name_local": "Леди Гайст",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 2,
   "tags": [
    "Кража здоровья",
@@ -2761,9 +2761,9 @@
  {
   "id": "hero_lash",
   "name": "Lash",
-  "name_ru": "Хлыст",
+  "name_local": "Хлыст",
   "type": "Assassin",
-  "type_ru": "Ассассин",
+  "type_local": "Ассассин",
   "complexity": 3,
   "tags": [
    "Инициатор",
@@ -2929,9 +2929,9 @@
  {
   "id": "hero_forge",
   "name": "McGinnis",
-  "name_ru": "Макгиннис",
+  "name_local": "Макгиннис",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 1,
   "tags": [
    "Изобретательница",
@@ -3112,9 +3112,9 @@
  {
   "id": "hero_vampirebat",
   "name": "Mina",
-  "name_ru": "Мина",
+  "name_local": "Мина",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 3,
   "tags": [
    "Мучительница",
@@ -3263,9 +3263,9 @@
  {
   "id": "hero_mirage",
   "name": "Mirage",
-  "name_ru": "Мираж",
+  "name_local": "Мираж",
   "type": "Assassin",
-  "type_ru": "Ассассин",
+  "type_local": "Ассассин",
   "complexity": 2,
   "tags": [
    "Телохранитель",
@@ -3427,9 +3427,9 @@
  {
   "id": "hero_krill",
   "name": "Mo & Krill",
-  "name_ru": "Мо и Мелкий",
+  "name_local": "Мо и Мелкий",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 3,
   "tags": [
    "Парная команда",
@@ -3607,9 +3607,9 @@
  {
   "id": "hero_nurse",
   "name": "Nurse Harrow",
-  "name_ru": "Сестра Хэрроу",
+  "name_local": "Сестра Хэрроу",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 1,
   "tags": [
    "Строгая",
@@ -3783,9 +3783,9 @@
  {
   "id": "hero_bookworm",
   "name": "Paige",
-  "name_ru": "Пейдж",
+  "name_local": "Пейдж",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 1,
   "tags": [
    "Помощница",
@@ -3971,9 +3971,9 @@
  {
   "id": "hero_chrono",
   "name": "Paradox",
-  "name_ru": "Парадокс",
+  "name_local": "Парадокс",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 3,
   "tags": [
    "Расчётливая",
@@ -4143,9 +4143,9 @@
  {
   "id": "hero_synth",
   "name": "Pocket",
-  "name_ru": "Карман",
+  "name_local": "Карман",
   "type": "Assassin",
-  "type_ru": "Ассассин",
+  "type_local": "Ассассин",
   "complexity": 2,
   "tags": [
    "Ловкач",
@@ -4295,9 +4295,9 @@
  {
   "id": "hero_ratking",
   "name": "Rat King",
-  "name_ru": "Крысиный король",
+  "name_local": "Крысиный король",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 3,
   "tags": [
    "Сварливый",
@@ -4459,9 +4459,9 @@
  {
   "id": "hero_familiar",
   "name": "Rem",
-  "name_ru": "Дрём",
+  "name_local": "Дрём",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 3,
   "tags": [
    "Подмога",
@@ -4627,9 +4627,9 @@
  {
   "id": "hero_gigawatt",
   "name": "Seven",
-  "name_ru": "Семь",
+  "name_local": "Семь",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 1,
   "tags": [
    "Высокое напряжение",
@@ -4799,9 +4799,9 @@
  {
   "id": "hero_shiv",
   "name": "Shiv",
-  "name_ru": "Заточка",
+  "name_local": "Заточка",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 3,
   "tags": [
    "Ярость",
@@ -4950,9 +4950,9 @@
  {
   "id": "hero_werewolf",
   "name": "Silver",
-  "name_ru": "Сильвер",
+  "name_local": "Сильвер",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 1,
   "tags": [
    "Дикая",
@@ -5102,9 +5102,9 @@
  {
   "id": "hero_magician",
   "name": "Sinclair",
-  "name_ru": "Синклер",
+  "name_local": "Синклер",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 4,
   "tags": [
    "Ловкач",
@@ -5270,9 +5270,9 @@
  {
   "id": "hero_chessmaster",
   "name": "Solomon",
-  "name_ru": "Соломон",
+  "name_local": "Соломон",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 1,
   "tags": [
    "Стратег",
@@ -5426,9 +5426,9 @@
  {
   "id": "hero_doorman",
   "name": "The Doorman",
-  "name_ru": "Швейцар",
+  "name_local": "Швейцар",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 1,
   "tags": [
    "Дезориентирующий",
@@ -5618,9 +5618,9 @@
  {
   "id": "hero_priest",
   "name": "Venator",
-  "name_ru": "Венатор",
+  "name_local": "Венатор",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 2,
   "tags": [
    "Набожный",
@@ -5782,9 +5782,9 @@
  {
   "id": "hero_frank",
   "name": "Victor",
-  "name_ru": "Виктор",
+  "name_local": "Виктор",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 2,
   "tags": [
    "Вам",
@@ -5958,9 +5958,9 @@
  {
   "id": "hero_hornet",
   "name": "Vindicta",
-  "name_ru": "Виндикта",
+  "name_local": "Виндикта",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 1,
   "tags": [
    "Снайпер",
@@ -6113,9 +6113,9 @@
  {
   "id": "hero_viscous",
   "name": "Viscous",
-  "name_ru": "Вязкус",
+  "name_local": "Вязкус",
   "type": "Mystic",
-  "type_ru": "Мистик",
+  "type_local": "Мистик",
   "complexity": 2,
   "tags": [
    "Увёртливый",
@@ -6276,9 +6276,9 @@
  {
   "id": "hero_viper",
   "name": "Vyper",
-  "name_ru": "Гадюка",
+  "name_local": "Гадюка",
   "type": "Assassin",
-  "type_ru": "Ассассин",
+  "type_local": "Ассассин",
   "complexity": 1,
   "tags": [
    "Стрелок",
@@ -6415,9 +6415,9 @@
  {
   "id": "hero_warden",
   "name": "Warden",
-  "name_ru": "Дозорный",
+  "name_local": "Дозорный",
   "type": "Brawler",
-  "type_ru": "Дебошир",
+  "type_local": "Дебошир",
   "complexity": 2,
   "tags": [
    "Инициатор",
@@ -6583,9 +6583,9 @@
  {
   "id": "hero_wraith",
   "name": "Wraith",
-  "name_ru": "Тень",
+  "name_local": "Тень",
   "type": "Marksman",
-  "type_ru": "Меткий стрелок",
+  "type_local": "Меткий стрелок",
   "complexity": 1,
   "tags": [
    "Дуэлянтка",
@@ -6751,9 +6751,9 @@
  {
   "id": "hero_yamato",
   "name": "Yamato",
-  "name_ru": "Ямато",
+  "name_local": "Ямато",
   "type": "Assassin",
-  "type_ru": "Ассассин",
+  "type_local": "Ассассин",
   "complexity": 3,
   "tags": [
    "Неустанная",

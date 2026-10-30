@@ -715,6 +715,11 @@ main { min-width: 0; padding: 0 var(--gutter) 80px; container-type: inline-size;
 .calib-card b { font: 700 17px/1 var(--display); text-transform: uppercase; }
 .calib-card:hover { background: var(--paper-2); }
 
+.mast .me .lang { display: flex; border: 1.5px solid var(--ink); }
+.mast .me .lang button { padding: 5px 8px 4px; border: 0; background: transparent; font: 500 12px/1 var(--mono); letter-spacing: 0.06em; color: var(--ink-3); }
+.mast .me .lang button.on { background: var(--ink); color: var(--paper); }
+.mast .me .lang button:hover:not(.on) { color: var(--ink); }
+
 /* ---------- chat rail ---------- */
 
 .rail {
