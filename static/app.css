@@ -716,40 +716,12 @@ main { min-width: 0; padding: 0 var(--gutter) 80px; container-type: inline-size;
 .mast .me .lang button.on { background: var(--ink); color: var(--paper); }
 .mast .me .lang button:hover:not(.on) { color: var(--ink); }
 
-/* ---------- admin ---------- */
+/* ---------- notices ---------- */
 
 .notice { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 16px 0 0; padding: 10px 14px; background: var(--ink); color: var(--paper); font-size: 15px; }
 .notice[hidden] { display: none; }
 .notice.bad { background: var(--red); }
 .nav a.admin-link { color: var(--red); }
-.alist { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
-.alist > li { padding: 14px 0; border-bottom: 1px solid var(--paper-3); }
-.alist .ahead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
-.alist .ahead b { font: 700 20px/1.1 var(--display); text-transform: uppercase; }
-.alist .ahead .btn { margin-left: auto; }
-.alist .ateams { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 8px; }
-.alist .ateams p { margin: 4px 0; display: flex; align-items: center; gap: 6px; }
-.alist .label.amber { color: var(--amber); }
-.alist .label.sapphire { color: var(--sapphire); }
-.btn.small.amber { --bg: var(--amber); }
-.btn.small.sapphire { --bg: var(--sapphire); }
-.atable td { vertical-align: middle; }
-.atable tr.banned td { background: rgba(200, 50, 31, 0.08); }
-.abtns { display: flex; flex-wrap: wrap; gap: 4px; justify-content: flex-end; }
-.achat { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
-.achat li { display: grid; grid-template-columns: 120px 110px 140px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--paper-3); font-size: 15px; }
-.achat .t { font: 12px/1.2 var(--mono); color: var(--ink-3); }
-.achat .label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.achat .txt { overflow-wrap: anywhere; }
-.asettings { max-width: 640px; }
-.asettings textarea { resize: vertical; font: 17px/1.4 var(--serif); }
-.asettings .check { display: flex; align-items: center; gap: 10px; margin: 8px 0 16px; }
-.asettings .check input { width: 18px; height: 18px; accent-color: var(--red); }
-@container (max-width: 760px) {
-  .achat li { grid-template-columns: minmax(0, 1fr) auto; }
-  .achat .t, .achat .label { grid-column: 1 / -1; }
-  .alist .ateams { grid-template-columns: minmax(0, 1fr); }
-}
 
 /* ---------- chat rail ---------- */
 
