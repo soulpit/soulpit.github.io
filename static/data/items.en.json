@@ -18,7 +18,7 @@
   ],
   "desc": "Adds one to your ability max <b>charges</b>.",
   "cooldown": null,
-  "icon": "extra_charge_psd.png"
+  "icon": "extra_charge_psd.webp"
  },
  {
   "id": "upgrade_improved_spirit",
@@ -35,7 +35,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "extra_spirit_psd.png"
+  "icon": "extra_spirit_psd.webp"
  },
  {
   "id": "upgrade_goose_egg",
@@ -60,7 +60,7 @@
   ],
   "desc": "Hatch the egg, gaining <b>souls</b> and <b>permanent buffs</b>.<br><br>The value of the egg grows the longer you hold onto it.<br><br>Gain a permanent buff per 80 Souls accrued when hatched.",
   "cooldown": null,
-  "icon": "goose_egg_psd.png"
+  "icon": "goose_egg_psd.webp"
  },
  {
   "id": "upgrade_magic_burst",
@@ -72,7 +72,7 @@
   "bonuses": [],
   "desc": "Charges up over time with , causing abilities dealing more than <b>80</b> damage to deal additional damage.",
   "cooldown": "14",
-  "icon": "mystic_burst_psd.png"
+  "icon": "mystic_burst_psd.webp"
  },
  {
   "id": "upgrade_magic_reach",
@@ -84,7 +84,7 @@
   "bonuses": [],
   "desc": "Imbue an ability to increase its <b>range</b> and <b>effect radius</b>.",
   "cooldown": null,
-  "icon": "mystic_reach_psd.png"
+  "icon": "mystic_reach_psd.webp"
  },
  {
   "id": "upgrade_mystic_regeneration",
@@ -101,7 +101,7 @@
   ],
   "desc": "Dealing  to enemy Heroes grants you Bonus . Stacks when dealing damage to different heroes.",
   "cooldown": null,
-  "icon": "mystic_regen_psd.png"
+  "icon": "mystic_regen_psd.webp"
  },
  {
   "id": "upgrade_withering_whip",
@@ -122,7 +122,7 @@
   ],
   "desc": "Target an enemy to reduce their <b>Fire Rate</b> and <b>Bullet Resistance</b>.",
   "cooldown": "16",
-  "icon": "rusted_barrel_psd.png"
+  "icon": "rusted_barrel_psd.webp"
  },
  {
   "id": "upgrade_acolytes_glove",
@@ -134,7 +134,7 @@
   "bonuses": [],
   "desc": "When you perform a <b>Light or Heavy Melee</b> attack against a hero, deal extra  with the attack and reduce the target's <b>Spirit Resist</b>.<b><br><br>Cooldown is 2x longer for Light Melee hits.</b>",
   "cooldown": "8",
-  "icon": "spirit_strike_psd.png"
+  "icon": "spirit_strike_psd.webp"
  },
  {
   "id": "upgrade_arcane_surge",
@@ -155,7 +155,7 @@
   ],
   "desc": "After you <b>Dash-Jump</b>, the <b>next ability you use</b> within s will have bonus <b>Range, Duration,</b> and <b>Spirit Power</b>.",
   "cooldown": null,
-  "icon": "arcane_surge_psd.png"
+  "icon": "arcane_surge_psd.webp"
  },
  {
   "id": "upgrade_bullet_resist_shredder",
@@ -176,7 +176,7 @@
   ],
   "desc": "Reduces <b>Bullet Resist</b> on enemies when you deal .",
   "cooldown": null,
-  "icon": "bullet_resist_shredder_psd.png"
+  "icon": "bullet_resist_shredder_psd.webp"
  },
  {
   "id": "upgrade_cold_front",
@@ -193,7 +193,7 @@
   ],
   "desc": "Release an expanding ice blast that deals  and <b>Slows</b> targets it hits.",
   "cooldown": "25",
-  "icon": "cold_front_psd.png"
+  "icon": "cold_front_psd.webp"
  },
  {
   "id": "upgrade_magic_tempo",
@@ -205,7 +205,7 @@
   "bonuses": [],
   "desc": "Imbue an ability to reduce its <b>Cooldown</b>.",
   "cooldown": null,
-  "icon": "improved_cooldown_psd.png"
+  "icon": "improved_cooldown_psd.webp"
  },
  {
   "id": "upgrade_arcane_extension",
@@ -217,7 +217,7 @@
   "bonuses": [],
   "desc": "Imbue an ability to increase its <b>Duration</b>.",
   "cooldown": null,
-  "icon": "duration_extender_psd.png"
+  "icon": "duration_extender_psd.webp"
  },
  {
   "id": "upgrade_soaring_spirit",
@@ -238,7 +238,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "improved_spirit_psd.png"
+  "icon": "improved_spirit_psd.webp"
  },
  {
   "id": "upgrade_magic_slow",
@@ -259,7 +259,7 @@
   ],
   "desc": "When the target takes , they have their <b>Move Speed</b> reduced.",
   "cooldown": null,
-  "icon": "mystic_slow_psd.png"
+  "icon": "mystic_slow_psd.webp"
  },
  {
   "id": "upgrade_magic_vulnerability",
@@ -276,7 +276,7 @@
   ],
   "desc": "When an enemy takes , they have their  reduced.",
   "cooldown": null,
-  "icon": "mystic_vulnerability_psd.png"
+  "icon": "mystic_vulnerability_psd.webp"
  },
  {
   "id": "upgrade_quick_silver",
@@ -288,7 +288,7 @@
   "bonuses": [],
   "desc": "Your imbued ability charges up over time with , , and <b>reloads bullets</b> on use.",
   "cooldown": "18",
-  "icon": "quicksilver_reload_psd.png"
+  "icon": "quicksilver_reload_psd.webp"
  },
  {
   "id": "upgrade_containment",
@@ -305,7 +305,7 @@
   ],
   "desc": "<b>Slows movement</b> of enemy target. Also <b>Silences</b> their <b>movement-based items and abilities</b>.<br><b>Increases the target's gravity.<br>Does not affect target's stamina usage.</b>",
   "cooldown": "29",
-  "icon": "slowing_hex_psd.png"
+  "icon": "slowing_hex_psd.webp"
  },
  {
   "id": "upgrade_spirit_sap",
@@ -322,7 +322,7 @@
   ],
   "desc": "Target an enemy to <b>reduce their Spirit Resist</b> and <b>Spirit Power</b>.",
   "cooldown": "18",
-  "icon": "spirit_sap_psd.png"
+  "icon": "spirit_sap_psd.webp"
  },
  {
   "id": "upgrade_suppressor",
@@ -343,7 +343,7 @@
   ],
   "desc": "When you deal  to enemies, you also reduce their <b>Fire Rate</b>.",
   "cooldown": null,
-  "icon": "suppressor_psd.png"
+  "icon": "suppressor_psd.webp"
  },
  {
   "id": "upgrade_rupture",
@@ -364,7 +364,7 @@
   ],
   "desc": "Inflict <b>damage over time</b> to a target, dealing damage based on their current health.<br>Decay's damage is non-lethal and does not apply item procs.",
   "cooldown": "30",
-  "icon": "decay_psd.png"
+  "icon": "decay_psd.webp"
  },
  {
   "id": "upgrade_greater_withering_whip",
@@ -385,7 +385,7 @@
   ],
   "desc": "<b>Disarms</b> enemy target and reduces their <b>Bullet Resist</b>.",
   "cooldown": "16",
-  "icon": "disarming_hex_psd.png"
+  "icon": "disarming_hex_psd.webp"
  },
  {
   "id": "upgrade_tech_range",
@@ -402,7 +402,7 @@
   ],
   "desc": "Increases the <b>range</b> and <b>effect radius</b> of your abilities and items.",
   "cooldown": null,
-  "icon": "greater_expansion_psd.png"
+  "icon": "greater_expansion_psd.webp"
  },
  {
   "id": "upgrade_target_stun",
@@ -423,7 +423,7 @@
   ],
   "desc": "Apply a <b>Stun</b> after <b>2s</b>. Stun duration is increased against <b>airborne</b> targets.<br><br><b>Increases the target's gravity for the duration of the stun.</b>",
   "cooldown": "35",
-  "icon": "knockdown_psd.png"
+  "icon": "knockdown_psd.webp"
  },
  {
   "id": "upgrade_resonant_healing",
@@ -440,7 +440,7 @@
   ],
   "desc": "Dealing  to enemy Heroes grants you Bonus . Stacks when dealing damage to different heroes.<br><b>Heal</b> and gain bonus <b>Movement Speed</b> for a short duration when you cast an ability.",
   "cooldown": "6",
-  "icon": "radiant_regeneration_psd.png"
+  "icon": "radiant_regeneration_psd.webp"
  },
  {
   "id": "upgrade_rapid_recharge",
@@ -469,7 +469,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "rapid_recharge_psd.png"
+  "icon": "rapid_recharge_psd.webp"
  },
  {
   "id": "upgrade_personal_rejuvenator",
@@ -481,7 +481,7 @@
   "bonuses": [],
   "desc": "Respawns the hero at the spot they died.",
   "cooldown": "509",
-  "icon": "rebirth_psd.png"
+  "icon": "rebirth_psd.webp"
  },
  {
   "id": "upgrade_targeted_silence",
@@ -498,7 +498,7 @@
   ],
   "desc": "Launch an expanding projectile which <b>Silences</b> enemies for a short duration and deals impact damage. <br><br><b>Silence does not interrupt channeling abilities.</b>",
   "cooldown": "42",
-  "icon": "silence_glyph_psd.png"
+  "icon": "silence_glyph_psd.webp"
  },
  {
   "id": "upgrade_spirit_snatch",
@@ -519,7 +519,7 @@
   ],
   "desc": "When you perform a <b>Light or Heavy Melee</b> attack against a hero, the attack deals extra  and steals <b>Spirit Resist</b> and <b>Spirit Power</b>.<b><br><br>Effects are reduced by 30% for Light Melee hits.</b>",
   "cooldown": "6",
-  "icon": "spirit_snatch_psd.png"
+  "icon": "spirit_snatch_psd.webp"
  },
  {
   "id": "upgrade_cooldown_reduction",
@@ -536,7 +536,7 @@
   ],
   "desc": "Reduces the <b>Cooldown</b> of your abilities.",
   "cooldown": null,
-  "icon": "superior_cooldown_psd.png"
+  "icon": "superior_cooldown_psd.webp"
  },
  {
   "id": "upgrade_imbued_duration_extender",
@@ -553,7 +553,7 @@
   ],
   "desc": "Increases the <b>duration</b> of your abilities and items.",
   "cooldown": null,
-  "icon": "superior_duration_psd.png"
+  "icon": "superior_duration_psd.webp"
  },
  {
   "id": "upgrade_magic_storm",
@@ -565,7 +565,7 @@
   "bonuses": [],
   "desc": "Imbue an ability with <b>permanent Spirit Power</b>. When that ability is used, gain bonus <b>Move Speed</b> and maintain full speed while attacking.",
   "cooldown": "14",
-  "icon": "surge_of_power_psd.png"
+  "icon": "surge_of_power_psd.webp"
  },
  {
   "id": "upgrade_magic_shock",
@@ -582,7 +582,7 @@
   ],
   "desc": "Charges up over time with , causing abilities dealing more than <b>165</b> damage to deal additional damage. <b>Ignores Spirit Resistance.</b>",
   "cooldown": "14",
-  "icon": "tankbuster_psd.png"
+  "icon": "tankbuster_psd.webp"
  },
  {
   "id": "upgrade_tech_damage_pulse",
@@ -603,7 +603,7 @@
   ],
   "desc": "Periodically deals  to the closest two enemies nearby.",
   "cooldown": "1.4",
-  "icon": "torment_pulse_psd.png"
+  "icon": "torment_pulse_psd.webp"
  },
  {
   "id": "upgrade_arctic_blast",
@@ -620,7 +620,7 @@
   ],
   "desc": "Release an expanding ice blast that deals , <b>Freezing</b> and then <b>Slowing</b> targets it hits.<br><br>Slowed targets have their <b>stamina regen frozen</b>",
   "cooldown": "24",
-  "icon": "arctic_blast_psd.png"
+  "icon": "arctic_blast_psd.webp"
  },
  {
   "id": "upgrade_boundless_spirit",
@@ -649,7 +649,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "boundless_spirit_psd.png"
+  "icon": "boundless_spirit_psd.webp"
  },
  {
   "id": "upgrade_glitch",
@@ -661,7 +661,7 @@
   "bonuses": [],
   "desc": "Curses an enemy - <b>interrupting, Silencing, Disarming</b>, and <b>preventing item usage</b>. <b>Removes all non-ultimate buffs</b>.<br><br>Your own <b>Damage Output</b> is reduced for the duration.",
   "cooldown": "55",
-  "icon": "curse_psd.png"
+  "icon": "curse_psd.webp"
  },
  {
   "id": "upgrade_ability_power_shard",
@@ -682,7 +682,7 @@
   ],
   "desc": "<b>Reset the cooldown</b> of the imbued non-ultimate ability.<br><br>This item's cooldown is increased by <b>the cooldown of the imbued ability</b>.",
   "cooldown": "30",
-  "icon": "echo_shard_psd.png"
+  "icon": "echo_shard_psd.webp"
  },
  {
   "id": "upgrade_escalating_exposure",
@@ -703,7 +703,7 @@
   ],
   "desc": "Dealing  applies a stacking <b>Spirit Amp</b> that increases your  to the target.",
   "cooldown": null,
-  "icon": "escalating_exposure_psd.png"
+  "icon": "escalating_exposure_psd.webp"
  },
  {
   "id": "upgrade_self_bubble",
@@ -715,7 +715,7 @@
   "bonuses": [],
   "desc": "Instantly enter a void state and become Invulnerable for a short duration.<br>Afterwards, gain a variety of temporary buffs:",
   "cooldown": "37",
-  "icon": "ethereal_shift_psd.png"
+  "icon": "ethereal_shift_psd.webp"
  },
  {
   "id": "upgrade_focus_lens",
@@ -732,7 +732,7 @@
   ],
   "desc": "Target an enemy to <b>Silence</b> them. A portion of <b>all damage dealt</b> during the silence gets applied to the target when the silence wears off.",
   "cooldown": "45",
-  "icon": "focus_lens_psd.png"
+  "icon": "focus_lens_psd.webp"
  },
  {
   "id": "upgrade_ultimate_burst",
@@ -757,7 +757,7 @@
   ],
   "desc": "Damage from your ultimate applies a  and deals  after a short delay.<br><b>This effect can only trigger once per target per ultimate.</b><br><b>Mystic Slow effects</b>",
   "cooldown": null,
-  "icon": "lightning_scroll_psd.png"
+  "icon": "lightning_scroll_psd.webp"
  },
  {
   "id": "upgrade_magic_carpet",
@@ -790,7 +790,7 @@
   ],
   "desc": "Summon a Magic Carpet that will <b>fly</b> you away. While flying you are immune to slows and doing any action will dismiss the carpet. <b><br>Cannot use abilities while the carpet is being summoned.</b>",
   "cooldown": "32",
-  "icon": "magic_carpet_psd.png"
+  "icon": "magic_carpet_psd.webp"
  },
  {
   "id": "upgrade_ethereal_bullets",
@@ -811,7 +811,7 @@
   ],
   "desc": "Your imbued ability charges up over time with , , and <b>reloads bullets</b> on use. Until your next reload, your <b>bullets deal </b> based on your Spirit Power.",
   "cooldown": "15",
-  "icon": "mercurial_magnum_psd.png"
+  "icon": "mercurial_magnum_psd.webp"
  },
  {
   "id": "upgrade_mystic_reverb",
@@ -828,7 +828,7 @@
   ],
   "desc": "Imbue an ability with <b>Lifesteal</b> and to apply <b>slow</b> on a hit target and deal an <b>additional percentage of the damage dealt</b> to enemies around the target after a short delay.",
   "cooldown": "6.25",
-  "icon": "mystic_reverb_psd.png"
+  "icon": "mystic_reverb_psd.webp"
  },
  {
   "id": "upgrade_ability_refresher",
@@ -840,7 +840,7 @@
   "bonuses": [],
   "desc": "<b>Reset the cooldown</b> of all your abilities and <b>restore all your charges</b>.",
   "cooldown": "300",
-  "icon": "refresher_psd.png"
+  "icon": "refresher_psd.webp"
  },
  {
   "id": "upgrade_discord",
@@ -857,7 +857,7 @@
   ],
   "desc": "Apply <b>Spirit Resist</b>, <b>Debuff Resist</b> and an aura on a friendly target that deals <b>damage</b> to enemies proportional to their max health. Existing debuffs on the target are reduced.<br>Can be self cast.",
   "cooldown": "35",
-  "icon": "scourge_psd.png"
+  "icon": "scourge_psd.webp"
  },
  {
   "id": "upgrade_spirit_burn",
@@ -874,7 +874,7 @@
   ],
   "desc": "Dealing significant  to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing.<br><b>The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.</b>",
   "cooldown": null,
-  "icon": "spirit_burn_psd.png"
+  "icon": "spirit_burn_psd.webp"
  },
  {
   "id": "upgrade_transcendent_cooldown",
@@ -891,7 +891,7 @@
   ],
   "desc": "Reduces the <b>Cooldown</b> of your abilities and items.",
   "cooldown": null,
-  "icon": "transcendent_cooldown_psd.png"
+  "icon": "transcendent_cooldown_psd.webp"
  },
  {
   "id": "upgrade_aoe_root",
@@ -912,7 +912,7 @@
   ],
   "desc": "Throw a <b>vacuum</b> grenade, pulling all enemies into a small area and applying <b>Slowing Hex</b>.  <b><br><br>Alt Cast to Target Unit Directly.</b>",
   "cooldown": "42",
-  "icon": "vortex_web_psd.png"
+  "icon": "vortex_web_psd.webp"
  },
  {
   "id": "upgrade_health",
@@ -929,7 +929,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "extra_health_psd.png"
+  "icon": "extra_health_psd.webp"
  },
  {
   "id": "upgrade_endurance",
@@ -950,7 +950,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "extra_regen_psd.png"
+  "icon": "extra_regen_psd.webp"
  },
  {
   "id": "upgrade_improved_stamina",
@@ -971,7 +971,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "extra_stamina_psd.png"
+  "icon": "extra_stamina_psd.webp"
  },
  {
   "id": "upgrade_grit",
@@ -988,7 +988,7 @@
   ],
   "desc": "Gain a <b>Barrier</b> for a short duration.",
   "cooldown": "60",
-  "icon": "grit_psd.png"
+  "icon": "grit_psd.webp"
  },
  {
   "id": "upgrade_health_stimpak",
@@ -1000,7 +1000,7 @@
   "bonuses": [],
   "desc": "Grant <b>Regen</b> and <b>Sprint Speed</b> to the target. Gets dispelled if you take damage from enemy players or objectives. Can be self-cast.",
   "cooldown": "70",
-  "icon": "healing_rite_psd.png"
+  "icon": "healing_rite_psd.webp"
  },
  {
   "id": "upgrade_lifestrike_gauntlets",
@@ -1017,7 +1017,7 @@
   ],
   "desc": "Your next <b>Melee</b> attack <b>heals you</b>. <b><br><br>This heal is 30% effective vs non-heroes. <br>Cooldown is 1.5x as long for Light Melee hits.</b>",
   "cooldown": "8",
-  "icon": "melee_lifesteal_psd.png"
+  "icon": "melee_lifesteal_psd.webp"
  },
  {
   "id": "upgrade_melee_rebuttal",
@@ -1042,7 +1042,7 @@
   ],
   "desc": "On a successful <b>Parry</b> against an enemy Hero, <b>Heal</b> yourself for the damage parried and returns that damage to the target, and temporarily gain increased <b>damage.</b>",
   "cooldown": null,
-  "icon": "rebuttal_psd.png"
+  "icon": "rebuttal_psd.webp"
  },
  {
   "id": "upgrade_sprint_booster",
@@ -1063,7 +1063,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "sprint_boots_psd.png"
+  "icon": "sprint_boots_psd.webp"
  },
  {
   "id": "upgrade_regenerating_bullet_shield",
@@ -1084,7 +1084,7 @@
   ],
   "desc": "While you are <b>above 65% health</b>, gain <b></b> and <b></b>.",
   "cooldown": null,
-  "icon": "battle_vest_psd.png"
+  "icon": "battle_vest_psd.webp"
  },
  {
   "id": "upgrade_vampire",
@@ -1109,7 +1109,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "bullet_lifesteal_psd.png"
+  "icon": "bullet_lifesteal_psd.webp"
  },
  {
   "id": "upgrade_debuff_reducer",
@@ -1126,7 +1126,7 @@
   ],
   "desc": "Reduces the <b>duration</b> of all negative effects applied to you.",
   "cooldown": null,
-  "icon": "debuff_reducer_psd.png"
+  "icon": "debuff_reducer_psd.webp"
  },
  {
   "id": "upgrade_magic_shield",
@@ -1147,7 +1147,7 @@
   ],
   "desc": "While you are <b>above 65% health</b>, gain bonus <b></b> and <b>Cooldown Reduction</b>.",
   "cooldown": null,
-  "icon": "enchanters_emblem_psd.png"
+  "icon": "enchanters_emblem_psd.webp"
  },
  {
   "id": "upgrade_cardio_calibrator",
@@ -1168,7 +1168,7 @@
   ],
   "desc": "Reduces the effect of enemy <b>Move Speed</b> penalties.",
   "cooldown": null,
-  "icon": "enduring_speed_psd.png"
+  "icon": "enduring_speed_psd.webp"
  },
  {
   "id": "upgrade_guardian_ward",
@@ -1189,7 +1189,7 @@
   ],
   "desc": "Provide the target with a <b>Barrier</b> and temporary <b>Move Speed</b>. <b><br>Can be self-cast.<br>Cooldown is reduced by half when cast on someone else.</b>",
   "cooldown": "60",
-  "icon": "guardian_ward_psd.png"
+  "icon": "guardian_ward_psd.webp"
  },
  {
   "id": "upgrade_healbane",
@@ -1206,7 +1206,7 @@
   ],
   "desc": "Your  reduces the enemy's <b>Incoming Healing</b>. If an enemy hero dies under this effect, you receive a large heal.",
   "cooldown": null,
-  "icon": "healbane_psd.png"
+  "icon": "healbane_psd.webp"
  },
  {
   "id": "upgrade_healing_booster",
@@ -1227,7 +1227,7 @@
   ],
   "desc": "Increases the effectiveness of your <b>healing</b>.",
   "cooldown": null,
-  "icon": "healing_booster_psd.png"
+  "icon": "healing_booster_psd.webp"
  },
  {
   "id": "upgrade_vex_barrier",
@@ -1244,7 +1244,7 @@
   ],
   "desc": "Gain a <b>Barrier</b> when you are <b>Stunned, Chained, Immobilized, Slept or Silenced</b>.",
   "cooldown": "55",
-  "icon": "reactive_barrier_psd.png"
+  "icon": "reactive_barrier_psd.webp"
  },
  {
   "id": "upgrade_restorative_locket",
@@ -1261,7 +1261,7 @@
   ],
   "desc": "When an enemy uses an ability within 32m range from you, store one <b>Restoration Stack</b>. <br><br>Consume all stacks to <b>heal yourself</b> and replenish <b>up to 3 stamina</b> based on how many stacks you have.",
   "cooldown": "20",
-  "icon": "restorative_locket_psd.png"
+  "icon": "restorative_locket_psd.webp"
  },
  {
   "id": "upgrade_return_fire",
@@ -1273,7 +1273,7 @@
   "bonuses": [],
   "desc": "Automatically <b>fire a bullet</b> towards any attacker who damages you with their abilities or weapon.",
   "cooldown": "23",
-  "icon": "return_fire_psd.png"
+  "icon": "return_fire_psd.webp"
  },
  {
   "id": "upgrade_health_stealing_magic",
@@ -1298,7 +1298,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "spirit_lifesteal_psd.png"
+  "icon": "spirit_lifesteal_psd.webp"
  },
  {
   "id": "upgrade_spirit_bubble",
@@ -1315,7 +1315,7 @@
   ],
   "desc": "Gain a <b>Barrier</b> whenever you take significant  from enemy Heroes in a small time frame.",
   "cooldown": "45",
-  "icon": "spirit_shielding_psd.png"
+  "icon": "spirit_shielding_psd.webp"
  },
  {
   "id": "upgrade_trophy_collector",
@@ -1340,7 +1340,7 @@
   ],
   "desc": "Whenever you score an <b>assist or kill</b>, gain extra <b>sprint</b>, <b>ability range</b> and <b>passive soul generation</b>. This effect stacks and persists through death.",
   "cooldown": null,
-  "icon": "trophy_collector_psd.png"
+  "icon": "trophy_collector_psd.webp"
  },
  {
   "id": "upgrade_weapon_shielding",
@@ -1357,7 +1357,7 @@
   ],
   "desc": "Gain a <b>Barrier</b> whenever you take significant  from enemy Heroes in a small time frame.",
   "cooldown": "35",
-  "icon": "weapon_shielding_psd.png"
+  "icon": "weapon_shielding_psd.webp"
  },
  {
   "id": "upgrade_improved_bullet_armor",
@@ -1378,7 +1378,7 @@
   ],
   "desc": "When below <b>50% health</b>, gain additional <b>Bullet Resist</b>.",
   "cooldown": null,
-  "icon": "bullet_resilience_psd.png"
+  "icon": "bullet_resilience_psd.webp"
  },
  {
   "id": "upgrade_counterspell",
@@ -1399,7 +1399,7 @@
   ],
   "desc": "Your next parry <b>protects you from the damage and effects of enemy abilities and items</b>. On a successful spell parry  and gain  and .",
   "cooldown": "23",
-  "icon": "counterspell_psd.png"
+  "icon": "counterspell_psd.webp"
  },
  {
   "id": "upgrade_reduce_debuff_duration",
@@ -1416,7 +1416,7 @@
   ],
   "desc": "<b>Purge all non-ultimate negative effects</b> currently applied to you. If any effects were removed, <b>heal yourself</b> and gain a <b>move speed bonus</b>. <br><b>Cannot be used while Stunned or Slept.</b>",
   "cooldown": "45",
-  "icon": "debuff_remover_psd.png"
+  "icon": "debuff_remover_psd.webp"
  },
  {
   "id": "upgrade_chonky",
@@ -1433,7 +1433,7 @@
   ],
   "desc": "After not taking damage for a period, gain health regen.<br>When you are <b>above 75% health</b>, you have bonus <b>Move Speed</b>.",
   "cooldown": null,
-  "icon": "fortitude_psd.png"
+  "icon": "fortitude_psd.webp"
  },
  {
   "id": "upgrade_fury_trance",
@@ -1458,7 +1458,7 @@
   ],
   "desc": "Grants <b>Fire Rate</b>, <b>Spirit Resistance</b> and <b>Move Speed</b>, and removes the <b>Move Speed</b> penalty while shooting, but <b>Silences</b> you and <b>disables stamina usage and regeneration</b>.",
   "cooldown": "18",
-  "icon": "fury_trance_psd.png"
+  "icon": "fury_trance_psd.webp"
  },
  {
   "id": "upgrade_health_nova",
@@ -1479,7 +1479,7 @@
   ],
   "desc": "<b>Heal</b> yourself and nearby allies.",
   "cooldown": "60",
-  "icon": "healing_nova_psd.png"
+  "icon": "healing_nova_psd.webp"
  },
  {
   "id": "upgrade_boxing_glove",
@@ -1500,7 +1500,7 @@
   ],
   "desc": "Your <b>Melee Attack</b> applies <b>Movement Slow</b> and <b>heals you</b> for a percentage of the <b>Melee Damage</b> dealt plus a fixed amount. <b><br><br>This heal is 40% effective vs non-heroes. <br>Cooldown is 1.5x as long for Light Melee hits.</b>",
   "cooldown": "4",
-  "icon": "lifestrike_psd.png"
+  "icon": "lifestrike_psd.webp"
  },
  {
   "id": "upgrade_rocket_booster",
@@ -1512,7 +1512,7 @@
   "bonuses": [],
   "desc": "<b>Launch yourself</b> high into the air and grant yourself a <b>Barrier</b>. While in the air, you can use the active again to drop down faster.<br><br><b>Cannot be used for 5s if attacked by enemy Hero.</b>",
   "cooldown": "45",
-  "icon": "majestic_leap_psd.png"
+  "icon": "majestic_leap_psd.webp"
  },
  {
   "id": "upgrade_rocket_boots",
@@ -1533,7 +1533,7 @@
   ],
   "desc": "",
   "cooldown": "16",
-  "icon": "springy_boots_psd.png"
+  "icon": "springy_boots_psd.webp"
  },
  {
   "id": "upgrade_metal_skin",
@@ -1550,7 +1550,7 @@
   ],
   "desc": "Become <b>immune to bullets</b>.",
   "cooldown": "24",
-  "icon": "metal_skin_psd.png"
+  "icon": "metal_skin_psd.webp"
  },
  {
   "id": "upgrade_rescue_beam",
@@ -1571,7 +1571,7 @@
   ],
   "desc": "<b>Heals</b> a target allied hero and yourself for a percentage of <b>Max Health</b>. Once while healing, you can <b>Pull</b> the target towards you. Can be self-cast.",
   "cooldown": "60",
-  "icon": "rescue_beam_psd.png"
+  "icon": "rescue_beam_psd.webp"
  },
  {
   "id": "upgrade_tech_purge",
@@ -1592,7 +1592,7 @@
   ],
   "desc": "When below <b>50% health</b>, gain additional Spirit Resist.",
   "cooldown": null,
-  "icon": "spirit_resilience_psd.png"
+  "icon": "spirit_resilience_psd.webp"
  },
  {
   "id": "upgrade_superior_stamina",
@@ -1617,7 +1617,7 @@
   ],
   "desc": "Allows an additional use of <b>Air Jump</b> or <b>Air Dash</b> before landing.",
   "cooldown": null,
-  "icon": "stamina_mastery_psd.png"
+  "icon": "stamina_mastery_psd.webp"
  },
  {
   "id": "upgrade_veil_walker",
@@ -1638,7 +1638,7 @@
   ],
   "desc": "Walking through a <b>cosmic veil</b> grants you <b>Stealth</b>, <b>Heal</b> and increased <b>Move Speed</b>.",
   "cooldown": "15",
-  "icon": "veil_walker_psd.png"
+  "icon": "veil_walker_psd.webp"
  },
  {
   "id": "upgrade_warp_stone",
@@ -1650,7 +1650,7 @@
   "bonuses": [],
   "desc": "<b>Teleport</b> straight ahead, gaining <b>Bullet Resist</b>.",
   "cooldown": "16",
-  "icon": "warp_stone_psd.png"
+  "icon": "warp_stone_psd.webp"
  },
  {
   "id": "upgrade_cheat_death",
@@ -1671,7 +1671,7 @@
   ],
   "desc": "When you would take lethal damage, instead become <b>temporarily death immune</b> and <b>remove all non-stun debuffs</b>. <br><br>While death immune, you deal <b>reduced damage</b> and have <b>reduced healing</b>.",
   "cooldown": "90",
-  "icon": "cheat_death_psd.png"
+  "icon": "cheat_death_psd.webp"
  },
  {
   "id": "upgrade_colossus",
@@ -1692,7 +1692,7 @@
   ],
   "desc": "Grow <b>larger in size</b>, gaining , , and . <br><br>Nearby enemies suffer from  and have reduced <b>dash speed</b>.",
   "cooldown": "37",
-  "icon": "colossus_psd.png"
+  "icon": "colossus_psd.webp"
  },
  {
   "id": "upgrade_divine_barrier",
@@ -1713,7 +1713,7 @@
   ],
   "desc": "<b>Remove all non-stun debuffs</b> from the target and provide them with a <b>Barrier</b> and <b>Move Speed</b>. <b><br>Can be self-cast. Cooldown is reduced by half when cast on someone else.</b>",
   "cooldown": "45",
-  "icon": "divine_barrier_psd.png"
+  "icon": "divine_barrier_psd.webp"
  },
  {
   "id": "upgrade_diviners_kevlar",
@@ -1734,7 +1734,7 @@
   ],
   "desc": "Upon casting an <b>ultimate ability</b> gain a <b>Barrier</b> and temporary <b>Spirit Power</b>.",
   "cooldown": "40",
-  "icon": "diviners_kevlar_psd.png"
+  "icon": "diviners_kevlar_psd.webp"
  },
  {
   "id": "upgrade_healbuff",
@@ -1763,7 +1763,7 @@
   ],
   "desc": "Applying  to yourself or an ally grants the target  and .<br><br><b>Does not apply on innate Regen or passive Bullet/Spirit Lifesteals.</b>",
   "cooldown": "1",
-  "icon": "healing_tempo_psd.png"
+  "icon": "healing_tempo_psd.webp"
  },
  {
   "id": "upgrade_auto_cleanse",
@@ -1788,7 +1788,7 @@
   ],
   "desc": "The next <b>Stun, Chain, Immobilize, Sleep, Silence or Fear</b> is automatically cleansed. When this happens, you gain a <b>barrier</b> and all your <b>ability cooldowns</b> get reduced by 20%.",
   "cooldown": "55",
-  "icon": "indomitable_psd.png"
+  "icon": "indomitable_psd.webp"
  },
  {
   "id": "upgrade_infuser",
@@ -1817,7 +1817,7 @@
   ],
   "desc": "Gain <b>Spirit Lifesteal</b> and <b>Spirit Power</b>.",
   "cooldown": "30",
-  "icon": "infuser_psd.png"
+  "icon": "infuser_psd.webp"
  },
  {
   "id": "upgrade_inhibitor",
@@ -1838,7 +1838,7 @@
   ],
   "desc": "Your bullets build up to reduce the target's <b>outgoing damage</b> and apply <b>healing reduction</b>.",
   "cooldown": null,
-  "icon": "inhibitor_psd.png"
+  "icon": "inhibitor_psd.webp"
  },
  {
   "id": "upgrade_juggernaut",
@@ -1867,7 +1867,7 @@
   ],
   "desc": "Enemies that shoot you have their <b>Fire Rate</b> slowed.",
   "cooldown": null,
-  "icon": "juggernaut_psd.png"
+  "icon": "juggernaut_psd.webp"
  },
  {
   "id": "upgrade_damage_recycler",
@@ -1900,7 +1900,7 @@
   ],
   "desc": "Reduces the effect of enemy applied <b>healing reduction</b>.",
   "cooldown": null,
-  "icon": "leech_psd.png"
+  "icon": "leech_psd.webp"
  },
  {
   "id": "upgrade_phantom_strike",
@@ -1921,7 +1921,7 @@
   ],
   "desc": "<b>Teleport</b> to an enemy target and pull them to the ground. Dealing <b>damage</b>, <b>Move speed</b> reduction and <b>Disarm</b>.",
   "cooldown": "35",
-  "icon": "phantom_strike_psd.png"
+  "icon": "phantom_strike_psd.webp"
  },
  {
   "id": "upgrade_deflecting_armor",
@@ -1938,7 +1938,7 @@
   ],
   "desc": "Gain a chance to either deflect incoming bullets, preventing all  or prevent all <b>on-hit effects</b> from bullets.",
   "cooldown": "1",
-  "icon": "plated_armor_psd.png"
+  "icon": "plated_armor_psd.webp"
  },
  {
   "id": "upgrade_siphon_bullets",
@@ -1959,7 +1959,7 @@
   ],
   "desc": "Your bullets temporarily <b>steal Max HP</b> from enemies. Enemies regain their stolen health when the debuff expires.",
   "cooldown": null,
-  "icon": "siphon_bullets_psd.png"
+  "icon": "siphon_bullets_psd.webp"
  },
  {
   "id": "upgrade_rebirth",
@@ -1980,7 +1980,7 @@
   ],
   "desc": "If you die, after 4s you will <b>respawn at your death location</b> with partial health.",
   "cooldown": "240",
-  "icon": "rebirth_psd.png"
+  "icon": "rebirth_psd.webp"
  },
  {
   "id": "upgrade_spellbreaker",
@@ -2005,7 +2005,7 @@
   ],
   "desc": "The next instance of high  you take is significantly reduced.",
   "cooldown": "9",
-  "icon": "spellbreaker_psd.png"
+  "icon": "spellbreaker_psd.webp"
  },
  {
   "id": "upgrade_unstoppable",
@@ -2026,7 +2026,7 @@
   ],
   "desc": "Temporarily suppress <b>negative status effects</b> and become <b>immune</b> to <b>Stun, Silence, Sleep, Root, and Disarm</b>. <br>Cannot be used while <b>Stunned</b> or <b>Slept</b>.",
   "cooldown": "60",
-  "icon": "unstoppable_psd.png"
+  "icon": "unstoppable_psd.webp"
  },
  {
   "id": "upgrade_surging_power",
@@ -2055,7 +2055,7 @@
   ],
   "desc": "Grants <b>Lifesteal</b>, <b>Fire Rate</b>, and <b>Ammo</b>. This added Ammo is not limited by your max magazine size.",
   "cooldown": "30",
-  "icon": "vampiric_burst_psd.png"
+  "icon": "vampiric_burst_psd.webp"
  },
  {
   "id": "upgrade_absorbing_armor",
@@ -2076,7 +2076,7 @@
   ],
   "desc": "Taking heavy hits of  from an enemy reduces a <b>random ability cooldown</b>.",
   "cooldown": "1",
-  "icon": "witchmail_psd.png"
+  "icon": "witchmail_psd.webp"
  },
  {
   "id": "upgrade_close_range",
@@ -2093,7 +2093,7 @@
   ],
   "desc": "Deal additional <b>Weapon Damage</b> when in <b>close range</b> to your target.",
   "cooldown": null,
-  "icon": "close_quarters_psd.png"
+  "icon": "close_quarters_psd.webp"
  },
  {
   "id": "upgrade_clip_size",
@@ -2114,7 +2114,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "basic_magazine_psd.png"
+  "icon": "basic_magazine_psd.webp"
  },
  {
   "id": "upgrade_headshot_booster",
@@ -2131,7 +2131,7 @@
   ],
   "desc": "Your next <b>headshot</b> against an enemy Hero deals .",
   "cooldown": "9",
-  "icon": "headshot_booster_psd.png"
+  "icon": "headshot_booster_psd.webp"
  },
  {
   "id": "upgrade_high_velocity_mag",
@@ -2152,7 +2152,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "high_velocity_rounds_psd.png"
+  "icon": "high_velocity_rounds_psd.webp"
  },
  {
   "id": "upgrade_non_player_bonus",
@@ -2177,7 +2177,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "monster_rounds_psd.png"
+  "icon": "monster_rounds_psd.webp"
  },
  {
   "id": "upgrade_rapid_rounds",
@@ -2194,7 +2194,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "rapid_rounds_psd.png"
+  "icon": "rapid_rounds_psd.webp"
  },
  {
   "id": "upgrade_medic_bullets",
@@ -2211,7 +2211,7 @@
   ],
   "desc": "Your next bullet will <b>heal</b> you based on what target you hit.",
   "cooldown": "6",
-  "icon": "restorative_shot_psd.png"
+  "icon": "restorative_shot_psd.webp"
  },
  {
   "id": "upgrade_active_reload",
@@ -2228,7 +2228,7 @@
   ],
   "desc": "While reloading, pressing  during the highlighted portion will <b>instantly finish your reload</b> and grant you <b>Fire Rate</b>, <b>Bullet Lifesteal</b> and <b>Move Speed</b>.",
   "cooldown": "12",
-  "icon": "active_reload_psd.png"
+  "icon": "active_reload_psd.webp"
  },
  {
   "id": "upgrade_fleetfoot_boots",
@@ -2253,7 +2253,7 @@
   ],
   "desc": "Removes the <b>Move Speed</b> penalty while shooting.<br>Gain bonus <b>Move Speed</b> and <b>Slow Resistance</b>.",
   "cooldown": "16",
-  "icon": "fleetfoot_psd.png"
+  "icon": "fleetfoot_psd.webp"
  },
  {
   "id": "upgrade_intensifying_clip",
@@ -2270,7 +2270,7 @@
   ],
   "desc": "Increases <b>Weapon Damage</b> as you continuously fire your weapon.",
   "cooldown": null,
-  "icon": "intensifying_magazine_psd.png"
+  "icon": "intensifying_magazine_psd.webp"
  },
  {
   "id": "upgrade_kinetic_sash",
@@ -2291,7 +2291,7 @@
   ],
   "desc": "When you <b>Dash-Jump</b> you gain <b>Fire Rate</b> and bonus <b>Ammo</b> until your next reload. Lasts up to 7s.",
   "cooldown": null,
-  "icon": "kinetic_dash_psd.png"
+  "icon": "kinetic_dash_psd.webp"
  },
  {
   "id": "upgrade_long_range",
@@ -2312,7 +2312,7 @@
   ],
   "desc": "Deal additional <b>Weapon Damage</b> when <b>beyond a minimum distance</b> from your target.",
   "cooldown": null,
-  "icon": "long_range_psd.png"
+  "icon": "long_range_psd.webp"
  },
  {
   "id": "upgrade_melee_charge",
@@ -2337,7 +2337,7 @@
   ],
   "desc": "Your next <b>Heavy Melee</b> attack against an enemy <b>deals increased damage</b>.",
   "cooldown": "5",
-  "icon": "melee_charge_psd.png"
+  "icon": "melee_charge_psd.webp"
  },
  {
   "id": "upgrade_crackshot",
@@ -2354,7 +2354,7 @@
   ],
   "desc": "Your next bullet deals bonus .",
   "cooldown": "8",
-  "icon": "mystic_shot_psd.png"
+  "icon": "mystic_shot_psd.webp"
  },
  {
   "id": "upgrade_pristine_emblem",
@@ -2379,7 +2379,7 @@
   ],
   "desc": "Your attacks have additional <b>Weapon Damage</b> against <b>enemies above 50% health</b>.",
   "cooldown": null,
-  "icon": "opening_rounds_psd.png"
+  "icon": "opening_rounds_psd.webp"
  },
  {
   "id": "upgrade_rechargingbullets",
@@ -2400,7 +2400,7 @@
   ],
   "desc": "Dealing significant  replenishes a charge for <b>each of your charged abilities</b>.",
   "cooldown": "25",
-  "icon": "recharging_rounds_psd.png"
+  "icon": "recharging_rounds_psd.webp"
  },
  {
   "id": "upgrade_slowing_bullets",
@@ -2412,7 +2412,7 @@
   "bonuses": [],
   "desc": "Your bullets build up a <b>Movement Slow</b> on enemies.",
   "cooldown": null,
-  "icon": "slowing_bullets_psd.png"
+  "icon": "slowing_bullets_psd.webp"
  },
  {
   "id": "upgrade_tech_defense_shredders",
@@ -2424,7 +2424,7 @@
   "bonuses": [],
   "desc": "Your bullets apply a debuff that reduces the <b>Spirit Resist</b> of the target and grants you and your allies <b>Spirit Lifesteal</b> against them.",
   "cooldown": null,
-  "icon": "spirit_shredder_bullets_psd.png"
+  "icon": "spirit_shredder_bullets_psd.webp"
  },
  {
   "id": "upgrade_split_shot",
@@ -2436,7 +2436,7 @@
   "bonuses": [],
   "desc": "Make your weapon fire <b>multishot</b>. <br><br> Hitting more than one Hero per attack will grant a <b>stacking weapon damage bonus</b>. <br><br><b>Targets can only be hit once per multishot.</b>",
   "cooldown": "27",
-  "icon": "split_shot_psd.png"
+  "icon": "split_shot_psd.webp"
  },
  {
   "id": "upgrade_weapon_backstabber",
@@ -2457,7 +2457,7 @@
   ],
   "desc": "Dealing  at close range opens a wound and grants you . <br><br>Wounded enemies take , have reduced , and are revealed <b>through walls</b>.",
   "cooldown": "6",
-  "icon": "backstabber_psd.png"
+  "icon": "backstabber_psd.webp"
  },
  {
   "id": "upgrade_blitz_bullets",
@@ -2478,7 +2478,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "swift_striker_psd.png"
+  "icon": "swift_striker_psd.webp"
  },
  {
   "id": "upgrade_titan_round",
@@ -2499,7 +2499,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "titanic_magazine_psd.png"
+  "icon": "titanic_magazine_psd.webp"
  },
  {
   "id": "upgrade_headshot_booster2",
@@ -2516,7 +2516,7 @@
   ],
   "desc": "Landing a <b>Headshot</b> reduces their <b>Bullet Resist</b>.",
   "cooldown": null,
-  "icon": "weakening_headshot_psd.png"
+  "icon": "weakening_headshot_psd.webp"
  },
  {
   "id": "upgrade_thermal_detonator",
@@ -2533,7 +2533,7 @@
   ],
   "desc": "Throw a flask that explodes on contact, creating an area that does increasing  <b>per second</b> and reduces enemy <b>Bullet Resist</b>.<br><br>50% less effective vs non-heroes.",
   "cooldown": "30",
-  "icon": "alchemical_fire_psd.png"
+  "icon": "alchemical_fire_psd.webp"
  },
  {
   "id": "upgrade_bulletshredimbue",
@@ -2545,7 +2545,7 @@
   "bonuses": [],
   "desc": "Imbue an ability with increased <b>range</b>. Dealing damage with that ability grants you increased <b>weapon damage</b> per <b>unique hero hit</b>. Has reduced effect on non-heroes.",
   "cooldown": null,
-  "icon": "alchemical_seal_psd.png"
+  "icon": "alchemical_seal_psd.webp"
  },
  {
   "id": "upgrade_berserker",
@@ -2562,7 +2562,7 @@
   ],
   "desc": "Your <b>Weapon Damage</b> increases as you take sustained damage.",
   "cooldown": null,
-  "icon": "berserker_psd.png"
+  "icon": "berserker_psd.webp"
  },
  {
   "id": "upgrade_blood_tribute",
@@ -2587,7 +2587,7 @@
   ],
   "desc": "Toggle: Continually sacrifice Health to improve , <b>Debuff Resistance</b> and <b>Move Speed</b>.",
   "cooldown": null,
-  "icon": "blood_tribute_psd.png"
+  "icon": "blood_tribute_psd.webp"
  },
  {
   "id": "upgrade_burst_fire",
@@ -2608,7 +2608,7 @@
   ],
   "desc": "Briefly gain <b>Fire Rate</b> and <b>Move Speed</b> when one of your bullets hits a hero.",
   "cooldown": "9",
-  "icon": "burst_fire_psd.png"
+  "icon": "burst_fire_psd.webp"
  },
  {
   "id": "upgrade_non_player_bonus_sacrifice",
@@ -2633,7 +2633,7 @@
   ],
   "desc": "Target an enemy NPC and consume it for <b>170% Bonus Souls</b> and grants a powerful long lasting buff.",
   "cooldown": "270",
-  "icon": "cultist_sacrifice_psd.png"
+  "icon": "cultist_sacrifice_psd.webp"
  },
  {
   "id": "upgrade_reinforcing_casings",
@@ -2658,7 +2658,7 @@
   ],
   "desc": "Grants <b>Bullet Resist</b> when your bullets hit a hero. <b>Each shot can only grant one stack.</b>",
   "cooldown": null,
-  "icon": "escalating_resilience_psd.png"
+  "icon": "escalating_resilience_psd.webp"
  },
  {
   "id": "upgrade_express_shot",
@@ -2679,7 +2679,7 @@
   ],
   "desc": "Your next attack will <b>fire twice</b> in quick succession with <b>increased damage</b> and velocity. This attack consumes extra ammo.",
   "cooldown": "8",
-  "icon": "express_shot_psd.png"
+  "icon": "express_shot_psd.webp"
  },
  {
   "id": "upgrade_headhunter",
@@ -2700,7 +2700,7 @@
   ],
   "desc": "Your next <b>headshot</b> against an enemy Hero deals ,  you, and briefly grants .",
   "cooldown": "8",
-  "icon": "headhunter_psd.png"
+  "icon": "headhunter_psd.webp"
  },
  {
   "id": "upgrade_dps_aura",
@@ -2717,7 +2717,7 @@
   ],
   "desc": "Provides <b>Bullet Resist</b> to nearby friendly units.<br>Provides <b></b> and <b></b> to you and nearby allies. <b>Minions</b> get double value.",
   "cooldown": "22",
-  "icon": "heroic_aura_psd.png"
+  "icon": "heroic_aura_psd.webp"
  },
  {
   "id": "upgrade_hollow_point_rounds",
@@ -2738,7 +2738,7 @@
   ],
   "desc": "When you are <b>above 65% health</b>, deal additional <b>Weapon Damage</b> and your bullets reduce enemy <b>Bullet Resist</b>.",
   "cooldown": null,
-  "icon": "hollow_point_psd.png"
+  "icon": "hollow_point_psd.webp"
  },
  {
   "id": "upgrade_bullet_armor_reduction_aura",
@@ -2759,7 +2759,7 @@
   ],
   "desc": "Reduces nearby enemies' <b>Bullet Resist and Fire Rate</b>. If there is only one enemy hero nearby, this <b>effect is doubled</b>.",
   "cooldown": null,
-  "icon": "hunters_aura_psd.png"
+  "icon": "hunters_aura_psd.webp"
  },
  {
   "id": "upgrade_close_quarter_combat",
@@ -2780,7 +2780,7 @@
   ],
   "desc": "When in <b>close range</b> to your target, gain <b>Weapon Damage</b> and your bullets apply a <b>Movement Slow</b>.",
   "cooldown": null,
-  "icon": "point_blank_psd.png"
+  "icon": "point_blank_psd.webp"
  },
  {
   "id": "upgrade_cloaking_device_active",
@@ -2801,7 +2801,7 @@
   ],
   "desc": "Become <b>Stealthed</b>. Whenever you take damage while Stealthed you get briefly revealed.<br><br>Attacking or using an ability will end your stealth and start an <b>ambush</b>, temporarily granting you bonus <b>Fire Rate</b>, <b>Spirit Power</b> and <b>Melee Damage</b>.",
   "cooldown": "37",
-  "icon": "shadow_weave_psd.png"
+  "icon": "shadow_weave_psd.webp"
  },
  {
   "id": "upgrade_sharpshooter",
@@ -2838,7 +2838,7 @@
   ],
   "desc": "Deal additional <b>Weapon Damage</b> when <b>beyond a minimum distance</b> from your target.",
   "cooldown": null,
-  "icon": "sharp_shooter_psd.png"
+  "icon": "sharp_shooter_psd.webp"
  },
  {
   "id": "upgrade_spellslinger_headshots",
@@ -2855,7 +2855,7 @@
   ],
   "desc": "Your bullets apply a debuff that reduces the <b>Spirit Resist</b> of the target and grants you and your allies <b>Spirit Lifesteal</b> against them.<br>Landing <b>headshots</b> against the target reduces their <b>Spirit Resist</b> further.",
   "cooldown": null,
-  "icon": "spellslinger_headshots_psd.png"
+  "icon": "spellslinger_headshots_psd.webp"
  },
  {
   "id": "upgrade_chain_lightning",
@@ -2867,7 +2867,7 @@
   "bonuses": [],
   "desc": "Your bullets have a chance to <b>shock</b> your target. The <b>shock</b> will jump to a nearby enemy.",
   "cooldown": null,
-  "icon": "tesla_bullets_psd.png"
+  "icon": "tesla_bullets_psd.webp"
  },
  {
   "id": "upgrade_toxic_bullets",
@@ -2879,7 +2879,7 @@
   "bonuses": [],
   "desc": "Your bullets build up a <b>Bleed</b> on enemies, causing them to lose a <b>percentage</b> of their <b>Max Health</b> over time. Also reduces <b>Incoming Healing</b> on the bleeding target.",
   "cooldown": null,
-  "icon": "toxic_bullets_psd.png"
+  "icon": "toxic_bullets_psd.webp"
  },
  {
   "id": "upgrade_weighted_shots",
@@ -2908,7 +2908,7 @@
   ],
   "desc": "Your bullets build up a <b>Movement Slow</b> on enemies.",
   "cooldown": null,
-  "icon": "weighted_shots_psd.png"
+  "icon": "weighted_shots_psd.webp"
  },
  {
   "id": "upgrade_aprounds",
@@ -2929,7 +2929,7 @@
   ],
   "desc": "Your Bullets have a chance to become unavoidable, <b>piercing through</b> enemies and <b>ignoring their Bullet Resistance</b>.",
   "cooldown": null,
-  "icon": "armor_piercing_rounds_psd.png"
+  "icon": "armor_piercing_rounds_psd.webp"
  },
  {
   "id": "upgrade_capacitor",
@@ -2946,7 +2946,7 @@
   ],
   "desc": "Your bullets have a chance to <b>shock</b> your target. The <b>shock</b> will jump to a nearby enemy.<br>Launch a projectile that deals <b>damage</b>, applies a strong slow that recovers over time, <b>prevents Stamina usage</b> and <b>Silences</b> their <b>movement-based items and abilities</b>.",
   "cooldown": "40",
-  "icon": "capacitor_psd.png"
+  "icon": "capacitor_psd.webp"
  },
  {
   "id": "upgrade_banshee_slugs",
@@ -2963,7 +2963,7 @@
   ],
   "desc": "Landing a <b>Headshot</b> will reduce their <b>Bullet, Spirit Resist, and Incoming Healing</b>.",
   "cooldown": null,
-  "icon": "crippling_headshot_psd.png"
+  "icon": "crippling_headshot_psd.webp"
  },
  {
   "id": "upgrade_crushing_fists",
@@ -2988,7 +2988,7 @@
   ],
   "desc": "Your next <b>Heavy Melee</b> attack against an enemy <b>deals increased damage</b>.<br>Your <b></b> will <b>restore ammo</b> and apply a <b>stacking bullet resist debuff</b> on enemies. Heavy melee applies 2 stacks. <br><br>If the target reaches max stacks, they will be <b>stunned</b>.",
   "cooldown": "5",
-  "icon": "crushing_fists_psd.png"
+  "icon": "crushing_fists_psd.webp"
  },
  {
   "id": "upgrade_fervor",
@@ -3013,7 +3013,7 @@
   ],
   "desc": "While you are <b>below 50% health</b>, you gain stat bonuses for a duration and existing debuffs on you are reduced.",
   "cooldown": "16",
-  "icon": "frenzy_psd.png"
+  "icon": "frenzy_psd.webp"
  },
  {
   "id": "upgrade_glass_cannon",
@@ -3034,7 +3034,7 @@
   ],
   "desc": "Each hero kill grants <b>permanent Fire Rate</b> (up to a max of 8 times). Death results in the loss of 1 stack.",
   "cooldown": null,
-  "icon": "glass_cannon_psd.png"
+  "icon": "glass_cannon_psd.webp"
  },
  {
   "id": "upgrade_critshot",
@@ -3051,7 +3051,7 @@
   ],
   "desc": "Your bullets have a chance to be empowered, causing them to deal <b>bonus weapon damage</b> on hit.<br><b>Bonus damage cannot Crit.</b>",
   "cooldown": null,
-  "icon": "lucky_shot_psd.png"
+  "icon": "lucky_shot_psd.webp"
  },
  {
   "id": "upgrade_ricochet",
@@ -3068,7 +3068,7 @@
   ],
   "desc": "Your bullets will <b>ricochet</b> on enemies near your target, <b>applying any bullet procs</b> and <b>dealing a percentage of the original damage.</b>",
   "cooldown": null,
-  "icon": "ricochet_psd.png"
+  "icon": "ricochet_psd.webp"
  },
  {
   "id": "upgrade_proc_silence",
@@ -3085,7 +3085,7 @@
   ],
   "desc": "Your bullets reduce the target's <b>outgoing spirit damage</b>.<br>Your bullets build up to a <b>Silence</b>. Victims are immune to the build up for <b>10s</b> after silence expires.",
   "cooldown": null,
-  "icon": "silencer_psd.png"
+  "icon": "silencer_psd.webp"
  },
  {
   "id": "upgrade_enchanted_holsters",
@@ -3102,7 +3102,7 @@
   ],
   "desc": "While in-combat whenever you cast an ability or item, gain a stacking buff that improves fire rate and reload speed. <br><b>Each stack refreshes the duration.</b>",
   "cooldown": null,
-  "icon": "spell_slinger_psd.png"
+  "icon": "spell_slinger_psd.webp"
  },
  {
   "id": "upgrade_tech_overflow",
@@ -3131,6 +3131,6 @@
   ],
   "desc": "Gain bonus <b>Fire Rate</b>, <b>Spirit Power</b> and <b>Spirit Lifesteal</b> by <b>charging up</b> when shooting heroes.",
   "cooldown": null,
-  "icon": "spiritual_overflow_psd.png"
+  "icon": "spiritual_overflow_psd.webp"
  }
 ]

@@ -4,6 +4,7 @@
 // Routes: #/ · #/lobbies · #/lobby · #/heroes · #/hero/<id> · #/items · #/modes · #/guide · #/top · #/matches   (the admin desk is a page of its own: /admin/)
 
 const API = ((window.SOULPIT && window.SOULPIT.api) || '').replace(/\/$/, '');
+const IMG_EXT = (window.SOULPIT && window.SOULPIT.img) || 'png';  // the published site has WebP images
 const TOKEN_KEY = 'yama_token';
 const LANG_KEY = 'yama_lang';
 let LANG = (() => {
@@ -79,13 +80,21 @@ function showError(message) {
 }
 
 async function act(path, body) {
+  let data;
   try {
-    return await api(path, body);
+    data = await api(path, body);
   } catch (e) {
     showError(e.message);
-  } finally {
-    await refresh();
+    return sync();
   }
+  const m = path.match(/^\/api\/lobbies(?:\/[0-9a-f]+\/(\w+))?$/);
+  if (m && me) {
+    // the server answers lobby actions with the lobby as it is now; after leaving it is not mine any more
+    applyState({ user: me, lobby: m[1] === 'leave' || !data?.id ? null : data });
+  } else {
+    await sync();
+  }
+  return data;
 }
 
 // ---------- language ----------
@@ -135,12 +144,15 @@ function applyStatic() {
 async function refresh() {
   if (!token) { me = null; lobby = null; return render(); }
   try {
-    const r = await api('/api/me');
-    me = r.user;
-    lobby = r.lobby;
+    applyState(await api('/api/me'));
   } catch (e) {
     if (token) showError(e.message);
   }
+}
+
+function applyState(r) {
+  me = r.user;
+  lobby = r.lobby;
   clock = lobby?.phase ? { left: lobby.phase.seconds_left, total: lobby.phase.total, at: performance.now() } : null;
   if (lobby?.state !== 'bans') pendingBan = null;
   const id = lobby?.id || null;
@@ -161,6 +173,36 @@ async function refreshPulse() {
   try { pulse = await api('/api/pulse'); } catch { /* keep the old one */ }
   renderTicker();
   render();
+}
+
+// /api/sync: me and my lobby, new lines of the open chat and, every few seconds, the pulse, in one request
+let syncing = null;
+let pulseAt = 0;
+function sync() {
+  if (syncing) return syncing;
+  syncing = (async () => {
+    const channel = chat.channel;
+    const log = chat.logs[channel];
+    const wantPulse = Date.now() - pulseAt > 3000;
+    try {
+      const r = await api(`/api/sync?channel=${encodeURIComponent(channel)}&since=${log ? log.since : 0}${wantPulse ? '&pulse=1' : ''}`);
+      if (r.pulse) { pulse = r.pulse; pulseAt = Date.now(); renderTicker(); }
+      if (token && !r.signed_in) setToken(null);
+      if (r.me) applyState(r.me);
+      else { me = null; lobby = null; }
+      if (r.chat && channel === chat.channel) addChat(channel, r.chat);
+      render();
+    } catch { /* offline for a moment: the next round tries again */ } finally {
+      syncing = null;
+    }
+  })();
+  return syncing;
+}
+
+function syncLoop() {
+  // faster while a draft is running, slower in a background tab
+  const busy = lobby && !['waiting', 'live'].includes(lobby.state);
+  sync().finally(() => setTimeout(syncLoop, document.hidden ? 5000 : busy ? 700 : 1500));
 }
 
 // ---------- shell ----------
@@ -754,7 +796,7 @@ function rankName(r) {
 
 function rankBadge(r, size = 'sm') {
   if (!r) return '';
-  const file = r.tier ? `ranks/rank${r.tier}/badge_${size}_subrank${r.sub}_psd.png` : `ranks/rank0/badge_${size}_psd.png`;
+  const file = r.tier ? `ranks/rank${r.tier}/badge_${size}_subrank${r.sub}_psd.${IMG_EXT}` : `ranks/rank0/badge_${size}_psd.${IMG_EXT}`;
   return `<img class="rank-badge ${size}" src="/static/data/img/${file}" alt="" title="${esc(rankName(r))}" onerror="this.remove()">`;
 }
 
@@ -1304,17 +1346,22 @@ async function pollChat() {
   try {
     const fresh = await api(`/api/chat?channel=${encodeURIComponent(channel)}&since=${log.since}`);
     if (channel !== chat.channel) return;
-    const first = !chat.logs[channel];
-    chat.logs[channel] = log;
-    // a message already shown (sent from this tab) is not added twice
-    const known = new Set(log.msgs.map((m) => m.id));
-    const add = fresh.filter((m) => !known.has(m.id));
-    log.msgs.push(...add);
-    if (fresh.length) log.since = fresh[fresh.length - 1].id;
-    renderMsgs(first, add);
+    addChat(channel, fresh);
   } catch { /* lost access to a closed lobby's chat: the next refresh switches back */ } finally {
     chatBusy = false;
   }
+}
+
+function addChat(channel, fresh) {
+  const first = !chat.logs[channel];
+  const log = chat.logs[channel] || { since: 0, msgs: [] };
+  chat.logs[channel] = log;
+  // a message already shown (by the other poll or sent from this tab) is not added twice
+  const known = new Set(log.msgs.map((m) => m.id));
+  const add = fresh.filter((m) => !known.has(m.id));
+  log.msgs.push(...add);
+  if (fresh.length) log.since = Math.max(log.since, fresh[fresh.length - 1].id);
+  if (first || add.length) renderMsgs(first, add);
 }
 
 async function sendChat(e) {
@@ -1436,11 +1483,8 @@ function pickItem(id) {
   applyStatic();
   [config] = await Promise.all([api('/api/config'), loadData()]);
   window.addEventListener('hashchange', () => { render(); window.scrollTo(0, 0); });
-  await Promise.all([refresh(), refreshPulse()]);
-  pollChat();
-  setInterval(refresh, 1000);
-  setInterval(refreshPulse, 3000);
-  setInterval(pollChat, 1500);
+  await sync();
+  syncLoop();
   const frame = () => { tickClock(); requestAnimationFrame(frame); };
   requestAnimationFrame(frame);
 })();

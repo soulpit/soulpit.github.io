@@ -18,7 +18,7 @@
   ],
   "desc": "Adds one to your ability max <b>charges</b>.",
   "cooldown": null,
-  "icon": "extra_charge_psd.png"
+  "icon": "extra_charge_psd.webp"
  },
  {
   "id": "upgrade_improved_spirit",
@@ -35,7 +35,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "extra_spirit_psd.png"
+  "icon": "extra_spirit_psd.webp"
  },
  {
   "id": "upgrade_goose_egg",
@@ -60,7 +60,7 @@
   ],
   "desc": "Вылупив яйцо, вы получите <b>души</b> и <b>постоянные бонусы</b>.<br><br>Чем дольше у вас яйцо, тем выше его ценность.<br><br>При вылуплении яйца вы получите постоянный бонус за каждые 80 накопленных душ.",
   "cooldown": null,
-  "icon": "goose_egg_psd.png"
+  "icon": "goose_egg_psd.webp"
  },
  {
   "id": "upgrade_magic_burst",
@@ -72,7 +72,7 @@
   "bonuses": [],
   "desc": "Постепенно заряжается <b>спиритическим уроном</b>, благодаря чему умения, наносящие более <b>80</b> ед. урона, причиняют дополнительный урон.",
   "cooldown": "14",
-  "icon": "mystic_burst_psd.png"
+  "icon": "mystic_burst_psd.webp"
  },
  {
   "id": "upgrade_mystic_regeneration",
@@ -89,7 +89,7 @@
   ],
   "desc": "Нанесение <b>спиритического урона</b> вражеским героям даёт вам бонусное . Накапливается при нанесении урона разным героям.",
   "cooldown": null,
-  "icon": "mystic_regen_psd.png"
+  "icon": "mystic_regen_psd.webp"
  },
  {
   "id": "upgrade_magic_reach",
@@ -101,7 +101,7 @@
   "bonuses": [],
   "desc": "Увеличивает <b>дальность</b> выбранного умения и <b>радиус его эффекта</b>.",
   "cooldown": null,
-  "icon": "mystic_reach_psd.png"
+  "icon": "mystic_reach_psd.webp"
  },
  {
   "id": "upgrade_withering_whip",
@@ -122,7 +122,7 @@
   ],
   "desc": "У выбранной цели снижаются <b>скорострельность</b> и <b>сопротивляемость пулям</b>.",
   "cooldown": "16",
-  "icon": "rusted_barrel_psd.png"
+  "icon": "rusted_barrel_psd.webp"
  },
  {
   "id": "upgrade_acolytes_glove",
@@ -134,7 +134,7 @@
   "bonuses": [],
   "desc": "Совершив <b>лёгкий или тяжёлый удар ближнего боя</b> по герою, вы нанесёте ему дополнительный  и уменьшите его <b>сопротивляемость спиритизму</b>.<b><br><br>При нанесении лёгких ударов ближнего боя перезарядка длится в 2 раза дольше.</b>",
   "cooldown": "8",
-  "icon": "spirit_strike_psd.png"
+  "icon": "spirit_strike_psd.webp"
  },
  {
   "id": "upgrade_containment",
@@ -151,7 +151,7 @@
   ],
   "desc": "<b>Замедляет передвижение</b> выбранного врага и накладывает <b>безмолвие</b> на его <b>предметы и умения, связанные с передвижением</b>.<br><b>Увеличивает гравитацию цели.<br>Не влияет на расход её выносливости.</b>",
   "cooldown": "29",
-  "icon": "slowing_hex_psd.png"
+  "icon": "slowing_hex_psd.webp"
  },
  {
   "id": "upgrade_bullet_resist_shredder",
@@ -172,7 +172,7 @@
   ],
   "desc": "Снижает <b>сопротивляемость пулям</b> у врагов, которым вы наносите .",
   "cooldown": null,
-  "icon": "bullet_resist_shredder_psd.png"
+  "icon": "bullet_resist_shredder_psd.webp"
  },
  {
   "id": "upgrade_arcane_surge",
@@ -193,7 +193,7 @@
   ],
   "desc": "После совершения <b>рывка с прыжком</b> <b>следующее умение, которое вы используете</b> в течение  сек., будет иметь бонусную <b>дальность, длительность</b> и <b>спиритическую мощь</b>.",
   "cooldown": null,
-  "icon": "arcane_surge_psd.png"
+  "icon": "arcane_surge_psd.webp"
  },
  {
   "id": "upgrade_magic_vulnerability",
@@ -210,7 +210,7 @@
   ],
   "desc": "Когда враг получает , у него снижается .",
   "cooldown": null,
-  "icon": "mystic_vulnerability_psd.png"
+  "icon": "mystic_vulnerability_psd.webp"
  },
  {
   "id": "upgrade_magic_slow",
@@ -231,7 +231,7 @@
   ],
   "desc": "Когда цель получает , у неё снижается <b>скорость передвижения</b>.",
   "cooldown": null,
-  "icon": "mystic_slow_psd.png"
+  "icon": "mystic_slow_psd.webp"
  },
  {
   "id": "upgrade_suppressor",
@@ -252,7 +252,7 @@
   ],
   "desc": "Нанося  врагам, вы также снижаете их <b>скорострельность</b>.",
   "cooldown": null,
-  "icon": "suppressor_psd.png"
+  "icon": "suppressor_psd.webp"
  },
  {
   "id": "upgrade_quick_silver",
@@ -264,7 +264,7 @@
   "bonuses": [],
   "desc": "Усиленное умение постепенно заряжается, благодаря чему при использовании наносит , даёт повышенную  и <b>перезаряжает оружие</b>.",
   "cooldown": "18",
-  "icon": "quicksilver_reload_psd.png"
+  "icon": "quicksilver_reload_psd.webp"
  },
  {
   "id": "upgrade_magic_tempo",
@@ -276,7 +276,7 @@
   "bonuses": [],
   "desc": "Сокращает <b>время перезарядки</b> выбранного умения.",
   "cooldown": null,
-  "icon": "improved_cooldown_psd.png"
+  "icon": "improved_cooldown_psd.webp"
  },
  {
   "id": "upgrade_spirit_sap",
@@ -293,7 +293,7 @@
   ],
   "desc": "Снижает <b>сопротивляемость спиритизму</b> и <b>спиритическую мощь</b> выбранного врага.",
   "cooldown": "18",
-  "icon": "spirit_sap_psd.png"
+  "icon": "spirit_sap_psd.webp"
  },
  {
   "id": "upgrade_arcane_extension",
@@ -305,7 +305,7 @@
   "bonuses": [],
   "desc": "Усиливает выбранное умение, повышая <b>время его действия</b>.",
   "cooldown": null,
-  "icon": "duration_extender_psd.png"
+  "icon": "duration_extender_psd.webp"
  },
  {
   "id": "upgrade_soaring_spirit",
@@ -326,7 +326,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "improved_spirit_psd.png"
+  "icon": "improved_spirit_psd.webp"
  },
  {
   "id": "upgrade_cold_front",
@@ -343,7 +343,7 @@
   ],
   "desc": "Вы выпускаете расширяющуюся леденящую волну, которая наносит  и <b>замедляет</b> задетых врагов.",
   "cooldown": "25",
-  "icon": "cold_front_psd.png"
+  "icon": "cold_front_psd.webp"
  },
  {
   "id": "upgrade_targeted_silence",
@@ -360,7 +360,7 @@
   ],
   "desc": "Вы выпускаете расширяющийся снаряд, который ненадолго накладывает на врагов <b>безмолвие</b> и наносит урон при попадании. <br><br><b>Безмолвие не прерывает подготавливаемые умения.</b>",
   "cooldown": "42",
-  "icon": "silence_glyph_psd.png"
+  "icon": "silence_glyph_psd.webp"
  },
  {
   "id": "upgrade_magic_shock",
@@ -377,7 +377,7 @@
   ],
   "desc": "Постепенно заряжается <b>спиритическим уроном</b>, благодаря чему умения, наносящие более <b>165</b> ед. урона, причиняют дополнительный урон. <b>Игнорирует сопротивляемость спиритизму.</b>",
   "cooldown": "14",
-  "icon": "tankbuster_psd.png"
+  "icon": "tankbuster_psd.webp"
  },
  {
   "id": "upgrade_target_stun",
@@ -398,7 +398,7 @@
   ],
   "desc": "Вы накладываете <b>оглушение</b> после задержки в <b>2 сек.</b> Оглушение действует дольше на цели, <b>находящиеся в воздухе</b>.<br><br><b>Во время действия оглушения гравитация цели увеличивается.</b>",
   "cooldown": "35",
-  "icon": "knockdown_psd.png"
+  "icon": "knockdown_psd.webp"
  },
  {
   "id": "upgrade_personal_rejuvenator",
@@ -410,7 +410,7 @@
   "bonuses": [],
   "desc": "Возрождает героя там, где он погиб.",
   "cooldown": "509",
-  "icon": "rebirth_psd.png"
+  "icon": "rebirth_psd.webp"
  },
  {
   "id": "upgrade_spirit_snatch",
@@ -431,7 +431,7 @@
   ],
   "desc": "Совершив <b>лёгкий или тяжёлый удар ближнего боя</b> по герою, вы нанесёте ему дополнительный , а также украдёте его <b>сопротивляемость спиритизму</b> и <b>спиритическую мощь</b>.<b><br><br>При нанесении лёгких ударов ближнего боя сила эффектов снижается на 30%.</b>",
   "cooldown": "6",
-  "icon": "spirit_snatch_psd.png"
+  "icon": "spirit_snatch_psd.webp"
  },
  {
   "id": "upgrade_imbued_duration_extender",
@@ -448,7 +448,7 @@
   ],
   "desc": "Увеличивает <b>длительность действия</b> ваших умений и предметов.",
   "cooldown": null,
-  "icon": "superior_duration_psd.png"
+  "icon": "superior_duration_psd.webp"
  },
  {
   "id": "upgrade_cooldown_reduction",
@@ -465,7 +465,7 @@
   ],
   "desc": "Сокращает <b>время перезарядки</b> ваших умений.",
   "cooldown": null,
-  "icon": "superior_cooldown_psd.png"
+  "icon": "superior_cooldown_psd.webp"
  },
  {
   "id": "upgrade_magic_storm",
@@ -477,7 +477,7 @@
   "bonuses": [],
   "desc": "Усиливает выбранное умение: навсегда увеличивает его <b>спиритическую мощь</b>. Применив его, вы некоторое время <b>передвигаетесь быстрее</b> и не замедляетесь при совершении атак.",
   "cooldown": "14",
-  "icon": "surge_of_power_psd.png"
+  "icon": "surge_of_power_psd.webp"
  },
  {
   "id": "upgrade_rupture",
@@ -498,7 +498,7 @@
   ],
   "desc": "Вы <b>постепенно наносите урон</b> цели на основе её текущего здоровья.<br>Урон от «Разложения» не может убить и не влияет на срабатывание предметов.",
   "cooldown": "30",
-  "icon": "decay_psd.png"
+  "icon": "decay_psd.webp"
  },
  {
   "id": "upgrade_resonant_healing",
@@ -515,7 +515,7 @@
   ],
   "desc": "Нанесение <b>спиритического урона</b> вражеским героям даёт вам бонусное . Накапливается при нанесении урона разным героям.<br>Вы получаете <b>лечение</b> и кратковременный бонус к <b>скорости передвижения</b> при применении умения.",
   "cooldown": "6",
-  "icon": "radiant_regeneration_psd.png"
+  "icon": "radiant_regeneration_psd.webp"
  },
  {
   "id": "upgrade_rapid_recharge",
@@ -544,7 +544,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "rapid_recharge_psd.png"
+  "icon": "rapid_recharge_psd.webp"
  },
  {
   "id": "upgrade_tech_damage_pulse",
@@ -565,7 +565,7 @@
   ],
   "desc": "Периодически наносит  двум ближайшим врагам неподалёку.",
   "cooldown": "1.4",
-  "icon": "torment_pulse_psd.png"
+  "icon": "torment_pulse_psd.webp"
  },
  {
   "id": "upgrade_tech_range",
@@ -582,7 +582,7 @@
   ],
   "desc": "Увеличивает <b>дальность</b> и <b>радиус действия</b> ваших умений и предметов.",
   "cooldown": null,
-  "icon": "greater_expansion_psd.png"
+  "icon": "greater_expansion_psd.webp"
  },
  {
   "id": "upgrade_greater_withering_whip",
@@ -603,7 +603,7 @@
   ],
   "desc": "<b>Разоружает</b> выбранного врага и снижает его <b>сопротивляемость пулям</b>.",
   "cooldown": "16",
-  "icon": "disarming_hex_psd.png"
+  "icon": "disarming_hex_psd.webp"
  },
  {
   "id": "upgrade_arctic_blast",
@@ -620,7 +620,7 @@
   ],
   "desc": "Вы выпускаете расширяющуюся леденящую волну, которая наносит  и <b>замораживает</b>, а затем <b>замедляет</b> задетые цели.<br><br>У замедленных жертв <b>замораживается восстановление выносливости</b>",
   "cooldown": "24",
-  "icon": "arctic_blast_psd.png"
+  "icon": "arctic_blast_psd.webp"
  },
  {
   "id": "upgrade_boundless_spirit",
@@ -649,7 +649,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "boundless_spirit_psd.png"
+  "icon": "boundless_spirit_psd.webp"
  },
  {
   "id": "upgrade_discord",
@@ -666,7 +666,7 @@
   ],
   "desc": "Накладывает на союзника <b>сопротивляемость спиритизму</b>, <b>сопротивляемость отриц. эффектам</b> и ауру, которая наносит <b>урон</b> врагам пропорционально их макс. здоровью. Отрицательные эффекты, уже наложенные на цель, ослабляются.<br>Можно применять на себя.",
   "cooldown": "35",
-  "icon": "scourge_psd.png"
+  "icon": "scourge_psd.webp"
  },
  {
   "id": "upgrade_magic_carpet",
@@ -699,7 +699,7 @@
   ],
   "desc": "Призывает волшебный ковёр, который <b>уносит</b> вас прочь. Вам даётся невосприимчивость к замедлениям на время полёта, но любое ваше действие его прервёт. <b><br>Во время призыва нельзя использовать умения.</b>",
   "cooldown": "32",
-  "icon": "magic_carpet_psd.png"
+  "icon": "magic_carpet_psd.webp"
  },
  {
   "id": "upgrade_mystic_reverb",
@@ -716,7 +716,7 @@
   ],
   "desc": "Усиливает выбранное умение: оно получает <b>кражу здоровья</b>, <b>замедляет</b> цель и после короткой задержки наносит врагам вокруг неё <b>долю от нанесённого ей урона</b>.",
   "cooldown": "6.25",
-  "icon": "mystic_reverb_psd.png"
+  "icon": "mystic_reverb_psd.webp"
  },
  {
   "id": "upgrade_ability_refresher",
@@ -728,7 +728,7 @@
   "bonuses": [],
   "desc": "<b>Сбрасывает перезарядку</b> всех ваших умений и <b>восстанавливает все их заряды</b>.",
   "cooldown": "300",
-  "icon": "refresher_psd.png"
+  "icon": "refresher_psd.webp"
  },
  {
   "id": "upgrade_ability_power_shard",
@@ -749,7 +749,7 @@
   ],
   "desc": "<b>Сбрасывает перезарядку</b> усиленного умения (кроме ультов).<br><br>Перезарядка этого предмета увеличивается в зависимости от <b>перезарядки усиленного умения</b>.",
   "cooldown": "30",
-  "icon": "echo_shard_psd.png"
+  "icon": "echo_shard_psd.webp"
  },
  {
   "id": "upgrade_aoe_root",
@@ -770,7 +770,7 @@
   ],
   "desc": "Вы бросаете <b>вакуумную</b> гранату, которая притягивает врагов в небольшую область и накладывает на них <b>«Замедляющие чары»</b>.  <b><br><br>Альт. огонь: применить на конкретную цель.</b>",
   "cooldown": "42",
-  "icon": "vortex_web_psd.png"
+  "icon": "vortex_web_psd.webp"
  },
  {
   "id": "upgrade_glitch",
@@ -782,7 +782,7 @@
   "bonuses": [],
   "desc": "Проклинает врага: <b>прерывает его действия, накладывает безмолвие и обезоруживание</b> и <b>запрещает использовать предметы</b>. <b>Снимает все положительные эффекты, кроме наложенных ультами</b>.<br><br>Наносимый вами <b>урон</b> снижен на время действия проклятия.",
   "cooldown": "55",
-  "icon": "curse_psd.png"
+  "icon": "curse_psd.webp"
  },
  {
   "id": "upgrade_self_bubble",
@@ -794,7 +794,7 @@
   "bonuses": [],
   "desc": "Вы мгновенно переходите в состояние пустоты и кратковременно становитесь неуязвимы.<br>После этого вы получаете временные усиления:",
   "cooldown": "37",
-  "icon": "ethereal_shift_psd.png"
+  "icon": "ethereal_shift_psd.webp"
  },
  {
   "id": "upgrade_escalating_exposure",
@@ -815,7 +815,7 @@
   ],
   "desc": "Нанося , вы получаете накапливаемое <b>повышение спиритизма</b>, которое увеличивает , наносимый вами цели.",
   "cooldown": null,
-  "icon": "escalating_exposure_psd.png"
+  "icon": "escalating_exposure_psd.webp"
  },
  {
   "id": "upgrade_ethereal_bullets",
@@ -836,7 +836,7 @@
   ],
   "desc": "Усиленное умение постепенно заряжается, благодаря чему наносит , <b>повышает скорострельность</b> и <b>перезаряжает оружие</b> при использовании. До следующей перезарядки оружия ваши <b>пули наносят </b>, пропорциональный вашей спиритической мощи.",
   "cooldown": "15",
-  "icon": "mercurial_magnum_psd.png"
+  "icon": "mercurial_magnum_psd.webp"
  },
  {
   "id": "upgrade_ultimate_burst",
@@ -861,7 +861,7 @@
   ],
   "desc": "Урон от вашего ульта накладывает  и наносит  после короткой задержки.<br><b>Данный эффект срабатывает на каждой цели только один раз за ульт.</b><br><b>Эффекты «Мистического замедления»</b>",
   "cooldown": null,
-  "icon": "lightning_scroll_psd.png"
+  "icon": "lightning_scroll_psd.webp"
  },
  {
   "id": "upgrade_spirit_burn",
@@ -878,7 +878,7 @@
   ],
   "desc": "Если нанести врагу значительный <b>спиритический урон</b> в течение 5 сек., происходит взрыв, который наносит урон этому врагу и обжигает его. Во время горения враги получают постепенный урон, а получаемое ими лечение уменьшается.<br><b>Для каждого врага действует отдельная перезарядка: до её окончания нельзя повторно наложить эффект. Если целью выбран не герой, урон уменьшается вдвое.</b>",
   "cooldown": null,
-  "icon": "spirit_burn_psd.png"
+  "icon": "spirit_burn_psd.webp"
  },
  {
   "id": "upgrade_transcendent_cooldown",
@@ -895,7 +895,7 @@
   ],
   "desc": "Сокращает <b>время перезарядки</b> ваших умений и предметов.",
   "cooldown": null,
-  "icon": "transcendent_cooldown_psd.png"
+  "icon": "transcendent_cooldown_psd.webp"
  },
  {
   "id": "upgrade_focus_lens",
@@ -912,7 +912,7 @@
   ],
   "desc": "Накладывает <b>безмолвие</b> на выбранного врага. Часть <b>всего урона</b>, нанесённого в период безмолвия, накладывается на цель по окончании действия эффекта.",
   "cooldown": "45",
-  "icon": "focus_lens_psd.png"
+  "icon": "focus_lens_psd.webp"
  },
  {
   "id": "upgrade_sprint_booster",
@@ -933,7 +933,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "sprint_boots_psd.png"
+  "icon": "sprint_boots_psd.webp"
  },
  {
   "id": "upgrade_improved_stamina",
@@ -954,7 +954,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "extra_stamina_psd.png"
+  "icon": "extra_stamina_psd.webp"
  },
  {
   "id": "upgrade_endurance",
@@ -975,7 +975,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "extra_regen_psd.png"
+  "icon": "extra_regen_psd.webp"
  },
  {
   "id": "upgrade_health",
@@ -992,7 +992,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "extra_health_psd.png"
+  "icon": "extra_health_psd.webp"
  },
  {
   "id": "upgrade_grit",
@@ -1009,7 +1009,7 @@
   ],
   "desc": "Вы ненадолго получаете <b>барьер</b>.",
   "cooldown": "60",
-  "icon": "grit_psd.png"
+  "icon": "grit_psd.webp"
  },
  {
   "id": "upgrade_health_stimpak",
@@ -1021,7 +1021,7 @@
   "bonuses": [],
   "desc": "Даёт цели <b>восстановление здоровья</b> и <b>скорость бега</b>. Эффект пропадает, если цель получает урон от вражеских героев или построек. Можно применить на себя.",
   "cooldown": "70",
-  "icon": "healing_rite_psd.png"
+  "icon": "healing_rite_psd.webp"
  },
  {
   "id": "upgrade_melee_rebuttal",
@@ -1046,7 +1046,7 @@
   ],
   "desc": "В случае успешного <b>парирования</b> атаки вражеского героя вы <b>лечите</b> себя на объём, соответствующий парированному урону, отражаете этот урон на цель и получаете временный бонус к <b>наносимому урону</b>.",
   "cooldown": null,
-  "icon": "rebuttal_psd.png"
+  "icon": "rebuttal_psd.webp"
  },
  {
   "id": "upgrade_lifestrike_gauntlets",
@@ -1063,7 +1063,7 @@
   ],
   "desc": "Ваша следующая атака <b>ближнего боя</b> <b>лечит вас</b>. <b><br><br>Лечение от существ, не являющихся героями, эффективно на 30%. <br>Множитель времени перезарядки составляет 1.5 при нанесении лёгких ударов ближнего боя.</b>",
   "cooldown": "8",
-  "icon": "melee_lifesteal_psd.png"
+  "icon": "melee_lifesteal_psd.webp"
  },
  {
   "id": "upgrade_vex_barrier",
@@ -1080,7 +1080,7 @@
   ],
   "desc": "Вы получаете <b>барьер</b>, когда <b>оглушены, скованы, обездвижены, спите или обезмолвлены</b>.",
   "cooldown": "55",
-  "icon": "reactive_barrier_psd.png"
+  "icon": "reactive_barrier_psd.webp"
  },
  {
   "id": "upgrade_regenerating_bullet_shield",
@@ -1101,7 +1101,7 @@
   ],
   "desc": "Если у вас <b>более 65% здоровья</b>, увеличивается наносимый вами <b></b> и вам даётся <b></b>.",
   "cooldown": null,
-  "icon": "battle_vest_psd.png"
+  "icon": "battle_vest_psd.webp"
  },
  {
   "id": "upgrade_healbane",
@@ -1118,7 +1118,7 @@
   ],
   "desc": "Наносимый вами  снижает врагу <b>получаемое лечение</b>. Если вражеский герой умирает, находясь под действием этого эффекта, вы значительно восстанавливаете здоровье.",
   "cooldown": null,
-  "icon": "healbane_psd.png"
+  "icon": "healbane_psd.webp"
  },
  {
   "id": "upgrade_restorative_locket",
@@ -1135,7 +1135,7 @@
   ],
   "desc": "Если враг применяет умение в радиусе 32 м от вас, вы получаете <b>единицу эффекта восстановления</b>. <br><br>Поглотите все накопленные единицы, чтобы <b>полечить себя</b> и восстановить <b>до 3 ед. выносливости</b> в зависимости от числа накопленных единиц.",
   "cooldown": "20",
-  "icon": "restorative_locket_psd.png"
+  "icon": "restorative_locket_psd.webp"
  },
  {
   "id": "upgrade_guardian_ward",
@@ -1156,7 +1156,7 @@
   ],
   "desc": "Цель получает <b>барьер</b> и временное повышение <b>скорости передвижения</b>. <b><br>Можно применять на себя.<br>Если применяется не на себя, время перезарядки сокращается вдвое.</b>",
   "cooldown": "60",
-  "icon": "guardian_ward_psd.png"
+  "icon": "guardian_ward_psd.webp"
  },
  {
   "id": "upgrade_return_fire",
@@ -1168,7 +1168,7 @@
   "bonuses": [],
   "desc": "Автоматически <b>выстреливает</b> в любого врага, который наносит вам урон умением или оружием.",
   "cooldown": "23",
-  "icon": "return_fire_psd.png"
+  "icon": "return_fire_psd.webp"
  },
  {
   "id": "upgrade_weapon_shielding",
@@ -1185,7 +1185,7 @@
   ],
   "desc": "Даёт вам <b>барьер</b> каждый раз, когда вражеские герои наносят вам значительный  за короткий интервал времени.",
   "cooldown": "35",
-  "icon": "weapon_shielding_psd.png"
+  "icon": "weapon_shielding_psd.webp"
  },
  {
   "id": "upgrade_vampire",
@@ -1210,7 +1210,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "bullet_lifesteal_psd.png"
+  "icon": "bullet_lifesteal_psd.webp"
  },
  {
   "id": "upgrade_cardio_calibrator",
@@ -1231,7 +1231,7 @@
   ],
   "desc": "Уменьшает эффективность наложенного врагами снижения <b>скорости передвижения</b>.",
   "cooldown": null,
-  "icon": "enduring_speed_psd.png"
+  "icon": "enduring_speed_psd.webp"
  },
  {
   "id": "upgrade_trophy_collector",
@@ -1256,7 +1256,7 @@
   ],
   "desc": "При каждой <b>помощи или убийстве</b> вы получаете бонус к <b>скорости бега</b> и <b>дальности умений</b>, а ещё у вас начинают <b>пассивно генерироваться души</b>. Данный эффект накапливается и не обнуляется в случае смерти.",
   "cooldown": null,
-  "icon": "trophy_collector_psd.png"
+  "icon": "trophy_collector_psd.webp"
  },
  {
   "id": "upgrade_spirit_bubble",
@@ -1273,7 +1273,7 @@
   ],
   "desc": "Даёт вам <b>барьер</b> каждый раз, когда вражеские герои наносят вам значительный  за короткий интервал времени.",
   "cooldown": "45",
-  "icon": "spirit_shielding_psd.png"
+  "icon": "spirit_shielding_psd.webp"
  },
  {
   "id": "upgrade_health_stealing_magic",
@@ -1298,7 +1298,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "spirit_lifesteal_psd.png"
+  "icon": "spirit_lifesteal_psd.webp"
  },
  {
   "id": "upgrade_debuff_reducer",
@@ -1315,7 +1315,7 @@
   ],
   "desc": "Снижает <b>длительность</b> всех накладываемых на вас отрицательных эффектов.",
   "cooldown": null,
-  "icon": "debuff_reducer_psd.png"
+  "icon": "debuff_reducer_psd.webp"
  },
  {
   "id": "upgrade_healing_booster",
@@ -1336,7 +1336,7 @@
   ],
   "desc": "Повышает эффективность вашего <b>лечения</b>.",
   "cooldown": null,
-  "icon": "healing_booster_psd.png"
+  "icon": "healing_booster_psd.webp"
  },
  {
   "id": "upgrade_magic_shield",
@@ -1357,7 +1357,7 @@
   ],
   "desc": "Если у вас <b>более 65% здоровья</b>, вам даётся дополнительная <b></b> и <b>сокращённое время перезарядки умений</b>.",
   "cooldown": null,
-  "icon": "enchanters_emblem_psd.png"
+  "icon": "enchanters_emblem_psd.webp"
  },
  {
   "id": "upgrade_boxing_glove",
@@ -1378,7 +1378,7 @@
   ],
   "desc": "Ваши атаки <b>ближнего боя</b> <b>замедляют врагов</b> и <b>лечат вас</b> на процент от нанесённого <b>в ближнем бою урона</b>, а также на фиксированное количество единиц. <b><br><br>Лечение от существ, не являющихся героями, эффективно на 40%. <br>Множитель времени перезарядки составляет 1.5 при нанесении лёгких ударов ближнего боя.</b>",
   "cooldown": "4",
-  "icon": "lifestrike_psd.png"
+  "icon": "lifestrike_psd.webp"
  },
  {
   "id": "upgrade_health_nova",
@@ -1399,7 +1399,7 @@
   ],
   "desc": "<b>Лечит</b> вас и союзников поблизости.",
   "cooldown": "60",
-  "icon": "healing_nova_psd.png"
+  "icon": "healing_nova_psd.webp"
  },
  {
   "id": "upgrade_chonky",
@@ -1416,7 +1416,7 @@
   ],
   "desc": "Если в течение некоторого времени не получать урон, вам даётся восстановление здоровья.<br>Увеличивает вашу <b>скорость передвижения</b>, когда у вас <b>больше 75% здоровья</b>.",
   "cooldown": null,
-  "icon": "fortitude_psd.png"
+  "icon": "fortitude_psd.webp"
  },
  {
   "id": "upgrade_rocket_booster",
@@ -1428,7 +1428,7 @@
   "bonuses": [],
   "desc": "<b>Подбрасывает вас</b> ввысь и даёт вам <b>барьер</b>. Находясь в воздухе, вы можете снова применить этот предмет, чтобы ускорить падение.<br><br><b>Нельзя использовать в течение 5 сек. после того, как вас атаковал вражеский герой.</b>",
   "cooldown": "45",
-  "icon": "majestic_leap_psd.png"
+  "icon": "majestic_leap_psd.webp"
  },
  {
   "id": "upgrade_rocket_boots",
@@ -1449,7 +1449,7 @@
   ],
   "desc": "",
   "cooldown": "16",
-  "icon": "springy_boots_psd.png"
+  "icon": "springy_boots_psd.webp"
  },
  {
   "id": "upgrade_warp_stone",
@@ -1461,7 +1461,7 @@
   "bonuses": [],
   "desc": "<b>Телепортирует</b> вас вперёд и увеличивает <b>сопротивляемость пулям</b>.",
   "cooldown": "16",
-  "icon": "warp_stone_psd.png"
+  "icon": "warp_stone_psd.webp"
  },
  {
   "id": "upgrade_counterspell",
@@ -1482,7 +1482,7 @@
   ],
   "desc": "Ваше следующее парирование <b>защитит вас от урона и эффектов вражеских умений и предметов</b>. При успешном парировании умения вы получите  и бонусы к <b>скорости передвижения</b> и <b>спиритической мощи</b>.",
   "cooldown": "23",
-  "icon": "counterspell_psd.png"
+  "icon": "counterspell_psd.webp"
  },
  {
   "id": "upgrade_metal_skin",
@@ -1499,7 +1499,7 @@
   ],
   "desc": "Даёт <b>невосприимчивость к пулям</b>.",
   "cooldown": "24",
-  "icon": "metal_skin_psd.png"
+  "icon": "metal_skin_psd.webp"
  },
  {
   "id": "upgrade_veil_walker",
@@ -1520,7 +1520,7 @@
   ],
   "desc": "Пройдя через <b>вселенскую вуаль</b>, вы получите <b>скрытность</b>, <b>лечение</b> и повышенную <b>скорость передвижения</b>.",
   "cooldown": "15",
-  "icon": "veil_walker_psd.png"
+  "icon": "veil_walker_psd.webp"
  },
  {
   "id": "upgrade_superior_stamina",
@@ -1545,7 +1545,7 @@
   ],
   "desc": "Позволяет делать дополнительный <b>прыжок</b> или <b>рывок в воздухе</b> перед приземлением.",
   "cooldown": null,
-  "icon": "stamina_mastery_psd.png"
+  "icon": "stamina_mastery_psd.webp"
  },
  {
   "id": "upgrade_improved_bullet_armor",
@@ -1566,7 +1566,7 @@
   ],
   "desc": "Если у вас менее <b>50% здоровья</b>, вы получаете дополнительную <b>сопротивляемость пулям</b>.",
   "cooldown": null,
-  "icon": "bullet_resilience_psd.png"
+  "icon": "bullet_resilience_psd.webp"
  },
  {
   "id": "upgrade_reduce_debuff_duration",
@@ -1583,7 +1583,7 @@
   ],
   "desc": "<b>Снимает с вас все отрицательные эффекты, кроме наложенных ультами.</b> Если был снят хоть один эффект, вы <b>лечите себя</b> и получаете <b>бонус к скорости передвижения</b>. <br><b>Нельзя применять в состоянии оглушения и сна.</b>",
   "cooldown": "45",
-  "icon": "debuff_remover_psd.png"
+  "icon": "debuff_remover_psd.webp"
  },
  {
   "id": "upgrade_rescue_beam",
@@ -1604,7 +1604,7 @@
   ],
   "desc": "<b>Лечит</b> вас и выбранного союзного героя в зависимости от <b>максимального здоровья</b>. Один раз за время лечения вы можете <b>притянуть</b> цель к себе. Можно применить на себя.",
   "cooldown": "60",
-  "icon": "rescue_beam_psd.png"
+  "icon": "rescue_beam_psd.webp"
  },
  {
   "id": "upgrade_tech_purge",
@@ -1625,7 +1625,7 @@
   ],
   "desc": "Если у вас менее <b>50% здоровья</b>, вы получаете дополнительную сопротивляемость спиритизму.",
   "cooldown": null,
-  "icon": "spirit_resilience_psd.png"
+  "icon": "spirit_resilience_psd.webp"
  },
  {
   "id": "upgrade_fury_trance",
@@ -1650,7 +1650,7 @@
   ],
   "desc": "Даёт <b>скорострельность</b>, <b>сопротивляемость спиритизму</b> и <b>скорость передвижения</b>, а также снимает штраф к <b>скорости передвижения</b> при стрельбе, но накладывает <b>безмолвие</b> и <b>не даёт восстанавливать и использовать выносливость</b>.",
   "cooldown": "18",
-  "icon": "fury_trance_psd.png"
+  "icon": "fury_trance_psd.webp"
  },
  {
   "id": "upgrade_divine_barrier",
@@ -1671,7 +1671,7 @@
   ],
   "desc": "<b>Снимает все отрицательные эффекты (кроме оглушения)</b> с цели, а также даёт ей <b>барьер</b> и бонус к <b>скорости передвижения</b>. <b><br>Можно применять на себя. При применении не на себя время перезарядки сокращается вдвое.</b>",
   "cooldown": "45",
-  "icon": "divine_barrier_psd.png"
+  "icon": "divine_barrier_psd.webp"
  },
  {
   "id": "upgrade_absorbing_armor",
@@ -1692,7 +1692,7 @@
   ],
   "desc": "Когда вы получаете большой  от врагов, у <b>вашего случайно выбранного умения сокращается время перезарядки</b>.",
   "cooldown": "1",
-  "icon": "witchmail_psd.png"
+  "icon": "witchmail_psd.webp"
  },
  {
   "id": "upgrade_siphon_bullets",
@@ -1713,7 +1713,7 @@
   ],
   "desc": "Ваши выстрелы на время <b>крадут долю от максимального здоровья</b> жертв. Украденное здоровье возвращается врагам по окончании действия эффекта.",
   "cooldown": null,
-  "icon": "siphon_bullets_psd.png"
+  "icon": "siphon_bullets_psd.webp"
  },
  {
   "id": "upgrade_juggernaut",
@@ -1742,7 +1742,7 @@
   ],
   "desc": "У стреляющих в вас врагов снижается <b>скорострельность</b>.",
   "cooldown": null,
-  "icon": "juggernaut_psd.png"
+  "icon": "juggernaut_psd.webp"
  },
  {
   "id": "upgrade_diviners_kevlar",
@@ -1763,7 +1763,7 @@
   ],
   "desc": "Применив <b>ульт</b>, вы получаете <b>барьер</b> и временный бонус к <b>спиритической мощи</b>.",
   "cooldown": "40",
-  "icon": "diviners_kevlar_psd.png"
+  "icon": "diviners_kevlar_psd.webp"
  },
  {
   "id": "upgrade_colossus",
@@ -1784,7 +1784,7 @@
   ],
   "desc": "Вы <b>увеличиваетесь в размерах</b> и получаете бонусы к сопротивляемости <b>пулям</b> и <b>спиритизму</b>, а также наносите повышенный . <br><br>Враги поблизости <b>замедляются</b> и имеют сниженную <b>скорость рывка</b>.",
   "cooldown": "37",
-  "icon": "colossus_psd.png"
+  "icon": "colossus_psd.webp"
  },
  {
   "id": "upgrade_damage_recycler",
@@ -1817,7 +1817,7 @@
   ],
   "desc": "Ослабляет накладываемое на вас врагами <b>снижения лечения</b>.",
   "cooldown": null,
-  "icon": "leech_psd.png"
+  "icon": "leech_psd.webp"
  },
  {
   "id": "upgrade_deflecting_armor",
@@ -1834,7 +1834,7 @@
   ],
   "desc": "Даёт шанс либо отразить летящие в вас пули, нейтрализовав весь , либо предотвратить все <b>эффекты, накладываемые на вас пулями при попадании</b>.",
   "cooldown": "1",
-  "icon": "plated_armor_psd.png"
+  "icon": "plated_armor_psd.webp"
  },
  {
   "id": "upgrade_infuser",
@@ -1863,7 +1863,7 @@
   ],
   "desc": "Даёт бонус к <b>краже здоровья спиритизмом</b> и <b>спиритической мощи</b>.",
   "cooldown": "30",
-  "icon": "infuser_psd.png"
+  "icon": "infuser_psd.webp"
  },
  {
   "id": "upgrade_auto_cleanse",
@@ -1888,7 +1888,7 @@
   ],
   "desc": "Следующий наложенный на вас эффект <b>оглушения, сковывания, обездвиживания, безмолвия или страха</b> автоматически снимается. При этом вы получаете <b>барьер</b>, а <b>перезарядка всех ваших умений</b> сокращается на 20%.",
   "cooldown": "55",
-  "icon": "indomitable_psd.png"
+  "icon": "indomitable_psd.webp"
  },
  {
   "id": "upgrade_unstoppable",
@@ -1909,7 +1909,7 @@
   ],
   "desc": "Временно подавляет <b>отрицательные эффекты</b> и даёт вам <b>невосприимчивость</b> к <b>оглушению, безмолвию, сну, оцепенению и обезоруживанию</b>.<br>Нельзя использовать во время <b>оглушения</b> или <b>сна</b>.",
   "cooldown": "60",
-  "icon": "unstoppable_psd.png"
+  "icon": "unstoppable_psd.webp"
  },
  {
   "id": "upgrade_cheat_death",
@@ -1930,7 +1930,7 @@
   ],
   "desc": "Если вам наносят смертельный урон, вы получаете <b>временное бессмертие</b>, а также <b>избавляетесь от всех отрицательных эффектов, кроме оглушения</b>.<br><br>В этом состоянии вы наносите <b>уменьшенный урон</b>, и имеете <b>сниженное лечение</b>.",
   "cooldown": "90",
-  "icon": "cheat_death_psd.png"
+  "icon": "cheat_death_psd.webp"
  },
  {
   "id": "upgrade_inhibitor",
@@ -1951,7 +1951,7 @@
   ],
   "desc": "Ваши пули накладывают на цель накапливаемый эффект, который снижает <b>наносимый ею урон</b> и <b>её лечение</b>.",
   "cooldown": null,
-  "icon": "inhibitor_psd.png"
+  "icon": "inhibitor_psd.webp"
  },
  {
   "id": "upgrade_rebirth",
@@ -1972,7 +1972,7 @@
   ],
   "desc": "Через 4 сек. после смерти вы <b>возродитесь на том же месте</b> с неполным здоровьем.",
   "cooldown": "240",
-  "icon": "rebirth_psd.png"
+  "icon": "rebirth_psd.webp"
  },
  {
   "id": "upgrade_surging_power",
@@ -2001,7 +2001,7 @@
   ],
   "desc": "Даёт бонус к <b>краже здоровья</b>, <b>скорострельности</b> и <b>боезапасу</b>. Увеличенный этим умением боезапас может превысить максимальный.",
   "cooldown": "30",
-  "icon": "vampiric_burst_psd.png"
+  "icon": "vampiric_burst_psd.webp"
  },
  {
   "id": "upgrade_spellbreaker",
@@ -2026,7 +2026,7 @@
   ],
   "desc": "При следующем получении большого <b>спиритического урона</b> он будет существенно снижен.",
   "cooldown": "9",
-  "icon": "spellbreaker_psd.png"
+  "icon": "spellbreaker_psd.webp"
  },
  {
   "id": "upgrade_phantom_strike",
@@ -2047,7 +2047,7 @@
   ],
   "desc": "<b>Телепортирует</b> вас к выбранному врагу и притягивает его к земле, нанося <b>урон</b>, <b>обезоруживая</b> его, и снижая <b>скорость его передвижения</b>.",
   "cooldown": "35",
-  "icon": "phantom_strike_psd.png"
+  "icon": "phantom_strike_psd.webp"
  },
  {
   "id": "upgrade_healbuff",
@@ -2076,7 +2076,7 @@
   ],
   "desc": "Когда вы накладываете на себя или союзника , у цели будет  и .<br><br><b>Не распространяется на врождённое восстановление и пассивную кражу здоровья пулями/спиритизмом.</b>",
   "cooldown": "1",
-  "icon": "healing_tempo_psd.png"
+  "icon": "healing_tempo_psd.webp"
  },
  {
   "id": "upgrade_close_range",
@@ -2093,7 +2093,7 @@
   ],
   "desc": "Когда цель выстрелов находится на <b>малой дальности</b>, вы наносите больше <b>урона оружием</b>.",
   "cooldown": null,
-  "icon": "close_quarters_psd.png"
+  "icon": "close_quarters_psd.webp"
  },
  {
   "id": "upgrade_medic_bullets",
@@ -2110,7 +2110,7 @@
   ],
   "desc": "Следующий выстрел вас <b>излечит</b> (количество будет зависеть от того, во что или кого вы попадёте).",
   "cooldown": "6",
-  "icon": "restorative_shot_psd.png"
+  "icon": "restorative_shot_psd.webp"
  },
  {
   "id": "upgrade_high_velocity_mag",
@@ -2131,7 +2131,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "high_velocity_rounds_psd.png"
+  "icon": "high_velocity_rounds_psd.webp"
  },
  {
   "id": "upgrade_rapid_rounds",
@@ -2148,7 +2148,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "rapid_rounds_psd.png"
+  "icon": "rapid_rounds_psd.webp"
  },
  {
   "id": "upgrade_clip_size",
@@ -2169,7 +2169,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "basic_magazine_psd.png"
+  "icon": "basic_magazine_psd.webp"
  },
  {
   "id": "upgrade_headshot_booster",
@@ -2186,7 +2186,7 @@
   ],
   "desc": "Ваше следующее <b>попадание в голову</b> вражескому герою нанесёт ему .",
   "cooldown": "9",
-  "icon": "headshot_booster_psd.png"
+  "icon": "headshot_booster_psd.webp"
  },
  {
   "id": "upgrade_non_player_bonus",
@@ -2211,7 +2211,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "monster_rounds_psd.png"
+  "icon": "monster_rounds_psd.webp"
  },
  {
   "id": "upgrade_active_reload",
@@ -2228,7 +2228,7 @@
   ],
   "desc": "Нажав  в указанный момент перезарядки, вы <b>мгновенно завершите её</b> и получите бонус к <b>скорострельности</b>, <b>краже здоровья пулями</b> и <b>скорости передвижения</b>.",
   "cooldown": "12",
-  "icon": "active_reload_psd.png"
+  "icon": "active_reload_psd.webp"
  },
  {
   "id": "upgrade_blitz_bullets",
@@ -2249,7 +2249,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "swift_striker_psd.png"
+  "icon": "swift_striker_psd.webp"
  },
  {
   "id": "upgrade_split_shot",
@@ -2261,7 +2261,7 @@
   "bonuses": [],
   "desc": "Ваше оружие начинает совершать <b>мультивыстрелы</b>. <br><br>Попадание в более чем одного героя за выстрел даёт <b>накапливаемый бонус к урону от оружия</b>. <br><br><b>При каждом мультивыстреле попасть в определённую цель можно только единожды.</b>",
   "cooldown": "27",
-  "icon": "split_shot_psd.png"
+  "icon": "split_shot_psd.webp"
  },
  {
   "id": "upgrade_pristine_emblem",
@@ -2286,7 +2286,7 @@
   ],
   "desc": "Повышает <b>урон от оружия</b>, наносимый врагам, у которых <b>больше 50% здоровья</b>.",
   "cooldown": null,
-  "icon": "opening_rounds_psd.png"
+  "icon": "opening_rounds_psd.webp"
  },
  {
   "id": "upgrade_long_range",
@@ -2307,7 +2307,7 @@
   ],
   "desc": "Вы наносите больше <b>урона оружием</b>, когда цель находится <b>за пределами минимальной дальности</b>.",
   "cooldown": null,
-  "icon": "long_range_psd.png"
+  "icon": "long_range_psd.webp"
  },
  {
   "id": "upgrade_tech_defense_shredders",
@@ -2319,7 +2319,7 @@
   "bonuses": [],
   "desc": "Ваши пули накладывают на цель эффект, снижающий её <b>сопротивляемость спиритизму</b> и дающий вам и вашим союзникам <b>кражу здоровья жертвы спиритизмом</b>.",
   "cooldown": null,
-  "icon": "spirit_shredder_bullets_psd.png"
+  "icon": "spirit_shredder_bullets_psd.webp"
  },
  {
   "id": "upgrade_slowing_bullets",
@@ -2331,7 +2331,7 @@
   "bonuses": [],
   "desc": "Ваши пули накладывают на врагов накапливаемое <b>снижение скорости передвижения</b>.",
   "cooldown": null,
-  "icon": "slowing_bullets_psd.png"
+  "icon": "slowing_bullets_psd.webp"
  },
  {
   "id": "upgrade_kinetic_sash",
@@ -2352,7 +2352,7 @@
   ],
   "desc": "При совершении <b>рывка с прыжком</b> вы получаете бонус к <b>скорострельности</b> и <b>боезапасу</b> до следующей перезарядки. Действует до 7 сек.",
   "cooldown": null,
-  "icon": "kinetic_dash_psd.png"
+  "icon": "kinetic_dash_psd.webp"
  },
  {
   "id": "upgrade_crackshot",
@@ -2369,7 +2369,7 @@
   ],
   "desc": "Ваша следующая пуля нанесёт дополнительный .",
   "cooldown": "8",
-  "icon": "mystic_shot_psd.png"
+  "icon": "mystic_shot_psd.webp"
  },
  {
   "id": "upgrade_headshot_booster2",
@@ -2386,7 +2386,7 @@
   ],
   "desc": "<b>Попадание в голову</b> снижает <b>сопротивляемость пулям</b> у жертвы.",
   "cooldown": null,
-  "icon": "weakening_headshot_psd.png"
+  "icon": "weakening_headshot_psd.webp"
  },
  {
   "id": "upgrade_weapon_backstabber",
@@ -2407,7 +2407,7 @@
   ],
   "desc": "Нанесение <b>урона от оружия</b> на ближней дистанции открывает рану и даёт вам <b>увеличенную скорость передвижения</b>. <br><br>Раненые враги получают , имеют сниженную  и становятся видимыми <b>сквозь стены</b>.",
   "cooldown": "6",
-  "icon": "backstabber_psd.png"
+  "icon": "backstabber_psd.webp"
  },
  {
   "id": "upgrade_rechargingbullets",
@@ -2428,7 +2428,7 @@
   ],
   "desc": "При нанесении значительного <b>урона от оружия</b> у вас восстанавливается заряд <b>у всех умений с зарядами</b>.",
   "cooldown": "25",
-  "icon": "recharging_rounds_psd.png"
+  "icon": "recharging_rounds_psd.webp"
  },
  {
   "id": "upgrade_fleetfoot_boots",
@@ -2453,7 +2453,7 @@
   ],
   "desc": "Убирает <b>снижение скорости передвижения</b> во время стрельбы.<br>Даёт бонус к <b>скорости передвижения</b> и <b>сопротивляемости замедлению</b>.",
   "cooldown": "16",
-  "icon": "fleetfoot_psd.png"
+  "icon": "fleetfoot_psd.webp"
  },
  {
   "id": "upgrade_titan_round",
@@ -2474,7 +2474,7 @@
   ],
   "desc": "",
   "cooldown": null,
-  "icon": "titanic_magazine_psd.png"
+  "icon": "titanic_magazine_psd.webp"
  },
  {
   "id": "upgrade_melee_charge",
@@ -2499,7 +2499,7 @@
   ],
   "desc": "Ваш следующий <b>тяжёлый удар ближнего боя</b> наносит врагу <b>повышенный урон</b>.",
   "cooldown": "5",
-  "icon": "melee_charge_psd.png"
+  "icon": "melee_charge_psd.webp"
  },
  {
   "id": "upgrade_intensifying_clip",
@@ -2516,7 +2516,7 @@
   ],
   "desc": "Увеличивает <b>урон от оружия</b> при непрерывной стрельбе.",
   "cooldown": null,
-  "icon": "intensifying_magazine_psd.png"
+  "icon": "intensifying_magazine_psd.webp"
  },
  {
   "id": "upgrade_thermal_detonator",
@@ -2533,7 +2533,7 @@
   ],
   "desc": "Вы бросаете колбу, которая взрывается в указанной точке и создаёт область, наносящую растущий  <b>каждую секунду</b> и снижающую <b>сопротивляемость пулям</b> у врагов.<br><br>Урон существам, не являющимися героями, ниже на 50%.",
   "cooldown": "30",
-  "icon": "alchemical_fire_psd.png"
+  "icon": "alchemical_fire_psd.webp"
  },
  {
   "id": "upgrade_bullet_armor_reduction_aura",
@@ -2554,7 +2554,7 @@
   ],
   "desc": "Снижает <b>сопротивляемость пулям и скорострельность</b> у врагов поблизости. Если рядом только один вражеский герой, <b>эффект удваивается</b>.",
   "cooldown": null,
-  "icon": "hunters_aura_psd.png"
+  "icon": "hunters_aura_psd.webp"
  },
  {
   "id": "upgrade_bulletshredimbue",
@@ -2566,7 +2566,7 @@
   "bonuses": [],
   "desc": "Выбранное умение получает повышенную <b>дальность</b>. Нанесение урона этим умением увеличивает <b>урон от оружия</b> за <b>каждого задетого героя</b>. Слабее действует на существ, не являющихся героями.",
   "cooldown": null,
-  "icon": "alchemical_seal_psd.png"
+  "icon": "alchemical_seal_psd.webp"
  },
  {
   "id": "upgrade_berserker",
@@ -2583,7 +2583,7 @@
   ],
   "desc": "Повышает наносимый <b>урон от оружия</b>, когда вы получаете урон на протяжении долгого времени.",
   "cooldown": null,
-  "icon": "berserker_psd.png"
+  "icon": "berserker_psd.webp"
  },
  {
   "id": "upgrade_dps_aura",
@@ -2600,7 +2600,7 @@
   ],
   "desc": "Даёт <b>сопротивляемость пулям</b> союзникам поблизости.<br>Повышает <b></b> и <b></b> у вас и союзников поблизости. У <b>солдатов</b> эффект удваивается.",
   "cooldown": "22",
-  "icon": "heroic_aura_psd.png"
+  "icon": "heroic_aura_psd.webp"
  },
  {
   "id": "upgrade_non_player_bonus_sacrifice",
@@ -2625,7 +2625,7 @@
   ],
   "desc": "Вы поглощаете выбранное существо, не являющееся героем, получая <b>бонусные души в размере 170%</b> и мощный долгосрочный положительный эффект.",
   "cooldown": "270",
-  "icon": "cultist_sacrifice_psd.png"
+  "icon": "cultist_sacrifice_psd.webp"
  },
  {
   "id": "upgrade_blood_tribute",
@@ -2650,7 +2650,7 @@
   ],
   "desc": "Когда включено: вы постоянно жертвуете здоровьем, чтобы повысить , <b>сопротивляемость отрицательным эффектам</b> и <b>скорость передвижения</b>.",
   "cooldown": null,
-  "icon": "blood_tribute_psd.png"
+  "icon": "blood_tribute_psd.webp"
  },
  {
   "id": "upgrade_headhunter",
@@ -2671,7 +2671,7 @@
   ],
   "desc": "Ваше следующее <b>попадание в голову</b> вражескому герою нанесёт ему . Вы также получите , а ваша  ненадолго повысится.",
   "cooldown": "8",
-  "icon": "headhunter_psd.png"
+  "icon": "headhunter_psd.webp"
  },
  {
   "id": "upgrade_sharpshooter",
@@ -2708,7 +2708,7 @@
   ],
   "desc": "Вы наносите больше <b>урона оружием</b>, когда цель находится <b>за пределами минимальной дальности</b>.",
   "cooldown": null,
-  "icon": "sharp_shooter_psd.png"
+  "icon": "sharp_shooter_psd.webp"
  },
  {
   "id": "upgrade_hollow_point_rounds",
@@ -2729,7 +2729,7 @@
   ],
   "desc": "Когда у вас <b>более 65% здоровья</b>, вы наносите дополнительный <b>урон от оружия</b>, а ваши пули снижают <b>сопротивляемость пулям</b> у врагов.",
   "cooldown": null,
-  "icon": "hollow_point_psd.png"
+  "icon": "hollow_point_psd.webp"
  },
  {
   "id": "upgrade_reinforcing_casings",
@@ -2754,7 +2754,7 @@
   ],
   "desc": "Увеличивает вашу <b>сопротивляемость пулям</b>, когда ваши пули задевают героя. <b>Каждый выстрел может дать только одну единицу этого эффекта.</b>",
   "cooldown": null,
-  "icon": "escalating_resilience_psd.png"
+  "icon": "escalating_resilience_psd.webp"
  },
  {
   "id": "upgrade_spellslinger_headshots",
@@ -2771,7 +2771,7 @@
   ],
   "desc": "Ваши пули накладывают на цель эффект, снижающий её <b>сопротивляемость спиритизму</b> и дающий вам и вашим союзникам <b>кражу здоровья жертвы спиритизмом</b>.<br><b>Попадания в голову</b> ещё больше снижают <b>сопротивляемость спиритизму</b> у жертвы.",
   "cooldown": null,
-  "icon": "spellslinger_headshots_psd.png"
+  "icon": "spellslinger_headshots_psd.webp"
  },
  {
   "id": "upgrade_cloaking_device_active",
@@ -2792,7 +2792,7 @@
   ],
   "desc": "Даёт <b>скрытность</b>. Получение урона ненадолго раскроет вас.<br><br>Если вы атакуете или используете умение, ваша скрытность прекращается и начинается <b>засада</b>, которая временно увеличивает вашу <b>скорострельность</b>, <b>спиритическую мощь</b> и <b>урон в ближнем бою</b>.",
   "cooldown": "37",
-  "icon": "shadow_weave_psd.png"
+  "icon": "shadow_weave_psd.webp"
  },
  {
   "id": "upgrade_close_quarter_combat",
@@ -2813,7 +2813,7 @@
   ],
   "desc": "Когда цель выстрелов находится на <b>малой дальности</b>, вы <b>замедляете её передвижение</b> выстрелами и наносите больше <b>урона оружием</b>.",
   "cooldown": null,
-  "icon": "point_blank_psd.png"
+  "icon": "point_blank_psd.webp"
  },
  {
   "id": "upgrade_chain_lightning",
@@ -2825,7 +2825,7 @@
   "bonuses": [],
   "desc": "У ваших выстрелов есть шанс поразить цель <b>электричеством</b>. <b>Электрический заряд</b> также отскочит на ближайшего к цели врага.",
   "cooldown": null,
-  "icon": "tesla_bullets_psd.png"
+  "icon": "tesla_bullets_psd.webp"
  },
  {
   "id": "upgrade_toxic_bullets",
@@ -2837,7 +2837,7 @@
   "bonuses": [],
   "desc": "От ваших пуль у врагов накапливается эффект <b>кровотечения</b>, который наносит им постепенный урон в <b>процентах</b> от их <b>макс. здоровья</b>, а также снижает им <b>получаемое лечение</b>.",
   "cooldown": null,
-  "icon": "toxic_bullets_psd.png"
+  "icon": "toxic_bullets_psd.webp"
  },
  {
   "id": "upgrade_weighted_shots",
@@ -2866,7 +2866,7 @@
   ],
   "desc": "Ваши пули накладывают на врагов накапливаемое <b>снижение скорости передвижения</b>.",
   "cooldown": null,
-  "icon": "weighted_shots_psd.png"
+  "icon": "weighted_shots_psd.webp"
  },
  {
   "id": "upgrade_burst_fire",
@@ -2887,7 +2887,7 @@
   ],
   "desc": "Ненадолго увеличивает ваши <b>скорострельность</b> и <b>скорость передвижения</b> при попадании выстрелом по герою.",
   "cooldown": "9",
-  "icon": "burst_fire_psd.png"
+  "icon": "burst_fire_psd.webp"
  },
  {
   "id": "upgrade_express_shot",
@@ -2908,7 +2908,7 @@
   ],
   "desc": "При следующей атаке вы быстро произведёте <b>два выстрела</b> один за другим. Выпущенные при этом пули имеют повышенную скорость и наносят <b>дополнительный урон</b>. Данная атака расходует дополнительный боезапас.",
   "cooldown": "8",
-  "icon": "express_shot_psd.png"
+  "icon": "express_shot_psd.webp"
  },
  {
   "id": "upgrade_aprounds",
@@ -2929,7 +2929,7 @@
   ],
   "desc": "Ваши пули получают шанс стать неотвратимыми — такие <b>прошивают</b> врагов и <b>игнорируют их сопротивляемость пулям</b>.",
   "cooldown": null,
-  "icon": "armor_piercing_rounds_psd.png"
+  "icon": "armor_piercing_rounds_psd.webp"
  },
  {
   "id": "upgrade_proc_silence",
@@ -2946,7 +2946,7 @@
   ],
   "desc": "Ваши пули снижают наносимый целью <b>спиритический урон</b>.<br>Ваши пули накладывают накапливаемое <b>безмолвие</b>. Жертвы становятся невосприимчивы к накапливанию через <b>10 сек.</b> после истечения действия безмолвия.",
   "cooldown": null,
-  "icon": "silencer_psd.png"
+  "icon": "silencer_psd.webp"
  },
  {
   "id": "upgrade_banshee_slugs",
@@ -2963,7 +2963,7 @@
   ],
   "desc": "<b>Попадание в голову</b> уменьшает жертве <b>сопротивляемость пулям и спиритизму</b>, а также <b>получаемое лечение</b>.",
   "cooldown": null,
-  "icon": "crippling_headshot_psd.png"
+  "icon": "crippling_headshot_psd.webp"
  },
  {
   "id": "upgrade_capacitor",
@@ -2980,7 +2980,7 @@
   ],
   "desc": "У ваших выстрелов есть шанс поразить цель <b>электричеством</b>. <b>Электрический заряд</b> также отскочит на ближайшего к цели врага.<br>Вы выпускаете снаряд, наносящий <b>урон</b> и накладывающий сильное замедление, которое постепенно развеивается. Цель также <b>не может использовать выносливость</b>, а на её <b>предметы и умения, связанные с движением</b>, накладывается <b>безмолвие</b>.",
   "cooldown": "40",
-  "icon": "capacitor_psd.png"
+  "icon": "capacitor_psd.webp"
  },
  {
   "id": "upgrade_enchanted_holsters",
@@ -2997,7 +2997,7 @@
   ],
   "desc": "При использовании умения или предмета в бою вы получаете суммирующийся положительный эффект, повышающий вашу скорострельность и скорость перезарядки. <br><b>Каждое новое использование продлевает действие эффекта.</b>",
   "cooldown": null,
-  "icon": "spell_slinger_psd.png"
+  "icon": "spell_slinger_psd.webp"
  },
  {
   "id": "upgrade_ricochet",
@@ -3014,7 +3014,7 @@
   ],
   "desc": "Ваши пули <b>рикошетят</b> во врагов рядом с целью, <b>накладывая эффекты выстрелов</b> и <b>нанося долю изначального урона</b>.",
   "cooldown": null,
-  "icon": "ricochet_psd.png"
+  "icon": "ricochet_psd.webp"
  },
  {
   "id": "upgrade_crushing_fists",
@@ -3039,7 +3039,7 @@
   ],
   "desc": "Ваш следующий <b>тяжёлый удар ближнего боя</b> наносит врагу <b>повышенный урон</b>.<br>Нанесённый вами <b></b> <b>восстанавливает ваш боезапас</b> и накладывает <b>накапливаемый эффект снижения сопротивляемости пулям</b> на врагов. Тяжёлый удар ближнего боя накладывает 2 ед. эффекта. <br><br>Если на цель наложено макс. число единиц эффекта, она <b>оглушается</b>.",
   "cooldown": "5",
-  "icon": "crushing_fists_psd.png"
+  "icon": "crushing_fists_psd.webp"
  },
  {
   "id": "upgrade_tech_overflow",
@@ -3068,7 +3068,7 @@
   ],
   "desc": "Стреляя в героев, вы <b>накапливаете</b> эффект, который повышает ваши <b>скорострельность</b>, <b>спиритическую мощь</b> и <b>кражу здоровья спиритизмом</b>.",
   "cooldown": null,
-  "icon": "spiritual_overflow_psd.png"
+  "icon": "spiritual_overflow_psd.webp"
  },
  {
   "id": "upgrade_glass_cannon",
@@ -3089,7 +3089,7 @@
   ],
   "desc": "Каждое убийство героя даёт постоянный <b>бонус к скорострельности</b> (максимум — 8 раз). При смерти владельца теряется один бонус.",
   "cooldown": null,
-  "icon": "glass_cannon_psd.png"
+  "icon": "glass_cannon_psd.webp"
  },
  {
   "id": "upgrade_critshot",
@@ -3106,7 +3106,7 @@
   ],
   "desc": "Ваши пули могут стать усиленными и нанести <b>дополнительный урон</b> при попадании.<br><b>Дополнительный урон не может быть критическим.</b>",
   "cooldown": null,
-  "icon": "lucky_shot_psd.png"
+  "icon": "lucky_shot_psd.webp"
  },
  {
   "id": "upgrade_fervor",
@@ -3131,6 +3131,6 @@
   ],
   "desc": "Когда у вас <b>меньше 50% здоровья</b>, вы на указанный период получаете бонусы к характеристикам, а наложенные на вас отрицательные эффекты ослабляются.",
   "cooldown": "16",
-  "icon": "frenzy_psd.png"
+  "icon": "frenzy_psd.webp"
  }
 ]

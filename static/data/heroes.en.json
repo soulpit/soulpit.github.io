@@ -19,8 +19,8 @@
    146,
    174
   ],
-  "card": "bull_card_psd.png",
-  "icon": "bull_sm_psd.png",
+  "card": "bull_card_psd.webp",
+  "icon": "bull_sm_psd.webp",
   "stats": {
    "health": "800",
    "regen": "1.5",
@@ -65,7 +65,7 @@
       "text": "<b>+2m</b> Radius and <b>+0.12</b> DPS with improved Spirit scaling"
      }
     ],
-    "icon": "bull_drain_psd.png"
+    "icon": "bull_drain_psd.webp"
    },
    {
     "id": "citadel_ability_bull_charge",
@@ -100,7 +100,7 @@
       "text": "<b>-18s</b> Cooldown <br>On Hero Collide: <b>+1.5</b> Weapon Damage for <b>6</b>s"
      }
     ],
-    "icon": "bull_charge_psd.png"
+    "icon": "bull_charge_psd.webp"
    },
    {
     "id": "citadel_ability_passive_beefy",
@@ -114,7 +114,7 @@
       "text": "<b>+20%</b> Debuff Resist and <b>+9%</b> Damage Regenerated"
      }
     ],
-    "icon": "bull_beef_psd.png"
+    "icon": "bull_beef_psd.webp"
    },
    {
     "id": "citadel_ability_bull_leap",
@@ -137,7 +137,7 @@
       "text": "On cast, become <b>Unstoppable</b> for 5s and <b>+6m</b> Impact Radius"
      }
     ],
-    "icon": "bull_jump_psd.png"
+    "icon": "bull_jump_psd.webp"
    }
   ]
  },
@@ -161,8 +161,8 @@
    51,
    51
   ],
-  "card": "fencer_card_psd.png",
-  "icon": "fencer_sm_psd.png",
+  "card": "fencer_card_psd.webp",
+  "icon": "fencer_sm_psd.webp",
   "stats": {
    "health": "770",
    "regen": "1",
@@ -211,7 +211,7 @@
       "text": "Can be Recast within 4s"
      }
     ],
-    "icon": "fencer_sigil_psd.png"
+    "icon": "fencer_sigil_psd.webp"
    },
    {
     "id": "ability_fencer_riposte",
@@ -238,7 +238,7 @@
       "text": "Gain <b>75%</b> Bullet, Spirit &amp;amp; Melee Lifesteal against the Riposte target for 13s"
      }
     ],
-    "icon": "fencer_riposte_psd.png"
+    "icon": "fencer_riposte_psd.webp"
    },
    {
     "id": "ability_fencer_lunge",
@@ -273,7 +273,7 @@
       "text": "+1.15 Perfect Damage with improved Spirit scaling.<br>Increased lunge speed &amp; distance."
      }
     ],
-    "icon": "fencer_lungingstab_psd.png"
+    "icon": "fencer_lungingstab_psd.webp"
    },
    {
     "id": "ability_fencer_ultimate",
@@ -300,7 +300,7 @@
       "text": "{s:}% Max Health Damage"
      }
     ],
-    "icon": "fencer_ult_psd.png"
+    "icon": "fencer_ult_psd.webp"
    }
   ]
  },
@@ -324,8 +324,8 @@
    71,
    52
   ],
-  "card": "bebop_card_psd.png",
-  "icon": "bebop_sm_psd.png",
+  "card": "bebop_card_psd.webp",
+  "icon": "bebop_sm_psd.webp",
   "stats": {
    "health": "880",
    "regen": "2.5",
@@ -370,7 +370,7 @@
       "text": "On Hero Hit: Set <b>Grapple Arm cooldown to 0</b> and restores <b>+18%</b> of your missing health"
      }
     ],
-    "icon": "bebop_uppercut_psd.png"
+    "icon": "bebop_uppercut_psd.webp"
    },
    {
     "id": "citadel_ability_sticky_bomb",
@@ -401,7 +401,7 @@
       "text": "On Cast: <b>+5m</b> Move Speed and <b>+25%</b> Debuff Resistance for <b>6s</b>"
      }
     ],
-    "icon": "bebop_sticky_bomb_psd.png"
+    "icon": "bebop_sticky_bomb_psd.webp"
    },
    {
     "id": "citadel_ability_hook",
@@ -424,7 +424,7 @@
       "text": "<b>+20% weapon damage</b> against victims for s"
      }
     ],
-    "icon": "bebop_hook_psd.png"
+    "icon": "bebop_hook_psd.webp"
    },
    {
     "id": "citadel_ability_bebop_laser_beam",
@@ -451,7 +451,7 @@
       "text": "Hyper Beam heals Bebop for <b>65%</b> of its damage on Heroes. 20% on non-hero"
      }
     ],
-    "icon": "bebop_hyper_beam_psd.png"
+    "icon": "bebop_hyper_beam_psd.webp"
    }
   ]
  },
@@ -475,8 +475,8 @@
    60,
    135
   ],
-  "card": "punkgoat_card_psd.png",
-  "icon": "punkgoat_sm_psd.png",
+  "card": "punkgoat_card_psd.webp",
+  "icon": "punkgoat_sm_psd.webp",
   "stats": {
    "health": "820",
    "regen": "2",
@@ -537,7 +537,7 @@
       "text": "-3s Charge Time<br>Now deals <b>50% Heavy Melee Damage</b>"
      }
     ],
-    "icon": "goat_sigilslam_psd.png"
+    "icon": "goat_sigilslam_psd.webp"
    },
    {
     "id": "ability_punkgoat_goatflip",
@@ -572,7 +572,7 @@
       "text": "-13s Cooldown<br>On hero hit: +10% Max Health for 16s"
      }
     ],
-    "icon": "goat_risingram_psd.png"
+    "icon": "goat_risingram_psd.webp"
    },
    {
     "id": "ability_punkgoat_blasted",
@@ -603,7 +603,7 @@
       "text": "+0.6 Melee Bonus Health and increases spirit scaling"
      }
     ],
-    "icon": "goat_blasted_psd.png"
+    "icon": "goat_blasted_psd.webp"
    },
    {
     "id": "ability_punkgoat_tether",
@@ -638,7 +638,7 @@
       "text": "<b>+5m</b> Range <br><b>+1.3s</b> of <b>Unstoppable</b> Per Hero pulled in"
      }
     ],
-    "icon": "goat_chaingang_psd.png"
+    "icon": "goat_chaingang_psd.webp"
    }
   ]
  },
@@ -662,8 +662,8 @@
    15,
    214
   ],
-  "card": "nano_card_psd.png",
-  "icon": "nano_sm_psd.png",
+  "card": "nano_card_psd.webp",
+  "icon": "nano_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "2",
@@ -704,7 +704,7 @@
       "text": "Per Bomb Touch : <b>-6%</b> Melee Resist for 6s"
      }
     ],
-    "icon": "nano_clustergrenade_psd.png"
+    "icon": "nano_clustergrenade_psd.webp"
    },
    {
     "id": "ability_nano_dash",
@@ -735,7 +735,7 @@
       "text": "<b>+60</b> Damage &amp; On Hero Hit: <b>50%</b> Cooldown Refund"
      }
     ],
-    "icon": "nano_dash_psd.png"
+    "icon": "nano_dash_psd.webp"
    },
    {
     "id": "ability_nano_catform",
@@ -758,7 +758,7 @@
       "text": "Gain Damage Amp over time, up to <b>18%</b>. Lingers for 6s"
      }
     ],
-    "icon": "nano_catform_psd.png"
+    "icon": "nano_catform_psd.webp"
    },
    {
     "id": "ability_nano_shadow_pulse",
@@ -789,7 +789,7 @@
       "text": "On Completion: Heal for <b>450</b> and <b>refund</b> all ability cooldowns"
      }
     ],
-    "icon": "nano_shadow_pulse_psd.png"
+    "icon": "nano_shadow_pulse_psd.webp"
    }
   ]
  },
@@ -813,8 +813,8 @@
    57,
    82
   ],
-  "card": "unicorn_card_psd.png",
-  "icon": "unicorn_sm_psd.png",
+  "card": "unicorn_card_psd.webp",
+  "icon": "unicorn_sm_psd.webp",
   "stats": {
    "health": "690",
    "regen": "1",
@@ -867,7 +867,7 @@
       "text": "+0.2 Damage and Increased Spirit Scaling"
      }
     ],
-    "icon": "unicorn_flare_psd.png"
+    "icon": "unicorn_flare_psd.webp"
    },
    {
     "id": "ability_unicorn_prismaticguard",
@@ -890,7 +890,7 @@
       "text": "+1.25 Silence Duration and -20s Cooldown. Allows Shining Wonder Bounce."
      }
     ],
-    "icon": "unicorn_shield_psd.png"
+    "icon": "unicorn_shield_psd.webp"
    },
    {
     "id": "ability_unicorn_luminousstrike",
@@ -925,7 +925,7 @@
       "text": "+4% Spirit Amp and +9% Fire Rate Per Stack"
      }
     ],
-    "icon": "unicorn_luminousflux_psd.png"
+    "icon": "unicorn_luminousflux_psd.webp"
    },
    {
     "id": "ability_unicorn_dazzlingorb",
@@ -960,7 +960,7 @@
       "text": "+6 Max Bounces and -30s Cooldown"
      }
     ],
-    "icon": "unicorn_orb_psd.png"
+    "icon": "unicorn_orb_psd.webp"
    }
   ]
  },
@@ -984,8 +984,8 @@
    57,
    82
   ],
-  "card": "deadpack_card_psd.png",
-  "icon": "deadpack_sm_psd.png",
+  "card": "deadpack_card_psd.webp",
+  "icon": "deadpack_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "3.25",
@@ -1038,7 +1038,7 @@
       "text": "+2 Missiles, Longer Range, and Improved Spirit Scaling"
      }
     ],
-    "icon": "deadpack_salvo_psd.png"
+    "icon": "deadpack_salvo_psd.webp"
    },
    {
     "id": "ability_deadpack_rocketeer",
@@ -1073,7 +1073,7 @@
       "text": "On Hero Hit: -50% Cooldown and +120 Spirit Damage"
      }
     ],
-    "icon": "deadpack_chimera_psd.png"
+    "icon": "deadpack_chimera_psd.webp"
    },
    {
     "id": "ability_deadpack_flamethrower",
@@ -1108,7 +1108,7 @@
       "text": "-10% Bullet Resist Shred<br>On Backblast Hit: Apply a Mark"
      }
     ],
-    "icon": "deadpack_thermalmass_psd.png"
+    "icon": "deadpack_thermalmass_psd.webp"
    },
    {
     "id": "ability_deadpack_ultimate",
@@ -1135,7 +1135,7 @@
       "text": "+0.5s Stun<br>+8 Damage / Meter"
      }
     ],
-    "icon": "deadpack_flight_psd.png"
+    "icon": "deadpack_flight_psd.webp"
    }
   ]
  },
@@ -1159,8 +1159,8 @@
    60,
    135
   ],
-  "card": "drifter_card_psd.png",
-  "icon": "drifter_sm_psd.png",
+  "card": "drifter_card_psd.webp",
+  "icon": "drifter_sm_psd.webp",
   "stats": {
    "health": "755",
    "regen": "3.5",
@@ -1209,7 +1209,7 @@
       "text": "Deals 55% Heavy Melee Damage<br>Silences enemies for 2s if close range"
      }
     ],
-    "icon": "drifter_claw_psd.png"
+    "icon": "drifter_claw_psd.webp"
    },
    {
     "id": "drifter_shadow_mark",
@@ -1240,7 +1240,7 @@
       "text": "<b>+1.5% Bleed</b> and <b>-40% Incoming Healing</b>"
      }
     ],
-    "icon": "drifter_stalkersmark_psd.png"
+    "icon": "drifter_stalkersmark_psd.webp"
    },
    {
     "id": "ability_drifter_hunger",
@@ -1267,7 +1267,7 @@
       "text": "On isolated hero death: Heal 24% of your missing health and restores 2 Stamina"
      }
     ],
-    "icon": "drifter_thehunger_psd.png"
+    "icon": "drifter_thehunger_psd.webp"
    },
    {
     "id": "drifter_darkness",
@@ -1294,7 +1294,7 @@
       "text": "+2.5s Duration and +1 Max Target."
      }
     ],
-    "icon": "darkness_psd.png"
+    "icon": "darkness_psd.webp"
    }
   ]
  },
@@ -1318,8 +1318,8 @@
    185,
    69
   ],
-  "card": "sumo_card_psd.png",
-  "icon": "sumo_sm_psd.png",
+  "card": "sumo_card_psd.webp",
+  "icon": "sumo_sm_psd.webp",
   "stats": {
    "health": "880",
    "regen": "1.75",
@@ -1372,7 +1372,7 @@
       "text": "<b>+135</b> Damage and <b>+20m</b> Cast Range"
      }
     ],
-    "icon": "sumo_stomp_psd.png"
+    "icon": "sumo_stomp_psd.webp"
    },
    {
     "id": "citadel_ability_void_sphere",
@@ -1399,7 +1399,7 @@
       "text": "Reduces non-ult debuffs by <b>50%</b><br>Replenishes <b>1</b> Charge"
      }
     ],
-    "icon": "sumo_quantum_psd.png"
+    "icon": "sumo_quantum_psd.webp"
    },
    {
     "id": "citadel_ability_nikuman",
@@ -1430,7 +1430,7 @@
       "text": "<b>Full move and ability use</b> and additionally heals <b>+2.5% of Max Health</b> per second"
      }
     ],
-    "icon": "sumo_pork_bun_psd.png"
+    "icon": "sumo_pork_bun_psd.webp"
    },
    {
     "id": "citadel_ability_self_vacuum",
@@ -1452,7 +1452,7 @@
      }
     ],
     "upgrades": [],
-    "icon": "sumo_vacuum_psd.png"
+    "icon": "sumo_vacuum_psd.webp"
    }
   ]
  },
@@ -1476,8 +1476,8 @@
    57,
    82
   ],
-  "card": "necro_card_psd.png",
-  "icon": "necro_sm_psd.png",
+  "card": "necro_card_psd.webp",
+  "icon": "necro_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "1",
@@ -1526,7 +1526,7 @@
       "text": "<b>+2</b> Deadheads<br><b>+4s</b> Deadhead Lifetime"
      }
     ],
-    "icon": "necro_skull_psd.png"
+    "icon": "necro_skull_psd.webp"
    },
    {
     "id": "ability_necro_zombiewall",
@@ -1561,7 +1561,7 @@
       "text": "<b>+</b> Ghouls Raised <br><b>-14s</b> Cooldown<br><b>+0.75s</b> Immobilize Duration"
      }
     ],
-    "icon": "necro_hands_psd.png"
+    "icon": "necro_hands_psd.webp"
    },
    {
     "id": "ability_necro_fear",
@@ -1580,7 +1580,7 @@
       "text": "<b>+1</b> Max Steal Targets<br>All <b>Summons</b> now apply Essence Theft"
      }
     ],
-    "icon": "necro_siphon_psd.png"
+    "icon": "necro_siphon_psd.webp"
    },
    {
     "id": "ability_necro_gravestone",
@@ -1619,7 +1619,7 @@
       "text": "On Death: Deal <b>+5%</b> Current Health as Damage"
      }
     ],
-    "icon": "necro_gravestone_psd.png"
+    "icon": "necro_gravestone_psd.webp"
    }
   ]
  },
@@ -1643,8 +1643,8 @@
    176,
    131
   ],
-  "card": "archer_card_psd.png",
-  "icon": "archer_sm_psd.png",
+  "card": "archer_card_psd.webp",
+  "icon": "archer_sm_psd.webp",
   "stats": {
    "health": "780",
    "regen": "1.5",
@@ -1697,7 +1697,7 @@
       "text": "<b>Improved damage scaling</b> and <b>-3s</b> Charge Delay"
      }
     ],
-    "icon": "archer_charged_shot_psd.png"
+    "icon": "archer_charged_shot_psd.webp"
    },
    {
     "id": "ability_power_jump",
@@ -1724,7 +1724,7 @@
       "text": "While airborne, <b>+30%</b> Bullet Lifesteal, <b>+30%</b> Spirit Lifesteal and <b>+30%</b> Bullet Evasion"
      }
     ],
-    "icon": "archer_power_jump_psd.png"
+    "icon": "archer_power_jump_psd.webp"
    },
    {
     "id": "ability_immobilize_trap",
@@ -1751,7 +1751,7 @@
       "text": "<b>+s</b> Curse Duration and <b>+1.5m</b> Radius"
      }
     ],
-    "icon": "imobolize_trap_psd.png"
+    "icon": "imobolize_trap_psd.webp"
    },
    {
     "id": "ability_guided_arrow",
@@ -1778,7 +1778,7 @@
       "text": "After hit, kills enemies that are below <b>22% Health</b>"
      }
     ],
-    "icon": "archer_guided_arrow_psd.png"
+    "icon": "archer_guided_arrow_psd.webp"
    }
   ]
  },
@@ -1802,8 +1802,8 @@
    97,
    51
   ],
-  "card": "haze_card_psd.png",
-  "icon": "haze_sm_psd.png",
+  "card": "haze_card_psd.webp",
+  "icon": "haze_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "2",
@@ -1852,7 +1852,7 @@
       "text": "<b>-17s</b> Cooldown <br><b>-40%</b> Move and Dash Speed for <b>3s</b> on wake-up"
      }
     ],
-    "icon": "haze_sleep_dagger_psd.png"
+    "icon": "haze_sleep_dagger_psd.webp"
    },
    {
     "id": "ability_smoke_bomb",
@@ -1883,7 +1883,7 @@
       "text": "Dispels non-ult debuffs<br>Grants <b>+50% Bullet Lifesteal</b> for s"
      }
     ],
-    "icon": "haze_smoke_bomb_psd.png"
+    "icon": "haze_smoke_bomb_psd.webp"
    },
    {
     "id": "ability_stacking_damage",
@@ -1910,7 +1910,7 @@
       "text": "<b>+0</b>/ per Stack<br>Scales with Weapon Damage"
      }
     ],
-    "icon": "haze_fixation_psd.png"
+    "icon": "haze_fixation_psd.webp"
    },
    {
     "id": "ability_bullet_flurry",
@@ -1937,7 +1937,7 @@
       "text": "<b>+40%</b> Evasion <br><b>-65s</b> Cooldown"
      }
     ],
-    "icon": "haze_bullet_flurry_psd.png"
+    "icon": "haze_bullet_flurry_psd.webp"
    }
   ]
  },
@@ -1961,8 +1961,8 @@
    76,
    49
   ],
-  "card": "astro_card_psd.png",
-  "icon": "astro_sm_psd.png",
+  "card": "astro_card_psd.webp",
+  "icon": "astro_sm_psd.webp",
   "stats": {
    "health": "780",
    "regen": "2",
@@ -2007,7 +2007,7 @@
       "text": "<b>+0.25</b> Impact Damage<br><b>+0.08</b> Burn Damage per Second<br><b>-5</b>s Charge Time<br><b>Improved Spirit Scaling</b>"
      }
     ],
-    "icon": "holliday_powder_keg_psd.png"
+    "icon": "holliday_powder_keg_psd.webp"
    },
    {
     "id": "ability_bounce_pad",
@@ -2033,7 +2033,7 @@
      }
     ],
     "upgrades": [],
-    "icon": "holliday_bounce_pad_psd.png"
+    "icon": "holliday_bounce_pad_psd.webp"
    },
    {
     "id": "ability_crackshot",
@@ -2051,7 +2051,7 @@
      }
     ],
     "upgrades": [],
-    "icon": "holliday_crackshot_psd.png"
+    "icon": "holliday_crackshot_psd.webp"
    },
    {
     "id": "ability_gravity_lasso",
@@ -2077,7 +2077,7 @@
      }
     ],
     "upgrades": [],
-    "icon": "holliday_spirit_lasso_psd.png"
+    "icon": "holliday_spirit_lasso_psd.webp"
    }
   ]
  },
@@ -2101,8 +2101,8 @@
    70,
    45
   ],
-  "card": "inferno_card_psd.png",
-  "icon": "inferno_sm_psd.png",
+  "card": "inferno_card_psd.webp",
+  "icon": "inferno_sm_psd.webp",
   "stats": {
    "health": "830",
    "regen": "2",
@@ -2155,7 +2155,7 @@
       "text": "Napalm Effect: <b>+17%</b> Damage Taken and <b>-33%</b> Healing"
      }
     ],
-    "icon": "inferno_molotov_psd.png"
+    "icon": "inferno_molotov_psd.webp"
    },
    {
     "id": "ability_flame_dash",
@@ -2186,7 +2186,7 @@
       "text": "Enable <b>2 Ability Charges</b> with <b>14s</b> Recharge time"
      }
     ],
-    "icon": "inferno_dash_psd.png"
+    "icon": "inferno_dash_psd.webp"
    },
    {
     "id": "ability_afterburn",
@@ -2209,7 +2209,7 @@
       "text": "<b>+s</b> Max Burn Duration"
      }
     ],
-    "icon": "inferno_deflect_psd.png"
+    "icon": "inferno_deflect_psd.webp"
    },
    {
     "id": "ability_fire_bomb",
@@ -2236,7 +2236,7 @@
       "text": "<b>+0.9s</b> Stun Duration and <b>+10m</b> Radius"
      }
     ],
-    "icon": "inferno_bomb_psd.png"
+    "icon": "inferno_bomb_psd.webp"
    }
   ]
  },
@@ -2260,8 +2260,8 @@
    115,
    217
   ],
-  "card": "tengu_card_psd.png",
-  "icon": "tengu_sm_psd.png",
+  "card": "tengu_card_psd.webp",
+  "icon": "tengu_sm_psd.webp",
   "stats": {
    "health": "755",
    "regen": "2",
@@ -2314,7 +2314,7 @@
       "text": "Enemies caught in thorns for 2s are <b>Immobilized</b> for <b>+1.6s</b>"
      }
     ],
-    "icon": "tengu_storm_flask_psd.png"
+    "icon": "tengu_storm_flask_psd.webp"
    },
    {
     "id": "citadel_ability_tangotether",
@@ -2345,7 +2345,7 @@
       "text": "Ability is always active"
      }
     ],
-    "icon": "tengu_tether_psd.png"
+    "icon": "tengu_tether_psd.webp"
    },
    {
     "id": "citadel_ability_tengu_stone_form",
@@ -2372,7 +2372,7 @@
       "text": "<b>+0.75s</b> Stun Duration and increased Damage spirit scaling"
      }
     ],
-    "icon": "tengu_stone_form_psd.png"
+    "icon": "tengu_stone_form_psd.webp"
    },
    {
     "id": "citadel_ability_tengu_airlift",
@@ -2411,7 +2411,7 @@
       "text": "<b>Silence</b> for <b>s</b> on enemies hit.<br>Increases damage and barrier scaling."
      }
     ],
-    "icon": "tengu_lightning_crash_psd.png"
+    "icon": "tengu_lightning_crash_psd.webp"
    }
   ]
  },
@@ -2435,8 +2435,8 @@
    171,
    188
   ],
-  "card": "kelvin_card_psd.png",
-  "icon": "kelvin_sm_psd.png",
+  "card": "kelvin_card_psd.webp",
+  "icon": "kelvin_sm_psd.webp",
   "stats": {
    "health": "880",
    "regen": "1",
@@ -2489,7 +2489,7 @@
       "text": "<b>+2m</b> Radius. Damage and Heal Spirit Scaling increased."
      }
     ],
-    "icon": "freezing_grenade_psd.png"
+    "icon": "freezing_grenade_psd.webp"
    },
    {
     "id": "ability_icepath",
@@ -2516,7 +2516,7 @@
       "text": "<b>+35%</b> Spirit and <b>+20</b> Spirit for Kelvin while on Ice Path"
      }
     ],
-    "icon": "ice_path_psd.png"
+    "icon": "ice_path_psd.webp"
    },
    {
     "id": "ability_icebeam",
@@ -2551,7 +2551,7 @@
       "text": "<b>-13s</b> Cooldown and Fires <b>2 additional Arctic Beams</b> within 0.93m of the last target hit."
      }
     ],
-    "icon": "ice_beam_psd.png"
+    "icon": "ice_beam_psd.webp"
    },
    {
     "id": "ability_ice_dome",
@@ -2578,7 +2578,7 @@
       "text": "<b>Purges</b> non-ult debuffs for you and your allies. <br><b>+1</b> Health Regen and increased Spirit Scaling"
      }
     ],
-    "icon": "frozen_shelter_psd.png"
+    "icon": "frozen_shelter_psd.webp"
    }
   ]
  },
@@ -2602,8 +2602,8 @@
    137,
    89
   ],
-  "card": "spectre_card_psd.png",
-  "icon": "spectre_sm_psd.png",
+  "card": "spectre_card_psd.webp",
+  "icon": "spectre_sm_psd.webp",
   "stats": {
    "health": "880",
    "regen": "1",
@@ -2648,7 +2648,7 @@
       "text": "Bombs leave a toxic mess on the ground, dealing <b>30%</b> of the original <b>damage per second</b>, for <b>6s</b>."
      }
     ],
-    "icon": "blood_bomb_psd.png"
+    "icon": "blood_bomb_psd.webp"
    },
    {
     "id": "ability_life_drain",
@@ -2679,7 +2679,7 @@
       "text": "Enables and Grants <b>+2</b> Charges. Increases spirit scaling."
      }
     ],
-    "icon": "life_drain_psd.png"
+    "icon": "life_drain_psd.webp"
    },
    {
     "id": "ability_blood_shards",
@@ -2706,7 +2706,7 @@
       "text": "<b>+8%</b> Damage Amp"
      }
     ],
-    "icon": "geist_dagger_psd.png"
+    "icon": "geist_dagger_psd.webp"
    },
    {
     "id": "ability_health_swap",
@@ -2737,7 +2737,7 @@
       "text": "On cast, <b>+60</b> Spirit Power, <b>+40%</b> Fire Rate and <b>+50%</b> Spirit Resistance for s."
      }
     ],
-    "icon": "blood_exchange_psd.png"
+    "icon": "blood_exchange_psd.webp"
    }
   ]
  },
@@ -2761,8 +2761,8 @@
    75,
    86
   ],
-  "card": "lash_card_psd.png",
-  "icon": "lash_sm_psd.png",
+  "card": "lash_card_psd.webp",
+  "icon": "lash_sm_psd.webp",
   "stats": {
    "health": "780",
    "regen": "2",
@@ -2807,7 +2807,7 @@
       "text": "<b>Damage Per Meter</b> +120% and improved scaling"
      }
     ],
-    "icon": "lash_death_slam_psd.png"
+    "icon": "lash_death_slam_psd.webp"
    },
    {
     "id": "citadel_ability_lash",
@@ -2838,7 +2838,7 @@
       "text": "<b>+1</b> Charges<br>OnCast : <b>+1</b> Stamina and <b>+60%</b> Air Control"
      }
     ],
-    "icon": "lash_lash_psd.png"
+    "icon": "lash_lash_psd.webp"
    },
    {
     "id": "ability_lash_flog",
@@ -2873,7 +2873,7 @@
       "text": "<b>+80</b> Damage <br><b>+25</b> Attack angle<br><b>+15%</b> Heal"
      }
     ],
-    "icon": "lash_flog_psd.png"
+    "icon": "lash_flog_psd.webp"
    },
    {
     "id": "citadel_ability_lash_ultimate",
@@ -2904,7 +2904,7 @@
       "text": "<b>Stun</b> enemies in Radius for 1.2s<br><b>+6m</b> Cast Range"
      }
     ],
-    "icon": "lash_counter_lash_psd.png"
+    "icon": "lash_counter_lash_psd.webp"
    }
   ]
  },
@@ -2928,8 +2928,8 @@
    104,
    155
   ],
-  "card": "engineer_card_psd.png",
-  "icon": "engineer_sm_psd.png",
+  "card": "engineer_card_psd.webp",
+  "icon": "engineer_sm_psd.webp",
   "stats": {
    "health": "780",
    "regen": "2",
@@ -2973,7 +2973,7 @@
      }
     ],
     "upgrades": [],
-    "icon": "engineer_turret_psd.png"
+    "icon": "engineer_turret_psd.webp"
    },
    {
     "id": "citadel_ability_mobile_resupply",
@@ -3008,7 +3008,7 @@
       "text": "<b>+2%</b> Max HP Regen <br><b>+3m</b> Heal Radius <br><b>+40%</b> Spirit Resist"
      }
     ],
-    "icon": "engineer_resupply_psd.png"
+    "icon": "engineer_resupply_psd.webp"
    },
    {
     "id": "citadel_ability_fissure_wall",
@@ -3047,7 +3047,7 @@
       "text": "Deploy <b>2 Mini Turrets</b> near the wall for 8s<br><b>+24% Slow</b>"
      }
     ],
-    "icon": "engineer_fissure_2_psd.png"
+    "icon": "engineer_fissure_2_psd.webp"
    },
    {
     "id": "citadel_ability_rocket_barrage",
@@ -3086,7 +3086,7 @@
       "text": "<b>+2m</b> Radius and <b>+0.16</b> Damage per Rocket with increased spirit scaling"
      }
     ],
-    "icon": "engineer_rockets_psd.png"
+    "icon": "engineer_rockets_psd.webp"
    }
   ]
  },
@@ -3110,8 +3110,8 @@
    57,
    82
   ],
-  "card": "vampirebat_card_psd.png",
-  "icon": "vampirebat_sm_psd.png",
+  "card": "vampirebat_card_psd.webp",
+  "icon": "vampirebat_sm_psd.webp",
   "stats": {
    "health": "660",
    "regen": "2",
@@ -3151,7 +3151,7 @@
      }
     ],
     "upgrades": [],
-    "icon": "vampirebat_rake_psd.png"
+    "icon": "vampirebat_rake_psd.webp"
    },
    {
     "id": "ability_vampirebat_batblink",
@@ -3182,7 +3182,7 @@
       "text": "<b>+1</b> Recast<br><b>+4m</b> Range"
      }
     ],
-    "icon": "vampirebat_sanguine_retreat_psd.png"
+    "icon": "vampirebat_sanguine_retreat_psd.webp"
    },
    {
     "id": "ability_vampirebat_lovebites",
@@ -3209,7 +3209,7 @@
       "text": "<b>-5</b> Cooldown <br>On Proc: <b>+25%</b> Fire Rate for 5s"
      }
     ],
-    "icon": "vampirebat_love_bites_psd.png"
+    "icon": "vampirebat_love_bites_psd.webp"
    },
    {
     "id": "ability_vampirebat_batswarm",
@@ -3236,7 +3236,7 @@
       "text": "On Hit: Deal <b>+0.5%</b> Current Health as Damage"
      }
     ],
-    "icon": "vampirebat_nox_nostra_psd.png"
+    "icon": "vampirebat_nox_nostra_psd.webp"
    }
   ]
  },
@@ -3260,8 +3260,8 @@
    103,
    60
   ],
-  "card": "mirage_card_psd.png",
-  "icon": "mirage_sm_psd.png",
+  "card": "mirage_card_psd.webp",
+  "icon": "mirage_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "1.5",
@@ -3310,7 +3310,7 @@
       "text": "-15% Damage Penalty <br>Increased Spirit scaling"
      }
     ],
-    "icon": "mirage_fire_beetles_psd.png"
+    "icon": "mirage_fire_beetles_psd.webp"
    },
    {
     "id": "mirage_tornado",
@@ -3345,7 +3345,7 @@
       "text": "Recast within <b>6s</b>.<br>Increases spirit scaling."
      }
     ],
-    "icon": "mirage_tornado_psd.png"
+    "icon": "mirage_tornado_psd.webp"
    },
    {
     "id": "mirage_sand_phantom",
@@ -3376,7 +3376,7 @@
       "text": "<b>-0.75s</b> Cooldown <br><b>+</b> Max Marks <br>Stun Victim for <b>0.5s</b> on Max Marks"
      }
     ],
-    "icon": "mirage_sand_phantom_psd.png"
+    "icon": "mirage_sand_phantom_psd.webp"
    },
    {
     "id": "mirage_teleport",
@@ -3399,7 +3399,7 @@
       "text": "0.6 Barrier that scales with Spirit"
      }
     ],
-    "icon": "mirage_teleport_psd.png"
+    "icon": "mirage_teleport_psd.webp"
    }
   ]
  },
@@ -3423,8 +3423,8 @@
    75,
    133
   ],
-  "card": "digger_card_psd.png",
-  "icon": "digger_sm_psd.png",
+  "card": "digger_card_psd.webp",
+  "icon": "digger_sm_psd.webp",
   "stats": {
    "health": "930",
    "regen": "1",
@@ -3469,7 +3469,7 @@
       "text": "Adds a debuff to enemies that lets Mo &amp; Krill deal <b>+15% Damage</b> to them. Stacks and lasts 16s."
      }
     ],
-    "icon": "grappler_regen_psd.png"
+    "icon": "grappler_regen_psd.webp"
    },
    {
     "id": "ability_burrow",
@@ -3504,7 +3504,7 @@
       "text": "<b>-20</b> Cooldown and <b>+4m/s</b> Move Speed"
      }
     ],
-    "icon": "grappler_spin_psd.png"
+    "icon": "grappler_spin_psd.webp"
    },
    {
     "id": "ability_throw_sand",
@@ -3539,7 +3539,7 @@
       "text": "<b>+1.5s</b> Duration and <b>-25</b> Cooldown"
      }
     ],
-    "icon": "grappler_throw_sand_psd.png"
+    "icon": "grappler_throw_sand_psd.webp"
    },
    {
     "id": "ability_ult_combo",
@@ -3578,7 +3578,7 @@
       "text": "<b>+0.7s</b> Duration and <b>+0.4</b> Damage Per Second and increased scaling"
      }
     ],
-    "icon": "grappler_combo_psd.png"
+    "icon": "grappler_combo_psd.webp"
    }
   ]
  },
@@ -3602,8 +3602,8 @@
    205,
    236
   ],
-  "card": "nurse_card_psd.png",
-  "icon": "nurse_sm_psd.png",
+  "card": "nurse_card_psd.webp",
+  "icon": "nurse_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "0",
@@ -3656,7 +3656,7 @@
       "text": "+1m Radius<br>+ Spirit Scaling<br>+8 Max Leech Stacks"
      }
     ],
-    "icon": "leech_psd.png"
+    "icon": "leech_psd.webp"
    },
    {
     "id": "ability_nurse_adrenaline_rush",
@@ -3691,7 +3691,7 @@
       "text": "+15% Rush Speed<br>Dispels non-ult debuffs"
      }
     ],
-    "icon": "nurse_vapors_psd.png"
+    "icon": "nurse_vapors_psd.webp"
    },
    {
     "id": "ability_nurse_healing_needles",
@@ -3718,7 +3718,7 @@
       "text": "+ Spirit Scaling<br>Shots extend non-ultimate buff durations by 6%, up to their max duration"
      }
     ],
-    "icon": "needle_psd.png"
+    "icon": "needle_psd.webp"
    },
    {
     "id": "ability_nurse_fear",
@@ -3753,7 +3753,7 @@
       "text": "+3s Channel Time<br>+ Spirit Scaling<br>Immune to damage while channeling"
      }
     ],
-    "icon": "medicine_bag_psd.png"
+    "icon": "medicine_bag_psd.webp"
    }
   ]
  },
@@ -3777,8 +3777,8 @@
    205,
    236
   ],
-  "card": "bookworm_card_psd.png",
-  "icon": "bookworm_sm_psd.png",
+  "card": "bookworm_card_psd.webp",
+  "icon": "bookworm_sm_psd.webp",
   "stats": {
    "health": "680",
    "regen": "2",
@@ -3835,7 +3835,7 @@
       "text": "<b>+12m</b> Travel Range<br><b>+100</b> Damage <br><b>+30</b> DPS"
      }
     ],
-    "icon": "bookworm_dragon_psd.png"
+    "icon": "bookworm_dragon_psd.webp"
    },
    {
     "id": "ability_bookworm_knightbarrier",
@@ -3874,7 +3874,7 @@
       "text": "Affects up to <b>2</b> additional allies.<br>Increases barrier scaling."
      }
     ],
-    "icon": "bookworm_defendandfight_psd.png"
+    "icon": "bookworm_defendandfight_psd.webp"
    },
    {
     "id": "ability_bookworm_aoemagic",
@@ -3901,7 +3901,7 @@
       "text": "<b>+2m</b> Radius<br>On Hit: Reduce Spirit Resist by <b>-18%</b> for <b>6s</b>"
      }
     ],
-    "icon": "bookworm_blindinglight_psd.png"
+    "icon": "bookworm_blindinglight_psd.webp"
    },
    {
     "id": "ability_bookworm_knightcharge",
@@ -3940,7 +3940,7 @@
       "text": "<b>+160</b> Damage <br><b>+0.5s</b> Stun Duration<br><b>+70%</b> Max Amp"
      }
     ],
-    "icon": "bookworm_charge_psd.png"
+    "icon": "bookworm_charge_psd.webp"
    }
   ]
  },
@@ -3964,8 +3964,8 @@
    57,
    82
   ],
-  "card": "chrono_card_psd.png",
-  "icon": "chrono_sm_psd.png",
+  "card": "chrono_card_psd.webp",
+  "icon": "chrono_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "1",
@@ -4014,7 +4014,7 @@
       "text": "<b>+%</b> Damage Amp and <b>+1.6s</b> Duration"
      }
     ],
-    "icon": "chrono_time_bomb_psd.png"
+    "icon": "chrono_time_bomb_psd.webp"
    },
    {
     "id": "citadel_ability_chrono_time_wall",
@@ -4049,7 +4049,7 @@
       "text": "<b>+2</b> Ability Charges"
      }
     ],
-    "icon": "chrono_time_wall_psd.png"
+    "icon": "chrono_time_wall_psd.webp"
    },
    {
     "id": "citadel_ability_chrono_kinetic_carbine",
@@ -4076,7 +4076,7 @@
       "text": "+2s Charge Hold Duration and +% Damage Scaling"
      }
     ],
-    "icon": "duo_attack_psd.png"
+    "icon": "duo_attack_psd.webp"
    },
    {
     "id": "citadel_ability_chrono_swap",
@@ -4111,7 +4111,7 @@
       "text": "Swaps all enemies within <b>7m</b> of hit target and <b>+10%</b> Max Health Damage"
      }
     ],
-    "icon": "chrono_swap_psd.png"
+    "icon": "chrono_swap_psd.webp"
    }
   ]
  },
@@ -4135,8 +4135,8 @@
    95,
    149
   ],
-  "card": "synth_card_psd.png",
-  "icon": "synth_sm_psd.png",
+  "card": "synth_card_psd.webp",
+  "icon": "synth_sm_psd.webp",
   "stats": {
    "health": "780",
    "regen": "1",
@@ -4181,7 +4181,7 @@
       "text": "<b>+4%</b> Amp Per Stack and <b>3m</b> Radius"
      }
     ],
-    "icon": "synth_barrage_psd.png"
+    "icon": "synth_barrage_psd.webp"
    },
    {
     "id": "synth_plasma_flux",
@@ -4208,7 +4208,7 @@
       "text": "<b>+1.6s</b> Lifetime and <b>-10s</b> Cooldown."
      }
     ],
-    "icon": "synth_plasma_flux_psd.png"
+    "icon": "synth_plasma_flux_psd.webp"
    },
    {
     "id": "synth_pulse",
@@ -4235,7 +4235,7 @@
       "text": "<b>+s</b> Duration<br><b>+4m</b> Radius<br><b>-%</b> Move Speed and Fire Rate for 4s"
      }
     ],
-    "icon": "synth_pulse_psd.png"
+    "icon": "synth_pulse_psd.webp"
    },
    {
     "id": "synth_affliction",
@@ -4262,7 +4262,7 @@
       "text": "<b>Prevents all healing</b><br><b>+0.1</b> DPS with increased Spirit scaling"
      }
     ],
-    "icon": "synth_affliction_psd.png"
+    "icon": "synth_affliction_psd.webp"
    }
   ]
  },
@@ -4286,8 +4286,8 @@
    75,
    133
   ],
-  "card": "ratking_card_psd.png",
-  "icon": "ratking_sm_psd.png",
+  "card": "ratking_card_psd.webp",
+  "icon": "ratking_sm_psd.webp",
   "stats": {
    "health": "800",
    "regen": "2",
@@ -4328,7 +4328,7 @@
       "text": "Add an additional final Bigger Detonation"
      }
     ],
-    "icon": "ratking_grenade_psd.png"
+    "icon": "ratking_grenade_psd.webp"
    },
    {
     "id": "ability_ratking_ratnibble",
@@ -4363,7 +4363,7 @@
       "text": "<b>+8</b> Damage and <b>-1%</b> Bullet Resist per Bite"
      }
     ],
-    "icon": "ratking_swarm_psd.png"
+    "icon": "ratking_swarm_psd.webp"
    },
    {
     "id": "ability_ratking_ratarmor",
@@ -4394,7 +4394,7 @@
       "text": "Reduce all damage to a max of <b>250</b><br><b>+10%</b> Max Health as Barrier"
      }
     ],
-    "icon": "ratking_shield_psd.png"
+    "icon": "ratking_shield_psd.webp"
    },
    {
     "id": "ability_ratking_standard_bearer",
@@ -4425,7 +4425,7 @@
       "text": "+150 Damage and +10% Damage Reduction"
      }
     ],
-    "icon": "ratking_flag_psd.png"
+    "icon": "ratking_flag_psd.webp"
    }
   ]
  },
@@ -4449,8 +4449,8 @@
    57,
    82
   ],
-  "card": "familiar_card_psd.png",
-  "icon": "familiar_sm_psd.png",
+  "card": "familiar_card_psd.webp",
+  "icon": "familiar_sm_psd.webp",
   "stats": {
    "health": "680",
    "regen": "2",
@@ -4499,7 +4499,7 @@
       "text": "+100 Damage and +1 Charge"
      }
     ],
-    "icon": "familiar_pillow_psd.png"
+    "icon": "familiar_pillow_psd.webp"
    },
    {
     "id": "ability_familiar_attach",
@@ -4530,7 +4530,7 @@
       "text": "+15% Spirit Power and +35 Spirit Power while napping and for 10s after napping<br>Improved Spirit Scaling"
      }
     ],
-    "icon": "familiar_tag_along_psd.png"
+    "icon": "familiar_tag_along_psd.webp"
    },
    {
     "id": "ability_familiar_helpinghands",
@@ -4557,7 +4557,7 @@
       "text": "+1 Helper<br>+15% Spirit Resist"
      }
     ],
-    "icon": "familiar_helpers_psd.png"
+    "icon": "familiar_helpers_psd.webp"
    },
    {
     "id": "ability_familiar_ability01",
@@ -4592,7 +4592,7 @@
       "text": "-55s cooldown <br>Reduced damage and unstoppable while channeling"
      }
     ],
-    "icon": "familiar_sleep_psd.png"
+    "icon": "familiar_sleep_psd.webp"
    }
   ]
  },
@@ -4616,8 +4616,8 @@
    149,
    60
   ],
-  "card": "gigawatt_card_psd.png",
-  "icon": "gigawatt_sm_psd.png",
+  "card": "gigawatt_card_psd.webp",
+  "icon": "gigawatt_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "1",
@@ -4666,7 +4666,7 @@
       "text": "+58.5 DPS and +1.75m radius"
      }
     ],
-    "icon": "giga_ball_psd.png"
+    "icon": "giga_ball_psd.webp"
    },
    {
     "id": "citadel_ability_static_charge",
@@ -4697,7 +4697,7 @@
       "text": "<b>+0.9s</b> Stun Duration <br><b>+160</b> Damage"
      }
     ],
-    "icon": "giga_static_psd.png"
+    "icon": "giga_static_psd.webp"
    },
    {
     "id": "ability_power_surge",
@@ -4728,7 +4728,7 @@
       "text": "+10s Duration<br>Applies <b>-15%</b> Spirit Resist"
      }
     ],
-    "icon": "giga_chain_psd.png"
+    "icon": "giga_chain_psd.webp"
    },
    {
     "id": "citadel_ability_storm_cloud",
@@ -4763,7 +4763,7 @@
       "text": "<b>+65</b> DPS<br><b>+4m</b> Flight Speed"
      }
     ],
-    "icon": "giga_storm_psd.png"
+    "icon": "giga_storm_psd.webp"
    }
   ]
  },
@@ -4787,8 +4787,8 @@
    60,
    135
   ],
-  "card": "shiv_card_psd.png",
-  "icon": "shiv_sm_psd.png",
+  "card": "shiv_card_psd.webp",
+  "icon": "shiv_sm_psd.webp",
   "stats": {
    "health": "830",
    "regen": "2",
@@ -4841,7 +4841,7 @@
       "text": "+0.07 Bleed DPS with increased Spirit scaling"
      }
     ],
-    "icon": "shiv_toss_psd.png"
+    "icon": "shiv_toss_psd.webp"
    },
    {
     "id": "citadel_ability_shiv_dash",
@@ -4868,7 +4868,7 @@
       "text": "<b>+50</b> Impact Damage<br><b>-2s</b> Cooldown per Hero hit."
      }
     ],
-    "icon": "shiv_flash_psd.png"
+    "icon": "shiv_flash_psd.webp"
    },
    {
     "id": "citadel_ability_shiv_defer_damage",
@@ -4882,7 +4882,7 @@
      }
     ],
     "upgrades": [],
-    "icon": "shiv_bloodletting_psd.png"
+    "icon": "shiv_bloodletting_psd.webp"
    },
    {
     "id": "citadel_ability_shiv_killing_blow",
@@ -4913,7 +4913,7 @@
       "text": "<b>+10%</b> Enemy Health Threshold"
      }
     ],
-    "icon": "shiv_killing_blow_psd.png"
+    "icon": "shiv_killing_blow_psd.webp"
    }
   ]
  },
@@ -4937,8 +4937,8 @@
    205,
    236
   ],
-  "card": "werewolf_card_psd.png",
-  "icon": "werewolf_sm_psd.png",
+  "card": "werewolf_card_psd.webp",
+  "icon": "werewolf_sm_psd.webp",
   "stats": {
    "health": "830",
    "regen": "2.5",
@@ -4983,7 +4983,7 @@
       "text": "If you hit all shots, deal <b>+7%</b> current health as damage"
      }
     ],
-    "icon": "werewolf_slamfire_psd.png"
+    "icon": "werewolf_slamfire_psd.webp"
    },
    {
     "id": "ability_werewolf_kickflip",
@@ -5014,7 +5014,7 @@
       "text": "<b>+80</b> Bonus Damage and kicked enemies deal <b>-35%</b> Damage for 5s"
      }
     ],
-    "icon": "werewolf_jumpback_psd.png"
+    "icon": "werewolf_jumpback_psd.webp"
    },
    {
     "id": "ability_werewolf_netshot",
@@ -5033,7 +5033,7 @@
       "text": "<b>+0.75s</b> Debuff Duration.<br>Bola ricochets to <b>2</b> additional targets"
      }
     ],
-    "icon": "werewolf_bola_psd.png"
+    "icon": "werewolf_bola_psd.webp"
    },
    {
     "id": "ability_werewolf_transformation",
@@ -5064,7 +5064,7 @@
       "text": "On Hero Kill: Refresh abilities and duration"
      }
     ],
-    "icon": "werewolf_lycancurse_psd.png"
+    "icon": "werewolf_lycancurse_psd.webp"
    }
   ]
  },
@@ -5088,8 +5088,8 @@
    149,
    60
   ],
-  "card": "magician_card_psd.png",
-  "icon": "magician_sm_psd.png",
+  "card": "magician_card_psd.webp",
+  "icon": "magician_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "1",
@@ -5142,7 +5142,7 @@
       "text": "<b>+126</b> Max Damage. +<b>50%</b> Assistant Damage."
      }
     ],
-    "icon": "magician_magicbolt_psd.png"
+    "icon": "magician_magicbolt_psd.webp"
    },
    {
     "id": "ability_magician_cloneturret",
@@ -5177,7 +5177,7 @@
       "text": "<b>+60% Fire Rate</b> and +<b>12.6 Assistant Damage</b>"
      }
     ],
-    "icon": "magician_cloneturret_psd.png"
+    "icon": "magician_cloneturret_psd.webp"
    },
    {
     "id": "ability_magician_animalhexarea",
@@ -5200,7 +5200,7 @@
       "text": "<b>+7%</b> Damage Amp and <b>+2m</b> Radius"
      }
     ],
-    "icon": "magician_animalcurse_psd.png"
+    "icon": "magician_animalcurse_psd.webp"
    },
    {
     "id": "ability_magician_copyult",
@@ -5231,7 +5231,7 @@
       "text": "<b>Upgrade</b> the Copy ONCE AGAIN!"
      }
     ],
-    "icon": "magician_copyult_psd.png"
+    "icon": "magician_copyult_psd.webp"
    }
   ]
  },
@@ -5255,8 +5255,8 @@
    205,
    236
   ],
-  "card": "chessmaster_card_psd.png",
-  "icon": "chessmaster_sm_psd.png",
+  "card": "chessmaster_card_psd.webp",
+  "icon": "chessmaster_sm_psd.webp",
   "stats": {
    "health": "780",
    "regen": "2",
@@ -5305,7 +5305,7 @@
       "text": "+1 Square Range<br>Squares reduce Spirit Resist by -2.5%, stacking 10 times"
      }
     ],
-    "icon": "chessmaster_bishop_psd.png"
+    "icon": "chessmaster_bishop_psd.webp"
    },
    {
     "id": "ability_chessmaster_knightbuff",
@@ -5332,7 +5332,7 @@
       "text": "Can target two allies within radius.<br>On Self: <b>Remove all debuffs</b> after a move"
      }
     ],
-    "icon": "chessmaster_knight_psd.png"
+    "icon": "chessmaster_knight_psd.webp"
    },
    {
     "id": "ability_chessmaster_forkpiece",
@@ -5359,7 +5359,7 @@
       "text": "+1 Wall Reflects<br>-12s Cooldown<br>+0.5s Immobilize Duration"
      }
     ],
-    "icon": "chessmaster_rook_psd.png"
+    "icon": "chessmaster_rook_psd.webp"
    },
    {
     "id": "ability_chessmaster_queen",
@@ -5386,7 +5386,7 @@
       "text": "+2 Moves<br>+1 Square Range"
      }
     ],
-    "icon": "chessmaster_queen_psd.png"
+    "icon": "chessmaster_queen_psd.webp"
    }
   ]
  },
@@ -5410,8 +5410,8 @@
    205,
    236
   ],
-  "card": "doorman_card_psd.png",
-  "icon": "doorman_sm_psd.png",
+  "card": "doorman_card_psd.webp",
+  "icon": "doorman_sm_psd.webp",
   "stats": {
    "health": "755",
    "regen": "1",
@@ -5468,7 +5468,7 @@
       "text": "+4.5m Radius<br>+s Bell Lifetime<br>Improved Scaling"
      }
     ],
-    "icon": "doorman_bell_psd.png"
+    "icon": "doorman_bell_psd.webp"
    },
    {
     "id": "ability_doorman_doorway",
@@ -5499,7 +5499,7 @@
       "text": "+30m Cast Range. +0.15m Doorway Distance<br> and scales with Spirit Power."
      }
     ],
-    "icon": "doorman_doorway_psd.png"
+    "icon": "doorman_doorway_psd.webp"
    },
    {
     "id": "ability_doorman_luggage_cart",
@@ -5534,7 +5534,7 @@
       "text": "-15s Cooldown and 1.25s  on wall impact"
      }
     ],
-    "icon": "doorman_luggagetrolley_psd.png"
+    "icon": "doorman_luggagetrolley_psd.webp"
    },
    {
     "id": "ability_doorman_hotel",
@@ -5577,7 +5577,7 @@
       "text": "Unstoppable while the Baroness is occupied.<br>15s Cooldown on Failure to Check Out."
      }
     ],
-    "icon": "doorman_elevator_psd.png"
+    "icon": "doorman_elevator_psd.webp"
    }
   ]
  },
@@ -5601,8 +5601,8 @@
    97,
    120
   ],
-  "card": "priest_card_psd.png",
-  "icon": "priest_sm_psd.png",
+  "card": "priest_card_psd.webp",
+  "icon": "priest_sm_psd.webp",
   "stats": {
    "health": "820",
    "regen": "2",
@@ -5647,7 +5647,7 @@
       "text": "<b>-20%</b> Incoming Healing and allow Charges"
      }
     ],
-    "icon": "priest_grenade_psd.png"
+    "icon": "priest_grenade_psd.webp"
    },
    {
     "id": "ability_priest_knockback",
@@ -5678,7 +5678,7 @@
       "text": "On Wall Stun: Your next heavy melee is <b>blessed</b>"
      }
     ],
-    "icon": "priest_shotgun_psd.png"
+    "icon": "priest_shotgun_psd.webp"
    },
    {
     "id": "ability_priest_beartrap",
@@ -5705,7 +5705,7 @@
       "text": "<b>+</b> Charge<br>Deal <b>+30%</b> damage against revealed targets"
      }
     ],
-    "icon": "priest_trap_psd.png"
+    "icon": "priest_trap_psd.webp"
    },
    {
     "id": "ability_priest_weaponswap",
@@ -5740,7 +5740,7 @@
       "text": "All Stakes are Blessed"
      }
     ],
-    "icon": "priest_crossbow_psd.png"
+    "icon": "priest_crossbow_psd.webp"
    }
   ]
  },
@@ -5764,8 +5764,8 @@
    97,
    120
   ],
-  "card": "frank_card_psd.png",
-  "icon": "frank_sm_psd.png",
+  "card": "frank_card_psd.webp",
+  "icon": "frank_sm_psd.webp",
   "stats": {
    "health": "800",
    "regen": "1.5",
@@ -5814,7 +5814,7 @@
       "text": "On Hero Hit: Heal for <b>15%</b> of your missing health and increased Spirit scaling"
      }
     ],
-    "icon": "frank_pain_battery_psd.png"
+    "icon": "frank_pain_battery_psd.webp"
    },
    {
     "id": "ability_frank_selfzap",
@@ -5849,7 +5849,7 @@
       "text": "<b>+1</b> Charge<br><b>+50%</b> Debuff Resistance<br>Increases spirit scaling"
      }
     ],
-    "icon": "frank_jump_start_psd.png"
+    "icon": "frank_jump_start_psd.webp"
    },
    {
     "id": "ability_frank_painaura",
@@ -5884,7 +5884,7 @@
       "text": "<b>+1m</b> Radius<br>Enemies take <b>+15%</b> Damage"
      }
     ],
-    "icon": "frank_aura_of_suffering_psd.png"
+    "icon": "frank_aura_of_suffering_psd.webp"
    },
    {
     "id": "ability_frank_revive",
@@ -5915,7 +5915,7 @@
       "text": "<b>+175</b> Damage<br><b>+1.5</b> Stun <br><b>-95s</b> Cooldown"
      }
     ],
-    "icon": "frank_shocking_reanimation_psd.png"
+    "icon": "frank_shocking_reanimation_psd.webp"
    }
   ]
  },
@@ -5939,8 +5939,8 @@
    205,
    236
   ],
-  "card": "hornet_card_psd.png",
-  "icon": "hornet_sm_png.png",
+  "card": "hornet_card_psd.webp",
+  "icon": "hornet_sm_png.webp",
   "stats": {
    "health": "755",
    "regen": "2",
@@ -5981,7 +5981,7 @@
       "text": "<b>+0.75s</b> Tether Duration and <b>+2m</b> Capture Radius"
      }
     ],
-    "icon": "vindicta_stake_psd.png"
+    "icon": "vindicta_stake_psd.webp"
    },
    {
     "id": "citadel_ability_hornet_leap",
@@ -6016,7 +6016,7 @@
       "text": "Hero Kills <b>Refresh</b> Duration. <br><b>+0.1</b> Spirit Damage with increased Spirit scaling"
      }
     ],
-    "icon": "vindicta_flight_psd.png"
+    "icon": "vindicta_flight_psd.webp"
    },
    {
     "id": "citadel_ability_hornet_sting",
@@ -6047,7 +6047,7 @@
       "text": "<b>+2s</b> Duration <br><b>-8% Bullet Resist</b> <br><b>% Spirit Resist</b>"
      }
     ],
-    "icon": "hornet_crow_psd.png"
+    "icon": "hornet_crow_psd.webp"
    },
    {
     "id": "citadel_ability_hornet_snipe",
@@ -6069,7 +6069,7 @@
      }
     ],
     "upgrades": [],
-    "icon": "hornet_assassinate_psd.png"
+    "icon": "hornet_assassinate_psd.webp"
    }
   ]
  },
@@ -6093,8 +6093,8 @@
    195,
    99
   ],
-  "card": "viscous_card_psd.png",
-  "icon": "viscous_sm_psd.png",
+  "card": "viscous_card_psd.webp",
+  "icon": "viscous_sm_psd.webp",
   "stats": {
    "health": "780",
    "regen": "2",
@@ -6139,7 +6139,7 @@
       "text": "+1 Bounce and improved Spirit Scaling"
      }
     ],
-    "icon": "viscous_goo_ball_psd.png"
+    "icon": "viscous_goo_ball_psd.webp"
    },
    {
     "id": "viscous_restorative_goo",
@@ -6161,7 +6161,7 @@
      }
     ],
     "upgrades": [],
-    "icon": "viscous_restorative_goo_psd.png"
+    "icon": "viscous_restorative_goo_psd.webp"
    },
    {
     "id": "viscous_telepunch",
@@ -6200,7 +6200,7 @@
       "text": "-14s Cooldown and now deals <b>Heavy Melee Damage</b>"
      }
     ],
-    "icon": "viscous_goo_punch_psd.png"
+    "icon": "viscous_goo_punch_psd.webp"
    },
    {
     "id": "viscous_goo_bowling_ball",
@@ -6231,7 +6231,7 @@
       "text": "+7s Duration, +0.3s Stun Duration, and + Spirit Scaling"
      }
     ],
-    "icon": "viscous_goo_sphere_psd.png"
+    "icon": "viscous_goo_sphere_psd.webp"
    }
   ]
  },
@@ -6255,8 +6255,8 @@
    115,
    217
   ],
-  "card": "kali_card_psd.png",
-  "icon": "kali_sm_psd.png",
+  "card": "kali_card_psd.webp",
+  "icon": "kali_sm_psd.webp",
   "stats": {
    "health": "780",
    "regen": "2",
@@ -6301,7 +6301,7 @@
       "text": "+<b>2</b> Max Stacks<br><b>-2s</b> Charge Delay<br>On Hit: Refund <b>55%</b> Charge Cooldown"
      }
     ],
-    "icon": "viper_debuffdagger_psd.png"
+    "icon": "viper_debuffdagger_psd.webp"
    },
    {
     "id": "ability_viper_venom",
@@ -6332,7 +6332,7 @@
       "text": "Bullets also build up <b>Lethal Venom</b>"
      }
     ],
-    "icon": "viper_venom_psd.png"
+    "icon": "viper_venom_psd.webp"
    },
    {
     "id": "ability_viper_snakedash",
@@ -6346,7 +6346,7 @@
       "text": "On Slide: <b>Gain 0.8</b> barrier for <b>4s</b>"
      }
     ],
-    "icon": "viper_snakedash_psd.png"
+    "icon": "viper_snakedash_psd.webp"
    },
    {
     "id": "ability_viper_petrifybola",
@@ -6369,7 +6369,7 @@
       "text": "+<b>1s</b> Petrify Duration. Petrifies all enemies in the area."
      }
     ],
-    "icon": "viper_petrifybola_psd.png"
+    "icon": "viper_petrifybola_psd.webp"
    }
   ]
  },
@@ -6393,8 +6393,8 @@
    97,
    120
   ],
-  "card": "warden_card_psd.png",
-  "icon": "warden_sm_psd.png",
+  "card": "warden_card_psd.webp",
+  "icon": "warden_sm_psd.webp",
   "stats": {
    "health": "805",
    "regen": "2",
@@ -6443,7 +6443,7 @@
       "text": "<b>-7s</b> Cooldown and <b>+2m</b> Radius<br> Applies <b>-30%</b> Fire Rate"
      }
     ],
-    "icon": "warden_crowd_control_psd.png"
+    "icon": "warden_crowd_control_psd.webp"
    },
    {
     "id": "ability_warden_high_alert",
@@ -6470,7 +6470,7 @@
       "text": "<b>+30%</b> Debuff Resistance and improved Barrier scaling"
      }
     ],
-    "icon": "warden_high_alert_psd.png"
+    "icon": "warden_high_alert_psd.webp"
    },
    {
     "id": "ability_warden_lock_down",
@@ -6505,7 +6505,7 @@
       "text": "-14s Cooldown <br>Silences enemies until they escape or are immobilized"
      }
     ],
-    "icon": "warden_lock_down_psd.png"
+    "icon": "warden_lock_down_psd.webp"
    },
    {
     "id": "ability_warden_riot_protocol",
@@ -6536,7 +6536,7 @@
       "text": "+4s Duration<br>Unstoppable and +30%  Resists while channeling"
      }
     ],
-    "icon": "warden_riot_protocol_psd.png"
+    "icon": "warden_riot_protocol_psd.webp"
    }
   ]
  },
@@ -6560,8 +6560,8 @@
    77,
    120
   ],
-  "card": "wraith_card_psd.png",
-  "icon": "wraith_sm_psd.png",
+  "card": "wraith_card_psd.webp",
+  "icon": "wraith_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "2",
@@ -6614,7 +6614,7 @@
       "text": "All suits are improved and higher chance for <b>Jokers</b>"
      }
     ],
-    "icon": "wraith_card_trick_psd.png"
+    "icon": "wraith_card_trick_psd.webp"
    },
    {
     "id": "citadel_ability_projectmind",
@@ -6637,7 +6637,7 @@
       "text": "<b>1.7 Barrier</b> for 5s. Barrier scales with Spirit Power."
      }
     ],
-    "icon": "wraith_teleport_psd.png"
+    "icon": "wraith_teleport_psd.webp"
    },
    {
     "id": "citadel_ability_wraith_rapidfire",
@@ -6668,7 +6668,7 @@
       "text": "<b>Unlimited Ammo</b> and Increased Scaling on Spirit Damage Per Bullet"
      }
     ],
-    "icon": "wraith_aura_psd.png"
+    "icon": "wraith_aura_psd.webp"
    },
    {
     "id": "citadel_ability_psychic_lift",
@@ -6703,7 +6703,7 @@
       "text": "+1.5s Debuff Duration and +6m Throw and Cast Range"
      }
     ],
-    "icon": "wraith_lift_psd.png"
+    "icon": "wraith_lift_psd.webp"
    }
   ]
  },
@@ -6727,8 +6727,8 @@
    144,
    128
   ],
-  "card": "yamato_card_psd.png",
-  "icon": "yamato_sm_psd.png",
+  "card": "yamato_card_psd.webp",
+  "icon": "yamato_sm_psd.webp",
   "stats": {
    "health": "730",
    "regen": "1",
@@ -6777,7 +6777,7 @@
       "text": "<b>+8m</b> Cast Range <br>+0.5 Damage and Increases Spirit Power scaling"
      }
     ],
-    "icon": "yamato_power_slash_psd.png"
+    "icon": "yamato_power_slash_psd.webp"
    },
    {
     "id": "citadel_ability_flying_strike",
@@ -6804,7 +6804,7 @@
       "text": "Alt-Cast to Grapple allies<br><b>+15m</b> Cast Range<br>Gains <b>1 extra charge</b>"
      }
     ],
-    "icon": "yamato_flying_strike_psd.png"
+    "icon": "yamato_flying_strike_psd.webp"
    },
    {
     "id": "citadel_ability_healing_slash",
@@ -6835,7 +6835,7 @@
       "text": "<b>-10s</b> Cooldown and increases scaling"
      }
     ],
-    "icon": "yamato_crimson_slash_psd.png"
+    "icon": "yamato_crimson_slash_psd.webp"
    },
    {
     "id": "citadel_ability_infinity_slash",
@@ -6866,7 +6866,7 @@
       "text": "+3s Duration<br>+30% Bullet Resist<br>+30% Spirit Resist"
      }
     ],
-    "icon": "yamato_blinding_steel_psd.png"
+    "icon": "yamato_blinding_steel_psd.webp"
    }
   ]
  }
