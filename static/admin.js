@@ -2,7 +2,7 @@
 // Same API and sign-in as the site (the token is shared through localStorage). Hash routes: #dashboard, #analytics,
 // #stats, #lobbies, #matches, #players, #chat, #settings, #log. Live sections poll; the rest load on demand.
 
-const API = ((window.SOULPIT && window.SOULPIT.api) || '').replace(/\/$/, '');
+let API = ((window.SOULPIT && window.SOULPIT.api) || '').replace(/\/$/, '');  // see findApi()
 const TOKEN_KEY = 'yama_token';
 
 let token = null;
@@ -49,12 +49,37 @@ const TEAM = ['amber', 'sapphire'];
 
 // ---------- api ----------
 
+
+// The free tunnel gets a new address now and then and the old one stops answering. The site's config.js always
+// has the current one: when the API is gone, read it again (at most every 5 s) and carry on at the new address.
+let apiCheckedAt = 0;
+async function findApi() {
+  if (!window.SOULPIT?.api || Date.now() - apiCheckedAt < 5000) return false;
+  apiCheckedAt = Date.now();
+  try {
+    const text = await (await fetch('/static/config.js?v=' + Date.now(), { cache: 'no-store' })).text();
+    const fresh = (text.match(/api:\s*"([^"]+)"/) || [])[1]?.replace(/\/$/, '');
+    if (fresh && fresh !== API) { API = fresh; return true; }
+  } catch { /* the site itself is unreachable */ }
+  return false;
+}
+
 async function api(path, body) {
-  const res = await fetch(API + path, {
+  const send = () => fetch(API + path, {
     method: body ? 'POST' : 'GET',
     headers: { 'Content-Type': 'application/json', 'X-Token': token || '', 'X-Lang': 'ru' },
     body: body ? JSON.stringify(body) : undefined,
   });
+  let res;
+  try {
+    res = await send();
+  } catch {
+    res = null;  // no answer at all: the tunnel address is dead
+  }
+  if ((!res || res.status === 502 || res.status === 503) && await findApi()) {
+    try { res = await send(); } catch { res = null; }
+  }
+  if (!res) throw new Error('Сервер недоступен');
   const data = await res.json().catch(() => ({}));
   if (!res.ok) {
     const err = new Error(data.error || res.statusText);
@@ -819,7 +844,15 @@ async function start() {
   }
   if (hash.get('error')) history.replaceState(null, '', location.pathname);
   try { token = token || sessionStorage.getItem(TOKEN_KEY) || localStorage.getItem(TOKEN_KEY); } catch { /* private mode */ }
-  try { config = config || await api('/api/config'); } catch { $('app').innerHTML = gate('Сервер сайта недоступен. Проверьте, что он запущен.'); return; }
+  try {
+    config = config || await api('/api/config');
+  } catch {
+    // off, or moving to a new tunnel address: try again shortly
+    $('app').innerHTML = gate('Сервер сайта сейчас недоступен — пробуем подключиться снова…');
+    apiCheckedAt = 0;
+    setTimeout(start, 5000);
+    return;
+  }
   if (!token) { $('app').innerHTML = gate(); return; }
   try {
     const mine = await api('/api/me');

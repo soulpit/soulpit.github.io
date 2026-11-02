@@ -3,7 +3,7 @@
 // Two languages: every string is written L('русский', 'English') where it is used; the choice is kept in localStorage.
 // Routes: #/ · #/lobbies · #/lobby · #/heroes · #/hero/<id> · #/items · #/modes · #/guide · #/top · #/matches   (the admin desk is a page of its own: /admin/)
 
-const API = ((window.SOULPIT && window.SOULPIT.api) || '').replace(/\/$/, '');
+let API = ((window.SOULPIT && window.SOULPIT.api) || '').replace(/\/$/, '');  // see findApi()
 const IMG_EXT = (window.SOULPIT && window.SOULPIT.img) || 'png';  // the published site has WebP images
 const TOKEN_KEY = 'yama_token';
 const LANG_KEY = 'yama_lang';
@@ -49,13 +49,38 @@ const ROMAN = ['I', 'II', 'III', 'IV'];
 
 // ---------- api ----------
 
+
+// The free tunnel gets a new address now and then and the old one stops answering. The site's config.js always
+// has the current one: when the API is gone, read it again (at most every 5 s) and carry on at the new address.
+let apiCheckedAt = 0;
+async function findApi() {
+  if (!window.SOULPIT?.api || Date.now() - apiCheckedAt < 5000) return false;
+  apiCheckedAt = Date.now();
+  try {
+    const text = await (await fetch('/static/config.js?v=' + Date.now(), { cache: 'no-store' })).text();
+    const fresh = (text.match(/api:\s*"([^"]+)"/) || [])[1]?.replace(/\/$/, '');
+    if (fresh && fresh !== API) { API = fresh; return true; }
+  } catch { /* the site itself is unreachable */ }
+  return false;
+}
+
 async function api(path, body) {
-  const res = await fetch(API + path, {
+  const send = () => fetch(API + path, {
     method: body ? 'POST' : 'GET',
     headers: { 'Content-Type': 'application/json', 'X-Token': token || '', 'X-Lang': LANG },
     body: body ? JSON.stringify(body) : undefined,
   });
-  const data = await res.json();
+  let res;
+  try {
+    res = await send();
+  } catch {
+    res = null;  // no answer at all: the tunnel address is dead
+  }
+  if ((!res || res.status === 502 || res.status === 503) && await findApi()) {
+    try { res = await send(); } catch { res = null; }
+  }
+  if (!res) throw new Error(L('Сервер недоступен', 'The server is unavailable'));
+  const data = await res.json().catch(() => ({ error: res.statusText }));
   if (res.status === 401 && token) { setToken(null); me = null; lobby = null; }
   if (!res.ok) throw new Error(data.error || res.statusText);
   return data;
@@ -809,7 +834,10 @@ function remote(url, maxAge = 8000) {
     fetch(API + url, { headers: { 'X-Token': token || '', 'X-Lang': LANG } })
       .then((r) => r.json().then((d) => [r.ok, d]))
       .then(([ok, d]) => { remoteCache[url] = { data: ok ? d : null, error: ok ? null : d.error, at: Date.now() }; render(); })
-      .catch(() => { remoteCache[url] = { data: null, error: L('Сервер недоступен', 'The server is unavailable'), at: Date.now() }; render(); });
+      .catch(() => {
+        remoteCache[url] = { data: null, error: L('Сервер недоступен', 'The server is unavailable'), at: Date.now() };
+        findApi().then((moved) => { if (moved) delete remoteCache[url]; render(); });
+      });
   }
   return remoteCache[url];
 }
@@ -1481,7 +1509,19 @@ function pickItem(id) {
     setTimeout(() => showError(L('Не удалось войти через Steam', 'Steam sign-in failed')), 0);
   }
   applyStatic();
-  [config] = await Promise.all([api('/api/config'), loadData()]);
+  await loadData();
+  // the API may be off or moving to a new tunnel address: say so and keep trying instead of a blank page
+  while (!config) {
+    try {
+      config = await api('/api/config');
+    } catch {
+      $('view').innerHTML = `<section class="section"><p class="muted">${L('Сервер сайта сейчас недоступен — пробуем подключиться снова…',
+        'The site server is unavailable right now. Trying to reconnect…')}</p></section>`;
+      apiCheckedAt = 0;
+      await new Promise((r) => setTimeout(r, 4000));
+      await findApi();
+    }
+  }
   window.addEventListener('hashchange', () => { render(); window.scrollTo(0, 0); });
   await sync();
   syncLoop();
